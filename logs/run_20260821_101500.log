@@ -1,0 +1,244 @@
+2026-08-21 10:15:00,575  [INFO    ]  main - ============================================================
+2026-08-21 10:15:00,575  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-21 10:15:00,575  [INFO    ]  main - ============================================================
+2026-08-21 10:15:00,575  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-21 10:15:00,575  [INFO    ]  main - [--resume] Skipping rows already marked SUCCESS/FAILED.
+2026-08-21 10:15:00,575  [INFO    ]  main - [--type]   Running only: 'Graduation Certificate'
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Andhra University.png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Annamalai University.png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Banki College.png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Berhampur University.png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\BPUT Degree Certificate.pdf
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Buxi Jagabandhu Bidyadhar Autonomous College.png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Central Sanskit University.png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\DAV Autonomous College.png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Dhenkanal Autonomous College.png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Gangadhar Meher University.png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Govt Autonomous College Anugul.png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Gurukul Kangri Vishwavidyalaya.png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\India Result Image .png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Indira Gandhi Naional Tribal University.png
+2026-08-21 10:15:00,986  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\ISPAT Autonomous College Rourkela.png
+2026-08-21 10:15:00,994  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\JAMIA MILIA ISLAMIA Unversity Defgree Certificate.pdf
+2026-08-21 10:15:01,004  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\KIIT University.png
+2026-08-21 10:15:01,006  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\LaxmiNarayan College Jarsuguda .png
+2026-08-21 10:15:01,010  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Maharaja Shri RamChandra Bhanja Deo University.png
+2026-08-21 10:15:01,012  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Maharaja Sriram Chandra Deo University.pdf
+2026-08-21 10:15:01,016  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\MCP Autonomous College Takhatpur Baripada.png
+2026-08-21 10:15:01,020  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\National Sanskrit University.png
+2026-08-21 10:15:01,025  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Orissa GIET University Degree Certificate.pdf
+2026-08-21 10:15:01,031  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Prananath College Autonomous Khorda.png
+2026-08-21 10:15:01,036  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Rajendra University.png
+2026-08-21 10:15:01,041  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Rama Devi Womens University.png
+2026-08-21 10:15:01,043  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Ravenshaw University.png
+2026-08-21 10:15:01,049  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Rayagada Autonomous College.png
+2026-08-21 10:15:01,049  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Sambalpur University Odisha Degree Certificate.pdf
+2026-08-21 10:15:01,049  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\SCS Autonomous College Puri.png
+2026-08-21 10:15:01,049  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Shailabala Womens Autonomous College.png
+2026-08-21 10:15:01,051  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\SKCG Autonomous College.png
+2026-08-21 10:15:01,055  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Sri Jagannath Sanskrit Vishwavidyalaya.png
+2026-08-21 10:15:01,065  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Udaynath Autonomous College.png
+2026-08-21 10:15:01,076  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Degree Certificate\Utkal University Additional .png
+2026-08-21 10:15:01,087  [INFO    ]  main - Records to process: 8
+2026-08-21 10:15:03,544  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-21 10:15:03,547  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260821_101503.xlsx
+2026-08-21 10:15:03,547  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-21 10:15:07,734  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_101507_01_dashboard.png
+2026-08-21 10:15:07,751  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-21 10:15:09,798  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-21 10:15:09,953  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_101509_02_verify_form.png
+2026-08-21 10:15:09,973  [INFO    ]  main - 
+[1/8] D:\ai_doc_automation\Degree Certificate\GIET Cirtificate .pdf
+2026-08-21 10:15:09,977  [INFO    ]  main - ============================================================
+2026-08-21 10:15:09,977  [INFO    ]  main - Processing [1/8]: GIET Cirtificate .pdf  |  Graduation Certificate  |  Attempt 1
+2026-08-21 10:15:09,977  [INFO    ]  main - ============================================================
+2026-08-21 10:15:10,233  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 10:15:10,351  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 10:15:10,351  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 10:15:15,831  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 10:15:15,833  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Degree Certificate\GIET Cirtificate .pdf
+2026-08-21 10:15:15,847  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 10:15:23,298  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 10:15:23,298  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 10:15:28,483  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'Graduation Certificate', found 'Aadhaar Card'. Re-selecting.
+2026-08-21 10:15:28,483  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 10:15:28,639  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 10:15:28,639  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 10:15:34,124  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 10:15:39,155  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 10:15:45,674  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 10:15:45,674  [INFO    ]  doc_uploader - Waiting for engine result (timeout=180s)...
+2026-08-21 10:15:47,764  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 10:15:48,903  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_101548_result_GIET Cirtificate .pdf.png
+2026-08-21 10:15:48,903  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 10:15:48,961  [INFO    ]  result_parser - Verdict: FAILED (Pipeline Failure banner detected: TRANSACTION COMPLETE — Pipeline failure result — TXN-20260820-6162113994)
+2026-08-21 10:15:48,961  [INFO    ]  result_parser - Skipping extraction (status=FAILED).
+2026-08-21 10:15:48,964  [INFO    ]  excel_writer - Created sheet: 'Graduation Certificate'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Screenshot', 'Processing Time (s)', 'Timestamp']
+2026-08-21 10:15:49,117  [INFO    ]  main - [FAIL] GIET Cirtificate .pdf: FAILED (38.5s)
+2026-08-21 10:15:49,117  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 10:15:51,062  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 10:15:52,065  [INFO    ]  main - 
+[2/8] D:\ai_doc_automation\Degree Certificate\Gulbarga University Degree Certificate.pdf
+2026-08-21 10:15:52,065  [INFO    ]  main - ============================================================
+2026-08-21 10:15:52,065  [INFO    ]  main - Processing [2/8]: Gulbarga University Degree Certificate.pdf  |  Graduation Certificate  |  Attempt 1
+2026-08-21 10:15:52,065  [INFO    ]  main - ============================================================
+2026-08-21 10:15:52,198  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 10:15:52,247  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 10:15:52,247  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 10:15:57,671  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 10:15:57,671  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Degree Certificate\Gulbarga University Degree Certificate.pdf
+2026-08-21 10:15:57,678  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 10:16:05,059  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 10:16:05,059  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 10:16:10,204  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 10:16:15,605  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 10:16:20,663  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 10:16:27,076  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 10:16:27,076  [INFO    ]  doc_uploader - Waiting for engine result (timeout=180s)...
+2026-08-21 10:16:42,237  [INFO    ]  doc_uploader - Result appeared after 15s.
+2026-08-21 10:16:43,339  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_101643_result_Gulbarga University Degree Certificate.pdf.png
+2026-08-21 10:16:43,339  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 10:16:59,875  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 10:16:59,875  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 10:17:01,774  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 10:17:01,783  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-21 10:17:01,893  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_101701_extracted_Gulbarga University Degree Certificate.pdf.png
+2026-08-21 10:17:02,020  [INFO    ]  main - [OK] Gulbarga University Degree Certificate.pdf: SUCCESS (51.0s)
+2026-08-21 10:17:02,020  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 10:17:03,908  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 10:17:04,909  [INFO    ]  main - 
+[3/8] D:\ai_doc_automation\Degree Certificate\Indra Gandhi National Open University.png
+2026-08-21 10:17:04,909  [INFO    ]  main - ============================================================
+2026-08-21 10:17:04,909  [INFO    ]  main - Processing [3/8]: Indra Gandhi National Open University.png  |  Graduation Certificate  |  Attempt 1
+2026-08-21 10:17:04,909  [INFO    ]  main - ============================================================
+2026-08-21 10:17:05,024  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 10:17:05,054  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 10:17:05,054  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 10:17:10,508  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 10:17:10,508  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Degree Certificate\Indra Gandhi National Open University.png
+2026-08-21 10:17:10,512  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 10:17:17,905  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 10:17:17,905  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 10:17:23,067  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 10:17:28,507  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 10:17:33,562  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 10:17:36,972  [WARNING ]  doc_uploader - Upload error detected: Upload a JPEG, PNG, WebP, or PDF document up to 5 MB.
+2026-08-21 10:17:36,972  [WARNING ]  main - File upload rejected for Indra Gandhi National Open University.png: Upload a JPEG, PNG, WebP, or PDF document up to 5 MB.
+2026-08-21 10:17:37,119  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_101736_upload_rejected_Indra Gandhi National Open University.png.png
+2026-08-21 10:17:37,231  [INFO    ]  main - [FAIL] Indra Gandhi National Open University.png: FAILED (31.9s)
+2026-08-21 10:17:37,247  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 10:17:47,869  [INFO    ]  doc_uploader - Navigating to Verify Document page to reset form.
+2026-08-21 10:17:47,869  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-21 10:17:49,752  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-21 10:17:50,753  [INFO    ]  main - 
+[4/8] D:\ai_doc_automation\Degree Certificate\National Open School 12th Marksheet.pdf
+2026-08-21 10:17:50,753  [INFO    ]  main - ============================================================
+2026-08-21 10:17:50,753  [INFO    ]  main - Processing [4/8]: National Open School 12th Marksheet.pdf  |  Graduation Certificate  |  Attempt 1
+2026-08-21 10:17:50,753  [INFO    ]  main - ============================================================
+2026-08-21 10:17:50,873  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 10:17:50,944  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 10:17:50,945  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 10:17:56,387  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 10:17:56,387  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Degree Certificate\National Open School 12th Marksheet.pdf
+2026-08-21 10:17:56,396  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 10:18:03,806  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 10:18:03,807  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 10:18:08,945  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'Graduation Certificate', found 'Aadhaar Card'. Re-selecting.
+2026-08-21 10:18:08,945  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 10:18:09,035  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 10:18:09,035  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 10:18:14,482  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 10:18:19,531  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 10:18:25,943  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 10:18:25,943  [INFO    ]  doc_uploader - Waiting for engine result (timeout=180s)...
+2026-08-21 10:18:31,004  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 10:18:32,108  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_101832_result_National Open School 12th Marksheet.pdf.png
+2026-08-21 10:18:32,108  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 10:18:32,143  [INFO    ]  result_parser - Verdict: FAILED (Pipeline Failure banner detected: TRANSACTION COMPLETE — Pipeline failure result — TXN-20260820-7341043840)
+2026-08-21 10:18:32,143  [INFO    ]  result_parser - Skipping extraction (status=FAILED).
+2026-08-21 10:18:32,264  [INFO    ]  main - [FAIL] National Open School 12th Marksheet.pdf: FAILED (41.1s)
+2026-08-21 10:18:32,264  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 10:18:34,140  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 10:18:35,141  [INFO    ]  main - 
+[5/8] D:\ai_doc_automation\Degree Certificate\Rajendra College.png
+2026-08-21 10:18:35,141  [INFO    ]  main - ============================================================
+2026-08-21 10:18:35,141  [INFO    ]  main - Processing [5/8]: Rajendra College.png  |  Graduation Certificate  |  Attempt 1
+2026-08-21 10:18:35,141  [INFO    ]  main - ============================================================
+2026-08-21 10:18:35,247  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 10:18:35,277  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 10:18:35,277  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 10:18:40,724  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 10:18:40,724  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Degree Certificate\Rajendra College.png
+2026-08-21 10:18:40,732  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 10:18:48,099  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 10:18:48,099  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 10:18:53,255  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 10:18:58,682  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 10:19:03,736  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 10:19:10,153  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 10:19:10,153  [INFO    ]  doc_uploader - Waiting for engine result (timeout=180s)...
+2026-08-21 10:22:11,447  [WARNING ]  doc_uploader - Engine timeout after 180s.
+2026-08-21 10:22:11,447  [WARNING ]  main - Timeout on attempt 1. Retrying...
+2026-08-21 10:22:11,534  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 10:22:22,086  [INFO    ]  doc_uploader - Navigating to Verify Document page to reset form.
+2026-08-21 10:22:22,086  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-21 10:22:24,060  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-21 10:22:24,060  [INFO    ]  main - ============================================================
+2026-08-21 10:22:24,060  [INFO    ]  main - Processing [5/8]: Rajendra College.png  |  Graduation Certificate  |  Attempt 2
+2026-08-21 10:22:24,060  [INFO    ]  main - ============================================================
+2026-08-21 10:22:24,162  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 10:22:24,271  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 10:22:24,271  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 10:22:29,670  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 10:22:29,671  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Degree Certificate\Rajendra College.png
+2026-08-21 10:22:29,680  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 10:22:37,084  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 10:22:37,084  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 10:22:42,185  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'Graduation Certificate', found 'Aadhaar Card'. Re-selecting.
+2026-08-21 10:22:42,201  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 10:22:42,290  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 10:22:42,290  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 10:22:47,685  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 10:22:52,768  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 10:22:59,185  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 10:22:59,185  [INFO    ]  doc_uploader - Waiting for engine result (timeout=180s)...
+2026-08-21 10:26:00,505  [WARNING ]  doc_uploader - Engine timeout after 180s.
+2026-08-21 10:26:00,827  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_102600_timeout_Rajendra College.png.png
+2026-08-21 10:26:00,960  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_102600_timeout_Rajendra College.png.png
+2026-08-21 10:26:01,109  [INFO    ]  main - [FAIL] Rajendra College.png: TIMEOUT (216.3s)
+2026-08-21 10:26:01,109  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 10:26:08,496  [WARNING ]  main - Error resetting form (Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=151.0.7922.169)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6a64fabb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6a64fac10+15210]
+	chromedriver!(No symbol) [0x7ff6a6025d6d]
+	chromedriver!(No symbol) [0x7ff6a6011c10]
+	chromedriver!(No symbol) [0x7ff6a6011b6c]
+	chromedriver!(No symbol) [0x7ff6a60103c9]
+	chromedriver!(No symbol) [0x7ff6a6010f7f]
+	chromedriver!(No symbol) [0x7ff6a602b656]
+	chromedriver!(No symbol) [0x7ff6a602c19b]
+	chromedriver!(No symbol) [0x7ff6a6030c85]
+	chromedriver!(No symbol) [0x7ff6a6030d4f]
+	chromedriver!(No symbol) [0x7ff6a6080a0a]
+	chromedriver!(No symbol) [0x7ff6a608158c]
+	chromedriver!(No symbol) [0x7ff6a60d2027]
+	chromedriver!(No symbol) [0x7ff6a60cec0b]
+	chromedriver!(No symbol) [0x7ff6a60737cc]
+	chromedriver!(No symbol) [0x7ff6a60746f3]
+	chromedriver!GetHandleVerifier [0x7ff6a6b1b79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6a6b15ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6a6b3bcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6a6518ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6a652147c+3ba7c]
+	chromedriver!GetHandleVerifier [0x7ff6a6504d64+1f364]
+	chromedriver!GetHandleVerifier [0x7ff6a6504ef4+1f4f4]
+	chromedriver!GetHandleVerifier [0x7ff6a64e7d97+2397]
+	KERNEL32!BaseThreadInitThunk [0x7ffe1602ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffe170aad6c+2c]
+). Restarting browser session...
+2026-08-21 10:26:12,838  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-21 10:26:15,915  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-21 10:26:18,158  [INFO    ]  main - Browser closed.

@@ -1,0 +1,94 @@
+2026-08-21 11:44:29,549  [INFO    ]  main - ============================================================
+2026-08-21 11:44:29,549  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-21 11:44:29,549  [INFO    ]  main - ============================================================
+2026-08-21 11:44:29,549  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-21 11:44:29,921  [INFO    ]  main - Records to process: 252
+2026-08-21 11:44:31,948  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-21 11:44:31,950  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260821_114431.xlsx
+2026-08-21 11:44:31,950  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-21 11:44:36,294  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_114436_01_dashboard.png
+2026-08-21 11:44:36,294  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-21 11:44:38,235  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-21 11:44:38,360  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_114438_02_verify_form.png
+2026-08-21 11:44:38,376  [INFO    ]  main - 
+[1/252] D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar Card Test - Digi Locker.pdf
+2026-08-21 11:44:38,377  [INFO    ]  main - ============================================================
+2026-08-21 11:44:38,377  [INFO    ]  main - Processing [1/252]: Aadhar Card Test - Digi Locker.pdf  |  Aadhaar Card  |  Attempt 1
+2026-08-21 11:44:38,377  [INFO    ]  main - ============================================================
+2026-08-21 11:44:38,711  [INFO    ]  doc_uploader - Selecting document type: 'Aadhaar Card'
+2026-08-21 11:44:38,769  [INFO    ]  doc_uploader - Selected by visible text: 'Aadhaar Card'
+2026-08-21 11:44:38,769  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:44:44,171  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:44:44,172  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar Card Test - Digi Locker.pdf
+2026-08-21 11:44:44,178  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 11:44:56,614  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 11:44:56,614  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 11:45:06,695  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:45:12,090  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:45:22,137  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 11:45:33,629  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 11:45:33,631  [INFO    ]  doc_uploader - Waiting for engine result (timeout=180s)...
+2026-08-21 11:45:33,650  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 11:45:34,811  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_114534_result_Aadhar Card Test - Digi Locker.pdf.png
+2026-08-21 11:45:34,811  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 11:45:51,387  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 11:45:51,387  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 11:45:53,295  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 11:45:53,295  [INFO    ]  result_parser - JS parse: 8 fields
+2026-08-21 11:45:53,396  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_114553_extracted_Aadhar Card Test - Digi Locker.pdf.png
+2026-08-21 11:45:53,396  [INFO    ]  excel_writer - Created sheet: 'Aadhaar Card'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Aadhaar Number', 'Address', 'Dob', 'Father Name', 'Full Name', 'Gender', 'Phone Number', 'Pincode']
+2026-08-21 11:45:53,713  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 11:45:53,713  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 11:45:55,611  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 11:45:56,612  [INFO    ]  main - 
+[2/252] D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar1.jpg
+2026-08-21 11:45:56,612  [INFO    ]  main - ============================================================
+2026-08-21 11:45:56,612  [INFO    ]  main - Processing [2/252]: Aadhar1.jpg  |  Aadhaar Card  |  Attempt 1
+2026-08-21 11:45:56,612  [INFO    ]  main - ============================================================
+2026-08-21 11:45:56,903  [INFO    ]  doc_uploader - Selecting document type: 'Aadhaar Card'
+2026-08-21 11:45:56,947  [INFO    ]  doc_uploader - Selected by visible text: 'Aadhaar Card'
+2026-08-21 11:45:56,947  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:46:02,372  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:46:02,372  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar1.jpg
+2026-08-21 11:46:02,372  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 11:46:14,743  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 11:46:14,743  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 11:46:24,873  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:46:30,273  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:46:40,368  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 11:46:51,883  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 11:46:51,883  [INFO    ]  doc_uploader - Waiting for engine result (timeout=180s)...
+2026-08-21 11:46:51,910  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 11:46:53,003  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_114652_result_Aadhar1.jpg.png
+2026-08-21 11:46:53,003  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 11:47:09,565  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 11:47:09,565  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 11:47:11,449  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 11:47:11,456  [INFO    ]  result_parser - JS parse: 8 fields
+2026-08-21 11:47:11,559  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_114711_extracted_Aadhar1.jpg.png
+2026-08-21 11:47:11,862  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 11:47:11,863  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 11:47:13,742  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 11:47:14,743  [INFO    ]  main - 
+[3/252] D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar2.jpg
+2026-08-21 11:47:14,743  [INFO    ]  main - ============================================================
+2026-08-21 11:47:14,743  [INFO    ]  main - Processing [3/252]: Aadhar2.jpg  |  Aadhaar Card  |  Attempt 1
+2026-08-21 11:47:14,743  [INFO    ]  main - ============================================================
+2026-08-21 11:47:15,041  [INFO    ]  doc_uploader - Selecting document type: 'Aadhaar Card'
+2026-08-21 11:47:15,089  [INFO    ]  doc_uploader - Selected by visible text: 'Aadhaar Card'
+2026-08-21 11:47:15,090  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:47:20,511  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:47:20,513  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar2.jpg
+2026-08-21 11:47:20,520  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 11:47:32,961  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 11:47:32,961  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 11:47:43,106  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:47:48,477  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:47:58,545  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 11:48:01,873  [WARNING ]  main - Interrupted by user (Ctrl+C). Saving partial results...
+2026-08-21 11:48:01,879  [INFO    ]  excel_writer - Summary sheet written with overall timing statistics.
+2026-08-21 11:48:01,931  [INFO    ]  excel_writer - Excel saved: D:\ai_doc_automation\output\ai_doc_results_20260821_114431.xlsx
+2026-08-21 11:48:01,931  [INFO    ]  main - Partial results saved: D:\ai_doc_automation\output\ai_doc_results_20260821_114431.xlsx
+2026-08-21 11:48:01,932  [INFO    ]  main - Run with --resume to continue from where you stopped.
+2026-08-21 11:48:06,005  [WARNING ]  urllib3.connectionpool - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=53626): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/46ea28de234f66b0fd7c6add77a49a53
+2026-08-21 11:48:10,059  [WARNING ]  urllib3.connectionpool - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=53626): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/46ea28de234f66b0fd7c6add77a49a53

@@ -1,0 +1,44 @@
+2026-08-20 15:41:14,481  [INFO    ]  main - ============================================================
+2026-08-20 15:41:14,481  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-20 15:41:14,484  [INFO    ]  main - ============================================================
+2026-08-20 15:41:14,484  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-20 15:41:14,484  [INFO    ]  main - [--type]   Running only: 'Graduation Certificate'
+2026-08-20 15:41:14,629  [INFO    ]  main - Records to process: 1
+2026-08-20 15:41:16,640  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-20 15:41:16,644  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260820_154116.xlsx
+2026-08-20 15:41:16,647  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-20 15:41:20,947  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_154120_01_dashboard.png
+2026-08-20 15:41:20,947  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-20 15:41:22,905  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-20 15:41:23,055  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_154122_02_verify_form.png
+2026-08-20 15:41:23,076  [INFO    ]  main - 
+[1/1] D:\ai_doc_automation\Degree Certificate\Andhra University.png
+2026-08-20 15:41:23,076  [INFO    ]  main - ============================================================
+2026-08-20 15:41:23,076  [INFO    ]  main - Processing [1/1]: Andhra University.png  |  Graduation Certificate  |  Attempt 1
+2026-08-20 15:41:23,076  [INFO    ]  main - ============================================================
+2026-08-20 15:41:23,184  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-20 15:41:23,296  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-20 15:41:23,296  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-20 15:41:23,296  [ERROR   ]  main - Exception on Andhra University.png: 'plain_extraction_radio'
+Traceback (most recent call last):
+  File "D:\ai_doc_automation\main.py", line 97, in process_document
+    ensure_plain_extraction(driver)
+  File "D:\ai_doc_automation\doc_uploader.py", line 158, in ensure_plain_extraction
+    XPATHS["plain_extraction_radio"],
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'plain_extraction_radio'
+2026-08-20 15:41:23,430  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_154123_error_Andhra University.png.png
+2026-08-20 15:41:23,442  [INFO    ]  excel_writer - Created sheet: 'Graduation Certificate'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Screenshot', 'Processing Time (s)', 'Timestamp']
+2026-08-20 15:41:23,546  [INFO    ]  main - [FAIL] Andhra University.png: ERROR (0.1s)
+2026-08-20 15:41:23,549  [INFO    ]  excel_writer - Summary sheet written.
+2026-08-20 15:41:23,580  [INFO    ]  excel_writer - Excel saved: D:\ai_doc_automation\output\ai_doc_results_20260820_154116.xlsx
+2026-08-20 15:41:23,580  [INFO    ]  main - 
+============================================================
+2026-08-20 15:41:23,583  [INFO    ]  main -   COMPLETE
+2026-08-20 15:41:23,583  [INFO    ]  main -   Total   : 1
+2026-08-20 15:41:23,583  [INFO    ]  main -   Success : 0
+2026-08-20 15:41:23,584  [INFO    ]  main -   Failed  : 0
+2026-08-20 15:41:23,584  [INFO    ]  main -   Errors  : 1
+2026-08-20 15:41:23,584  [INFO    ]  main -   Output  : D:\ai_doc_automation\output\ai_doc_results_20260820_154116.xlsx
+2026-08-20 15:41:23,584  [INFO    ]  main - ============================================================
+2026-08-20 15:41:25,880  [INFO    ]  main - Browser closed.

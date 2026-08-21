@@ -1,0 +1,42 @@
+2026-08-20 15:40:24,121  [INFO    ]  main - ============================================================
+2026-08-20 15:40:24,122  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-20 15:40:24,122  [INFO    ]  main - ============================================================
+2026-08-20 15:40:24,122  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-20 15:40:24,122  [INFO    ]  main - [--type]   Running only: 'Graduation Certificate'
+2026-08-20 15:40:24,251  [INFO    ]  main - Records to process: 1
+2026-08-20 15:40:28,895  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-20 15:40:28,899  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260820_154028.xlsx
+2026-08-20 15:40:28,902  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-20 15:40:33,392  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_154033_01_dashboard.png
+2026-08-20 15:40:33,392  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-20 15:40:35,452  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-20 15:40:35,595  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_154035_02_verify_form.png
+2026-08-20 15:40:35,637  [INFO    ]  main - 
+[1/1] D:\ai_doc_automation\Degree Certificate\Andhra University.png
+2026-08-20 15:40:35,648  [INFO    ]  main - ============================================================
+2026-08-20 15:40:35,648  [INFO    ]  main - Processing [1/1]: Andhra University.png  |  Graduation Certificate  |  Attempt 1
+2026-08-20 15:40:35,648  [INFO    ]  main - ============================================================
+2026-08-20 15:40:35,853  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-20 15:40:35,854  [ERROR   ]  main - Exception on Andhra University.png: 'doc_type_select_fallback'
+Traceback (most recent call last):
+  File "D:\ai_doc_automation\main.py", line 94, in process_document
+    select_document_type(driver, doc_type)
+  File "D:\ai_doc_automation\doc_uploader.py", line 97, in select_document_type
+    XPATHS["doc_type_select_fallback"],
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'doc_type_select_fallback'
+2026-08-20 15:40:36,004  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_154035_error_Andhra University.png.png
+2026-08-20 15:40:36,012  [INFO    ]  excel_writer - Created sheet: 'Graduation Certificate'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Screenshot', 'Processing Time (s)', 'Timestamp']
+2026-08-20 15:40:36,154  [INFO    ]  main - [FAIL] Andhra University.png: ERROR (0.0s)
+2026-08-20 15:40:36,162  [INFO    ]  excel_writer - Summary sheet written.
+2026-08-20 15:40:36,209  [INFO    ]  excel_writer - Excel saved: D:\ai_doc_automation\output\ai_doc_results_20260820_154028.xlsx
+2026-08-20 15:40:36,209  [INFO    ]  main - 
+============================================================
+2026-08-20 15:40:36,213  [INFO    ]  main -   COMPLETE
+2026-08-20 15:40:36,213  [INFO    ]  main -   Total   : 1
+2026-08-20 15:40:36,213  [INFO    ]  main -   Success : 0
+2026-08-20 15:40:36,213  [INFO    ]  main -   Failed  : 0
+2026-08-20 15:40:36,214  [INFO    ]  main -   Errors  : 1
+2026-08-20 15:40:36,214  [INFO    ]  main -   Output  : D:\ai_doc_automation\output\ai_doc_results_20260820_154028.xlsx
+2026-08-20 15:40:36,214  [INFO    ]  main - ============================================================
+2026-08-20 15:40:38,468  [INFO    ]  main - Browser closed.

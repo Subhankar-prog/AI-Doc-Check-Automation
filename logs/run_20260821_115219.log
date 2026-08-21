@@ -1,0 +1,6 @@
+2026-08-21 11:52:19,962  [INFO    ]  main - ============================================================
+2026-08-21 11:52:19,962  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-21 11:52:19,962  [INFO    ]  main - ============================================================
+2026-08-21 11:52:19,963  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-21 11:52:19,963  [INFO    ]  main - [--resume] Skipping rows already marked SUCCESS/FAILED.
+2026-08-21 11:52:20,032  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.

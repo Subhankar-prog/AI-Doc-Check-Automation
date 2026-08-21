@@ -1,0 +1,139 @@
+2026-08-21 11:32:51,338  [INFO    ]  main - ============================================================
+2026-08-21 11:32:51,338  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-21 11:32:51,338  [INFO    ]  main - ============================================================
+2026-08-21 11:32:51,340  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-21 11:32:51,486  [INFO    ]  main - Records to process: 43
+2026-08-21 11:32:54,870  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-21 11:32:54,873  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260821_113254.xlsx
+2026-08-21 11:32:54,873  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-21 11:32:59,076  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_113258_01_dashboard.png
+2026-08-21 11:32:59,076  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-21 11:33:01,016  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-21 11:33:01,135  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_113301_02_verify_form.png
+2026-08-21 11:33:01,151  [INFO    ]  main - 
+[1/43] D:\ai_doc_automation\Degree Certificate\Andhra University.png
+2026-08-21 11:33:01,151  [INFO    ]  main - ============================================================
+2026-08-21 11:33:01,151  [INFO    ]  main - Processing [1/43]: Andhra University.png  |  Graduation Certificate  |  Attempt 1
+2026-08-21 11:33:01,151  [INFO    ]  main - ============================================================
+2026-08-21 11:33:01,254  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 11:33:01,354  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 11:33:01,354  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:33:06,766  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:33:06,767  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Degree Certificate\Andhra University.png
+2026-08-21 11:33:06,776  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 11:33:19,201  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 11:33:19,201  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 11:33:29,303  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'Graduation Certificate', found 'Aadhaar Card'. Re-selecting.
+2026-08-21 11:33:29,303  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 11:33:29,365  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 11:33:29,366  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:33:31,681  [ERROR   ]  main - Exception on Andhra University.png: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=151.0.7922.169)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6a64fabb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6a64fac10+15210]
+	chromedriver!(No symbol) [0x7ff6a6025d6d]
+	chromedriver!(No symbol) [0x7ff6a6011c10]
+	chromedriver!(No symbol) [0x7ff6a6011b6c]
+	chromedriver!(No symbol) [0x7ff6a60103c9]
+	chromedriver!(No symbol) [0x7ff6a6010f7f]
+	chromedriver!(No symbol) [0x7ff6a602b656]
+	chromedriver!(No symbol) [0x7ff6a602c19b]
+	chromedriver!(No symbol) [0x7ff6a6030c85]
+	chromedriver!(No symbol) [0x7ff6a6030d4f]
+	chromedriver!(No symbol) [0x7ff6a6080a0a]
+	chromedriver!(No symbol) [0x7ff6a608158c]
+	chromedriver!(No symbol) [0x7ff6a60750cc]
+	chromedriver!(No symbol) [0x7ff6a6074f76]
+	chromedriver!(No symbol) [0x7ff6a60cec0b]
+	chromedriver!(No symbol) [0x7ff6a60737cc]
+	chromedriver!(No symbol) [0x7ff6a60746f3]
+	chromedriver!GetHandleVerifier [0x7ff6a6b1b79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6a6b15ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6a6b3bcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6a6518ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6a652147c+3ba7c]
+	chromedriver!GetHandleVerifier [0x7ff6a6504d64+1f364]
+	chromedriver!GetHandleVerifier [0x7ff6a6504ef4+1f4f4]
+	chromedriver!GetHandleVerifier [0x7ff6a64e7d97+2397]
+	KERNEL32!BaseThreadInitThunk [0x7ffe1602ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffe170aad6c+2c]
+Traceback (most recent call last):
+  File "D:\ai_doc_automation\main.py", line 104, in process_document
+    verify_and_submit(driver, doc_type)
+  File "D:\ai_doc_automation\doc_uploader.py", line 406, in verify_and_submit
+    ensure_plain_extraction(driver)
+  File "D:\ai_doc_automation\doc_uploader.py", line 165, in ensure_plain_extraction
+    radio_input = el.find_element(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 417, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=151.0.7922.169)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6a64fabb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6a64fac10+15210]
+	chromedriver!(No symbol) [0x7ff6a6025d6d]
+	chromedriver!(No symbol) [0x7ff6a6011c10]
+	chromedriver!(No symbol) [0x7ff6a6011b6c]
+	chromedriver!(No symbol) [0x7ff6a60103c9]
+	chromedriver!(No symbol) [0x7ff6a6010f7f]
+	chromedriver!(No symbol) [0x7ff6a602b656]
+	chromedriver!(No symbol) [0x7ff6a602c19b]
+	chromedriver!(No symbol) [0x7ff6a6030c85]
+	chromedriver!(No symbol) [0x7ff6a6030d4f]
+	chromedriver!(No symbol) [0x7ff6a6080a0a]
+	chromedriver!(No symbol) [0x7ff6a608158c]
+	chromedriver!(No symbol) [0x7ff6a60750cc]
+	chromedriver!(No symbol) [0x7ff6a6074f76]
+	chromedriver!(No symbol) [0x7ff6a60cec0b]
+	chromedriver!(No symbol) [0x7ff6a60737cc]
+	chromedriver!(No symbol) [0x7ff6a60746f3]
+	chromedriver!GetHandleVerifier [0x7ff6a6b1b79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6a6b15ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6a6b3bcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6a6518ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6a652147c+3ba7c]
+	chromedriver!GetHandleVerifier [0x7ff6a6504d64+1f364]
+	chromedriver!GetHandleVerifier [0x7ff6a6504ef4+1f4f4]
+	chromedriver!GetHandleVerifier [0x7ff6a64e7d97+2397]
+	KERNEL32!BaseThreadInitThunk [0x7ffe1602ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffe170aad6c+2c]
+
+2026-08-21 11:33:31,933  [INFO    ]  excel_writer - Created sheet: 'Graduation Certificate'  headers: ['Filename', 'Document Type', 'Status', 'Error Message']
+2026-08-21 11:33:32,134  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 11:33:32,135  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 11:33:32,137  [WARNING ]  main - Error resetting form (Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6a64fabb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6a64fac10+15210]
+	chromedriver!(No symbol) [0x7ff6a6025b56]
+	chromedriver!(No symbol) [0x7ff6a6072833]
+	chromedriver!(No symbol) [0x7ff6a60a9c12]
+	chromedriver!(No symbol) [0x7ff6a60a3a22]
+	chromedriver!(No symbol) [0x7ff6a60a31e2]
+	chromedriver!(No symbol) [0x7ff6a5fee2bb]
+	chromedriver!(No symbol) [0x7ff6a5fee912]
+	chromedriver!(No symbol) [0x7ff6a5feeed5]
+	chromedriver!GetHandleVerifier [0x7ff6a6b1b79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6a6b15ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6a6b3bcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6a6518ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6a652147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6a5fed83c]
+	chromedriver!GetHandleVerifier [0x7ff6a6ce35e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffe1602ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffe170aad6c+2c]
+). Restarting browser session...
+2026-08-21 11:33:35,961  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-21 11:33:39,077  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...

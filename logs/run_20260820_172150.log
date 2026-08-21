@@ -1,0 +1,170 @@
+2026-08-20 17:21:50,612  [INFO    ]  main - ============================================================
+2026-08-20 17:21:50,612  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-20 17:21:50,612  [INFO    ]  main - ============================================================
+2026-08-20 17:21:50,612  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-20 17:21:50,612  [INFO    ]  main - [--type]   Running only: 'Graduation Certificate'
+2026-08-20 17:21:50,638  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-20 17:21:50,638  [INFO    ]  main - Records to process: 6
+2026-08-20 17:21:52,554  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-20 17:21:52,562  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260820_172152.xlsx
+2026-08-20 17:21:52,562  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-20 17:21:56,850  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_172156_01_dashboard.png
+2026-08-20 17:21:56,850  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-20 17:21:58,784  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-20 17:21:58,885  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_172158_02_verify_form.png
+2026-08-20 17:21:58,900  [INFO    ]  main - 
+[1/6] D:\ai_doc_automation\Degree Certificate\Andhra University.png
+2026-08-20 17:21:58,900  [INFO    ]  main - ============================================================
+2026-08-20 17:21:58,900  [INFO    ]  main - Processing [1/6]: Andhra University.png  |  Graduation Certificate  |  Attempt 1
+2026-08-20 17:21:58,900  [INFO    ]  main - ============================================================
+2026-08-20 17:21:58,900  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-20 17:21:58,900  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-20 17:21:58,999  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-20 17:21:58,999  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-20 17:22:04,420  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-20 17:22:04,420  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Degree Certificate\Andhra University.png
+2026-08-20 17:22:04,431  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-20 17:22:06,770  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-20 17:22:06,770  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-20 17:22:06,811  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'Graduation Certificate', found 'Aadhaar Card'. Re-selecting.
+2026-08-20 17:22:06,811  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-20 17:22:06,890  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-20 17:22:06,890  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-20 17:22:12,350  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-20 17:22:12,350  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-20 17:22:12,753  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-20 17:22:12,753  [INFO    ]  doc_uploader - Waiting for engine result (timeout=180s)...
+2026-08-20 17:22:12,772  [INFO    ]  doc_uploader -   [0s] Engine processing...
+2026-08-20 17:22:17,801  [INFO    ]  doc_uploader -   [5s] Engine processing...
+2026-08-20 17:22:22,816  [INFO    ]  doc_uploader -   [10s] Engine processing...
+2026-08-20 17:22:27,832  [INFO    ]  doc_uploader -   [15s] Engine processing...
+2026-08-20 17:22:37,893  [INFO    ]  doc_uploader - Result appeared after 20s.
+2026-08-20 17:22:38,995  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_172238_result_Andhra University.png.png
+2026-08-20 17:22:38,995  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-20 17:22:40,597  [INFO    ]  result_parser - Verdict: SUCCESS
+2026-08-20 17:22:40,597  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-20 17:22:42,486  [INFO    ]  result_parser - On Extraction tab.
+2026-08-20 17:22:42,488  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-20 17:22:42,611  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_172242_extracted_Andhra University.png.png
+2026-08-20 17:22:42,611  [INFO    ]  excel_writer - Created sheet: 'Graduation Certificate'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Screenshot', 'Processing Time (s)', 'Timestamp', 'Cgpa Secured', 'College Name', 'Degree Name', 'Enrollment Number', 'Father Name', 'Grade', 'Mother Name', 'Percentage', 'Registration Number', 'Result', 'Roll Number', 'Stream Or Specialization', 'Student Name', 'Total Marks Secured', 'University Name', 'Year Of Passing']
+2026-08-20 17:22:42,849  [INFO    ]  main - [OK] Andhra University.png: SUCCESS (40.0s)
+2026-08-20 17:22:42,849  [INFO    ]  doc_uploader - Clicking 'New submission'...
+2026-08-20 17:22:45,234  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-20 17:22:46,234  [INFO    ]  main - 
+[2/6] D:\ai_doc_automation\Degree Certificate\Annamalai University.png
+2026-08-20 17:22:46,234  [INFO    ]  main - ============================================================
+2026-08-20 17:22:46,234  [INFO    ]  main - Processing [2/6]: Annamalai University.png  |  Graduation Certificate  |  Attempt 1
+2026-08-20 17:22:46,234  [INFO    ]  main - ============================================================
+2026-08-20 17:22:46,436  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-20 17:22:46,467  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-20 17:22:46,467  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-20 17:22:51,858  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-20 17:22:51,859  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Degree Certificate\Annamalai University.png
+2026-08-20 17:22:51,864  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-20 17:22:54,186  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-20 17:22:54,186  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-20 17:22:54,263  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-20 17:22:59,660  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-20 17:22:59,660  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-20 17:23:00,035  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-20 17:23:00,035  [INFO    ]  doc_uploader - Waiting for engine result (timeout=180s)...
+2026-08-20 17:23:00,054  [INFO    ]  doc_uploader -   [0s] Engine processing...
+2026-08-20 17:23:05,060  [INFO    ]  doc_uploader -   [5s] Engine processing...
+2026-08-20 17:23:10,077  [INFO    ]  doc_uploader -   [10s] Engine processing...
+2026-08-20 17:23:15,093  [INFO    ]  doc_uploader -   [15s] Engine processing...
+2026-08-20 17:23:25,144  [INFO    ]  doc_uploader - Result appeared after 20s.
+2026-08-20 17:23:26,256  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_172326_result_Annamalai University.png.png
+2026-08-20 17:23:26,256  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-20 17:23:27,871  [INFO    ]  result_parser - Verdict: SUCCESS
+2026-08-20 17:23:27,871  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-20 17:23:29,743  [INFO    ]  result_parser - On Extraction tab.
+2026-08-20 17:23:29,743  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-20 17:23:29,872  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_172329_extracted_Annamalai University.png.png
+2026-08-20 17:23:29,999  [INFO    ]  main - [OK] Annamalai University.png: SUCCESS (39.7s)
+2026-08-20 17:23:29,999  [INFO    ]  doc_uploader - Clicking 'New submission'...
+2026-08-20 17:23:32,385  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-20 17:23:33,385  [INFO    ]  main - 
+[3/6] D:\ai_doc_automation\Degree Certificate\Banki College.png
+2026-08-20 17:23:33,385  [INFO    ]  main - ============================================================
+2026-08-20 17:23:33,385  [INFO    ]  main - Processing [3/6]: Banki College.png  |  Graduation Certificate  |  Attempt 1
+2026-08-20 17:23:33,385  [INFO    ]  main - ============================================================
+2026-08-20 17:23:33,470  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-20 17:23:33,502  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-20 17:23:33,502  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-20 17:23:38,903  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-20 17:23:38,904  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Degree Certificate\Banki College.png
+2026-08-20 17:23:38,910  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-20 17:23:41,236  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-20 17:23:41,236  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-20 17:23:41,316  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-20 17:23:46,698  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-20 17:23:46,698  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-20 17:23:47,061  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-20 17:23:47,061  [INFO    ]  doc_uploader - Waiting for engine result (timeout=180s)...
+2026-08-20 17:23:47,072  [INFO    ]  doc_uploader -   [0s] Engine processing...
+2026-08-20 17:23:52,096  [INFO    ]  doc_uploader -   [5s] Engine processing...
+2026-08-20 17:23:57,118  [INFO    ]  doc_uploader -   [10s] Engine processing...
+2026-08-20 17:24:02,121  [ERROR   ]  main - Exception on Banki College.png: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=151.0.7922.169)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7dfa0abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff7dfa0ac10+15210]
+	chromedriver!(No symbol) [0x7ff7df535d6d]
+	chromedriver!(No symbol) [0x7ff7df5215c2]
+	chromedriver!(No symbol) [0x7ff7df5474a1]
+	chromedriver!(No symbol) [0x7ff7df5c1320]
+	chromedriver!(No symbol) [0x7ff7df5de4f2]
+	chromedriver!(No symbol) [0x7ff7df5837cc]
+	chromedriver!(No symbol) [0x7ff7df5846f3]
+	chromedriver!GetHandleVerifier [0x7ff7e002b79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff7e0025ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff7e004bcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff7dfa28ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff7dfa3147c+3ba7c]
+	chromedriver!GetHandleVerifier [0x7ff7dfa14d64+1f364]
+	chromedriver!GetHandleVerifier [0x7ff7dfa14ef4+1f4f4]
+	chromedriver!GetHandleVerifier [0x7ff7df9f7d97+2397]
+	KERNEL32!BaseThreadInitThunk [0x7ffee09dccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffee150ad6c+2c]
+Traceback (most recent call last):
+  File "D:\ai_doc_automation\main.py", line 106, in process_document
+    result_appeared = wait_for_result(driver)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai_doc_automation\doc_uploader.py", line 358, in wait_for_result
+    proc = driver.find_element(By.XPATH, XPATHS["processing_indicator"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=151.0.7922.169)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7dfa0abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff7dfa0ac10+15210]
+	chromedriver!(No symbol) [0x7ff7df535d6d]
+	chromedriver!(No symbol) [0x7ff7df5215c2]
+	chromedriver!(No symbol) [0x7ff7df5474a1]
+	chromedriver!(No symbol) [0x7ff7df5c1320]
+	chromedriver!(No symbol) [0x7ff7df5de4f2]
+	chromedriver!(No symbol) [0x7ff7df5837cc]
+	chromedriver!(No symbol) [0x7ff7df5846f3]
+	chromedriver!GetHandleVerifier [0x7ff7e002b79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff7e0025ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff7e004bcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff7dfa28ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff7dfa3147c+3ba7c]
+	chromedriver!GetHandleVerifier [0x7ff7dfa14d64+1f364]
+	chromedriver!GetHandleVerifier [0x7ff7dfa14ef4+1f4f4]
+	chromedriver!GetHandleVerifier [0x7ff7df9f7d97+2397]
+	KERNEL32!BaseThreadInitThunk [0x7ffee09dccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffee150ad6c+2c]
+
+2026-08-20 17:24:02,375  [INFO    ]  main - [FAIL] Banki College.png: ERROR (28.7s)
+2026-08-20 17:24:02,375  [INFO    ]  doc_uploader - Clicking 'New submission'...
+2026-08-20 17:24:04,430  [INFO    ]  main - Browser closed.

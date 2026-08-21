@@ -1,0 +1,17 @@
+2026-08-20 15:38:50,581  [INFO    ]  main - ============================================================
+2026-08-20 15:38:50,581  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-20 15:38:50,581  [INFO    ]  main - ============================================================
+2026-08-20 15:38:50,581  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-20 15:38:50,581  [INFO    ]  main - [--type]   Running only: 'Graduation Certificate'
+2026-08-20 15:38:50,748  [INFO    ]  main - Records to process: 1
+2026-08-20 15:38:50,748  [INFO    ]  WDM - ====== WebDriver manager ======
+2026-08-20 15:38:52,549  [INFO    ]  WDM - Get LATEST chromedriver version for google-chrome
+2026-08-20 15:38:53,522  [INFO    ]  WDM - Get LATEST chromedriver version for google-chrome
+2026-08-20 15:38:54,116  [INFO    ]  WDM - There is no [win64] chromedriver "151.0.7922.138" for browser google-chrome "151.0.7922" in cache
+2026-08-20 15:38:54,116  [INFO    ]  WDM - Get LATEST chromedriver version for google-chrome
+2026-08-20 15:38:55,570  [INFO    ]  WDM - WebDriver version 151.0.7922.138 selected
+2026-08-20 15:38:55,570  [INFO    ]  WDM - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/151.0.7922.138/win32/chromedriver-win32.zip
+2026-08-20 15:38:55,586  [INFO    ]  WDM - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/151.0.7922.138/win32/chromedriver-win32.zip
+2026-08-20 15:38:56,251  [INFO    ]  WDM - Driver downloading response is 200
+2026-08-20 15:39:00,540  [INFO    ]  WDM - Get LATEST chromedriver version for google-chrome
+2026-08-20 15:39:01,294  [INFO    ]  WDM - Driver has been saved in cache [C:\Users\secuo\.wdm\drivers\chromedriver\win64\151.0.7922.138]

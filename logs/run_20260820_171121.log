@@ -1,0 +1,49 @@
+2026-08-20 17:11:21,485  [INFO    ]  main - ============================================================
+2026-08-20 17:11:21,485  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-20 17:11:21,485  [INFO    ]  main - ============================================================
+2026-08-20 17:11:21,485  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-20 17:11:21,486  [INFO    ]  main - [--type]   Running only: 'Graduation Certificate'
+2026-08-20 17:11:21,762  [INFO    ]  main - Records to process: 1
+2026-08-20 17:11:25,704  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-20 17:11:25,708  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260820_171125.xlsx
+2026-08-20 17:11:25,711  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-20 17:11:29,899  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_171129_01_dashboard.png
+2026-08-20 17:11:29,899  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-20 17:11:31,862  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-20 17:11:31,994  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_171131_02_verify_form.png
+2026-08-20 17:11:32,010  [INFO    ]  main - 
+[1/1] D:\ai_doc_automation\Degree Certificate\Andhra University.png
+2026-08-20 17:11:32,018  [INFO    ]  main - ============================================================
+2026-08-20 17:11:32,018  [INFO    ]  main - Processing [1/1]: Andhra University.png  |  Graduation Certificate  |  Attempt 1
+2026-08-20 17:11:32,018  [INFO    ]  main - ============================================================
+2026-08-20 17:11:32,144  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-20 17:11:32,243  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-20 17:11:32,243  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-20 17:11:37,671  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-20 17:11:37,674  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Degree Certificate\Andhra University.png
+2026-08-20 17:11:48,032  [ERROR   ]  main - Exception on Andhra University.png: Message: None of the XPaths found within 10s: ("//input[@type='file']",); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Traceback (most recent call last):
+  File "D:\ai_doc_automation\main.py", line 100, in process_document
+    upload_file(driver, file_path)
+  File "D:\ai_doc_automation\doc_uploader.py", line 201, in upload_file
+    file_input = _find_element(driver, XPATHS["file_input"], timeout=10)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai_doc_automation\doc_uploader.py", line 39, in _find_element
+    raise NoSuchElementException(
+selenium.common.exceptions.NoSuchElementException: Message: None of the XPaths found within 10s: ("//input[@type='file']",); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+
+2026-08-20 17:11:48,162  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_171148_error_Andhra University.png.png
+2026-08-20 17:11:48,165  [INFO    ]  excel_writer - Created sheet: 'Graduation Certificate'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Screenshot', 'Processing Time (s)', 'Timestamp']
+2026-08-20 17:11:48,293  [INFO    ]  main - [FAIL] Andhra University.png: ERROR (15.9s)
+2026-08-20 17:11:48,301  [INFO    ]  excel_writer - Summary sheet written.
+2026-08-20 17:11:48,342  [INFO    ]  excel_writer - Excel saved: D:\ai_doc_automation\output\ai_doc_results_20260820_171125.xlsx
+2026-08-20 17:11:48,342  [INFO    ]  main - 
+============================================================
+2026-08-20 17:11:48,343  [INFO    ]  main -   COMPLETE
+2026-08-20 17:11:48,343  [INFO    ]  main -   Total   : 1
+2026-08-20 17:11:48,343  [INFO    ]  main -   Success : 0
+2026-08-20 17:11:48,344  [INFO    ]  main -   Failed  : 0
+2026-08-20 17:11:48,344  [INFO    ]  main -   Errors  : 1
+2026-08-20 17:11:48,344  [INFO    ]  main -   Output  : D:\ai_doc_automation\output\ai_doc_results_20260820_171125.xlsx
+2026-08-20 17:11:48,344  [INFO    ]  main - ============================================================
+2026-08-20 17:11:50,658  [INFO    ]  main - Browser closed.

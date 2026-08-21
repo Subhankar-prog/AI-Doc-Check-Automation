@@ -1,0 +1,10 @@
+2026-08-20 15:38:32,282  [INFO    ]  main - ============================================================
+2026-08-20 15:38:32,286  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-20 15:38:32,286  [INFO    ]  main - ============================================================
+2026-08-20 15:38:32,286  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-20 15:38:32,286  [INFO    ]  main - [--type]   Running only: 'Graduation Certificate'
+2026-08-20 15:38:32,611  [INFO    ]  main - Records to process: 1
+2026-08-20 15:38:32,612  [INFO    ]  main - [DRY RUN] Checking file paths...
+2026-08-20 15:38:32,612  [INFO    ]  main -   [OK]     Graduation Certificate          D:\ai_doc_automation\Degree Certificate\Andhra University.png
+2026-08-20 15:38:32,614  [INFO    ]  main - 
+[DRY RUN] Done.  Found: 1  |  Missing: 0

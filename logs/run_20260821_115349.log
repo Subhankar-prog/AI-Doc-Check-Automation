@@ -1,0 +1,1259 @@
+2026-08-21 11:53:49,908  [INFO    ]  main - ============================================================
+2026-08-21 11:53:49,908  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-21 11:53:49,908  [INFO    ]  main - ============================================================
+2026-08-21 11:53:49,908  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-21 11:53:49,908  [INFO    ]  main - [--resume] Skipping rows already marked SUCCESS/FAILED.
+2026-08-21 11:53:50,305  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar Card Test - Digi Locker.pdf
+2026-08-21 11:53:50,305  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar1.jpg
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar3.jpg
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Chinmaya Aadhara.pdf
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving License Image1.jpg
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving License Sample.jpg
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1003_page_0.png
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1004_page_0.png
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1005_page_0.png
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1006_page_0.png
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1007_page_0.png
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1008_page_0.png
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1009_page_0.png
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1010_page_0.png
+2026-08-21 11:53:50,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1011_page_0.png
+2026-08-21 11:53:50,324  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1012_page_0.png
+2026-08-21 11:53:50,324  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1013_page_0.png
+2026-08-21 11:53:50,324  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1014_page_0.png
+2026-08-21 11:53:50,325  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1015_page_0.png
+2026-08-21 11:53:50,325  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1016_page_0.png
+2026-08-21 11:53:50,325  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1017_page_0.png
+2026-08-21 11:53:50,325  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1018_page_0.png
+2026-08-21 11:53:50,326  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1019_page_0.png
+2026-08-21 11:53:50,326  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1020_page_0.png
+2026-08-21 11:53:50,326  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1021_page_0.png
+2026-08-21 11:53:50,326  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1022_page_0.png
+2026-08-21 11:53:50,326  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1023_page_0.png
+2026-08-21 11:53:50,327  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1024_page_0.png
+2026-08-21 11:53:50,327  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1025_page_0.png
+2026-08-21 11:53:50,327  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1026_page_0.png
+2026-08-21 11:53:50,327  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1027_page_0.png
+2026-08-21 11:53:50,327  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1028_page_0.png
+2026-08-21 11:53:50,328  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1029_page_0.png
+2026-08-21 11:53:50,328  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1030_page_0.png
+2026-08-21 11:53:50,328  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1031_page_0.png
+2026-08-21 11:53:50,329  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1032_page_0.png
+2026-08-21 11:53:50,329  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1033_page_0.png
+2026-08-21 11:53:50,329  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1034_page_0.png
+2026-08-21 11:53:50,331  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1035_page_0.png
+2026-08-21 11:53:50,331  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1036_page_0.png
+2026-08-21 11:53:50,331  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1037_page_0.png
+2026-08-21 11:53:50,331  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_103_page_0.png
+2026-08-21 11:53:50,332  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_104_page_0.png
+2026-08-21 11:53:50,332  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_105_page_0.png
+2026-08-21 11:53:50,332  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_106_page_0.png
+2026-08-21 11:53:50,332  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_106_page_1.png
+2026-08-21 11:53:50,333  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_107_page_0.png
+2026-08-21 11:53:50,333  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_108_page_0.png
+2026-08-21 11:53:50,333  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_109_page_0.png
+2026-08-21 11:53:50,333  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_10_page_0.png
+2026-08-21 11:53:50,333  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_110_page_0.png
+2026-08-21 11:53:50,334  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_111_page_0.png
+2026-08-21 11:53:50,334  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_112_page_0.png
+2026-08-21 11:53:50,334  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_113_page_0.png
+2026-08-21 11:53:50,334  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_114_page_0.png
+2026-08-21 11:53:50,334  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_115_page_0.png
+2026-08-21 11:53:50,334  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_116_page_0.png
+2026-08-21 11:53:50,334  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_117_page_0.png
+2026-08-21 11:53:50,335  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_117_page_1.png
+2026-08-21 11:53:50,335  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_118_page_0.png
+2026-08-21 11:53:50,335  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_119_page_0.png
+2026-08-21 11:53:50,335  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_11_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_120_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_121_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_122_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_123_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_123_page_1.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_124_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_125_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_126_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_127_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_128_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_129_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_129_page_1.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_12_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_130_page_0.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Andhra University.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Annamalai University.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Banki College (1).png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Banki College.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Berhampur University.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\BPUT Degree Certificate.pdf
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Buxi Jagabandhu Bidyadhar Autonomous College.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Central Sanskit University.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\DAV Autonomous College.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Dhenkanal Autonomous College.png
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\GIET Cirtificate .pdf
+2026-08-21 11:53:50,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Govt Autonomous College Anugul.png
+2026-08-21 11:53:50,345  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Gulbarga University Degree Certificate.pdf
+2026-08-21 11:53:50,346  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Gurukul Kangri Vishwavidyalaya.png
+2026-08-21 11:53:50,346  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\India Result Image .png
+2026-08-21 11:53:50,346  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Indra Gandhi National Open University.png
+2026-08-21 11:53:50,346  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\ISPAT Autonomous College Rourkela.png
+2026-08-21 11:53:50,348  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\JAMIA MILIA ISLAMIA Unversity Defgree Certificate.pdf
+2026-08-21 11:53:50,348  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\KIIT University.png
+2026-08-21 11:53:50,348  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\LaxmiNarayan College Jarsuguda .png
+2026-08-21 11:53:50,348  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Maharaja Shri RamChandra Bhanja Deo University.png
+2026-08-21 11:53:50,348  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Maharaja Sriram Chandra Deo University.pdf
+2026-08-21 11:53:50,350  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\National Open School 12th Marksheet.pdf
+2026-08-21 11:53:50,350  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\National Sanskrit University.png
+2026-08-21 11:53:50,350  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Orissa GIET University Degree Certificate.pdf
+2026-08-21 11:53:50,350  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Rajendra College.png
+2026-08-21 11:53:50,350  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Rajendra University.png
+2026-08-21 11:53:50,350  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Rama Devi Womens University.png
+2026-08-21 11:53:50,352  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Rayagada Autonomous College.png
+2026-08-21 11:53:50,352  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Sambalpur University .png
+2026-08-21 11:53:50,352  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Sanskrit Vishwavidyalaya Puri - Hindi.pdf
+2026-08-21 11:53:50,352  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\SCS Autonomous College Puri.png
+2026-08-21 11:53:50,352  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Shailabala Womens Autonomous College.png
+2026-08-21 11:53:50,353  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\SKCG Autonomous College.png
+2026-08-21 11:53:50,353  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Sri Jagannath Sanskrit Vishwavidyalaya.png
+2026-08-21 11:53:50,353  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Udaynath Autonomous College.png
+2026-08-21 11:53:50,355  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_101_page_0.png
+2026-08-21 11:53:50,355  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_102_page_0.png
+2026-08-21 11:53:50,355  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_103_page_0.png
+2026-08-21 11:53:50,355  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_104_page_0.png
+2026-08-21 11:53:50,355  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_105_page_0.png
+2026-08-21 11:53:50,355  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_106_page_0.png
+2026-08-21 11:53:50,355  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_107_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_108_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_109_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_10_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_110_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_111_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_112_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_113_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_114_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_115_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_116_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_117_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_118_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_119_page_0.png
+2026-08-21 11:53:50,356  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_11_page_0.png
+2026-08-21 11:53:50,360  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_120_page_0.png
+2026-08-21 11:53:50,360  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_121_page_0.png
+2026-08-21 11:53:50,360  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_122_page_0.png
+2026-08-21 11:53:50,360  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_123_page_0.png
+2026-08-21 11:53:50,360  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_124_page_0.png
+2026-08-21 11:53:50,360  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_125_page_0.png
+2026-08-21 11:53:50,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_126_page_0.png
+2026-08-21 11:53:50,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_127_page_0.png
+2026-08-21 11:53:50,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_128_page_0.png
+2026-08-21 11:53:50,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_129_page_0.png
+2026-08-21 11:53:50,363  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_12_page_0.png
+2026-08-21 11:53:50,363  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_130_page_0.png
+2026-08-21 11:53:50,363  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_131_page_0.png
+2026-08-21 11:53:50,363  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_132_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_103_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_104_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_105_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_106_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_107_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_108_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_109_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_10_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_110_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_111_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_112_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_113_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_114_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_115_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_116_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_117_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_118_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_119_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_11_page_0.png
+2026-08-21 11:53:50,365  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_120_page_0.png
+2026-08-21 11:53:50,370  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_121_page_0.png
+2026-08-21 11:53:50,370  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_122_page_0.png
+2026-08-21 11:53:50,370  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_123_page_0.png
+2026-08-21 11:53:50,370  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_124_page_0.png
+2026-08-21 11:53:50,370  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_125_page_0.png
+2026-08-21 11:53:50,370  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_126_page_0.png
+2026-08-21 11:53:50,371  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_127_page_0.png
+2026-08-21 11:53:50,371  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_128_page_0.png
+2026-08-21 11:53:50,371  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_129_page_0.png
+2026-08-21 11:53:50,371  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_12_page_0.png
+2026-08-21 11:53:50,371  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_130_page_0.png
+2026-08-21 11:53:50,372  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_131_page_0.png
+2026-08-21 11:53:50,372  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_132_page_0.png
+2026-08-21 11:53:50,372  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_133_page_0.png
+2026-08-21 11:53:50,372  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_134_page_0.png
+2026-08-21 11:53:50,373  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_101_page_0.png
+2026-08-21 11:53:50,374  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_102_page_0.png
+2026-08-21 11:53:50,374  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_103_page_0.png
+2026-08-21 11:53:50,374  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_104_page_0.png
+2026-08-21 11:53:50,374  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_105_page_0.png
+2026-08-21 11:53:50,374  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_106_page_0.png
+2026-08-21 11:53:50,374  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_107_page_0.png
+2026-08-21 11:53:50,374  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_108_page_0.png
+2026-08-21 11:53:50,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_109_page_0.png
+2026-08-21 11:53:50,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_10_page_0.png
+2026-08-21 11:53:50,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_110_page_0.png
+2026-08-21 11:53:50,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_111_page_0.png
+2026-08-21 11:53:50,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_112_page_0.png
+2026-08-21 11:53:50,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_113_page_0.png
+2026-08-21 11:53:50,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_114_page_0.png
+2026-08-21 11:53:50,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_115_page_0.png
+2026-08-21 11:53:50,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_116_page_0.png
+2026-08-21 11:53:50,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_117_page_0.png
+2026-08-21 11:53:50,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_118_page_0.png
+2026-08-21 11:53:50,379  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_119_page_0.png
+2026-08-21 11:53:50,379  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_11_page_0.png
+2026-08-21 11:53:50,379  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_120_page_0.png
+2026-08-21 11:53:50,379  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_121_page_0.png
+2026-08-21 11:53:50,379  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_122_page_0.png
+2026-08-21 11:53:50,379  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_123_page_0.png
+2026-08-21 11:53:50,379  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_124_page_0.png
+2026-08-21 11:53:50,379  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_125_page_0.png
+2026-08-21 11:53:50,383  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_126_page_0.png
+2026-08-21 11:53:50,383  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_127_page_0.png
+2026-08-21 11:53:50,383  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_128_page_0.png
+2026-08-21 11:53:50,384  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_129_page_0.png
+2026-08-21 11:53:50,384  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_12_page_0.png
+2026-08-21 11:53:50,384  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_130_page_0.png
+2026-08-21 11:53:50,385  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_131_page_0.png
+2026-08-21 11:53:50,385  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_132_page_0.png
+2026-08-21 11:53:50,385  [INFO    ]  main - Records to process: 35
+2026-08-21 11:53:52,458  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-21 11:53:52,465  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260821_115352.xlsx
+2026-08-21 11:53:52,465  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-21 11:53:57,063  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_115356_01_dashboard.png
+2026-08-21 11:53:57,063  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-21 11:53:59,019  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-21 11:53:59,194  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_115359_02_verify_form.png
+2026-08-21 11:53:59,210  [INFO    ]  main - 
+[1/35] D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar2.jpg
+2026-08-21 11:53:59,210  [INFO    ]  main - ============================================================
+2026-08-21 11:53:59,210  [INFO    ]  main - Processing [1/35]: Aadhar2.jpg  |  Aadhaar Card  |  Attempt 1
+2026-08-21 11:53:59,210  [INFO    ]  main - ============================================================
+2026-08-21 11:53:59,542  [INFO    ]  doc_uploader - Selecting document type: 'Aadhaar Card'
+2026-08-21 11:53:59,599  [INFO    ]  doc_uploader - Selected by visible text: 'Aadhaar Card'
+2026-08-21 11:53:59,599  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:54:05,014  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:54:05,014  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar2.jpg
+2026-08-21 11:54:05,034  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 11:54:17,463  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 11:54:17,463  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 11:54:27,583  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:54:33,012  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:54:43,075  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 11:54:54,608  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 11:54:54,608  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 11:54:54,834  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 11:54:55,973  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_115455_result_Aadhar2.jpg.png
+2026-08-21 11:54:55,973  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 11:55:12,551  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 11:55:12,551  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 11:55:14,437  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 11:55:14,444  [INFO    ]  result_parser - JS parse: 8 fields
+2026-08-21 11:55:14,542  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_115514_extracted_Aadhar2.jpg.png
+2026-08-21 11:55:14,544  [INFO    ]  excel_writer - Created sheet: 'Aadhaar Card'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Aadhaar Number', 'Address', 'Dob', 'Father Name', 'Full Name', 'Gender', 'Phone Number', 'Pincode']
+2026-08-21 11:55:14,858  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 11:55:14,858  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 11:55:16,739  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 11:55:17,740  [INFO    ]  main - 
+[2/35] D:\ai_doc_automation\Test Data\PAN card for Testing\PAN.jpg
+2026-08-21 11:55:17,741  [INFO    ]  main - ============================================================
+2026-08-21 11:55:17,741  [INFO    ]  main - Processing [2/35]: PAN.jpg  |  PAN Card  |  Attempt 1
+2026-08-21 11:55:17,741  [INFO    ]  main - ============================================================
+2026-08-21 11:55:18,031  [INFO    ]  doc_uploader - Selecting document type: 'PAN Card'
+2026-08-21 11:55:18,125  [INFO    ]  doc_uploader - Selected by visible text: 'PAN Card'
+2026-08-21 11:55:18,126  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:55:23,540  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:55:23,541  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\PAN card for Testing\PAN.jpg
+2026-08-21 11:55:23,548  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 11:55:36,020  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 11:55:36,021  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 11:55:46,148  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:55:51,517  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:56:01,582  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 11:56:13,050  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 11:56:13,050  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 11:56:17,403  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 11:56:18,521  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_115618_result_PAN.jpg.png
+2026-08-21 11:56:18,522  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 11:56:35,079  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 11:56:35,080  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 11:56:36,987  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 11:56:36,997  [INFO    ]  result_parser - JS parse: 4 fields
+2026-08-21 11:56:37,123  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_115636_extracted_PAN.jpg.png
+2026-08-21 11:56:37,123  [INFO    ]  excel_writer - Created sheet: 'PAN Card'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Dob', 'Father Name', 'Full Name', 'Pan Number']
+2026-08-21 11:56:37,491  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 11:56:37,491  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 11:56:39,378  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 11:56:40,379  [INFO    ]  main - 
+[3/35] D:\ai_doc_automation\Test Data\PAN card for Testing\PAN1.jpg
+2026-08-21 11:56:40,379  [INFO    ]  main - ============================================================
+2026-08-21 11:56:40,380  [INFO    ]  main - Processing [3/35]: PAN1.jpg  |  PAN Card  |  Attempt 1
+2026-08-21 11:56:40,380  [INFO    ]  main - ============================================================
+2026-08-21 11:56:40,830  [INFO    ]  doc_uploader - Selecting document type: 'PAN Card'
+2026-08-21 11:56:40,880  [INFO    ]  doc_uploader - Selected by visible text: 'PAN Card'
+2026-08-21 11:56:40,880  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:56:46,307  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:56:46,307  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\PAN card for Testing\PAN1.jpg
+2026-08-21 11:56:46,307  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 11:56:58,755  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 11:56:58,755  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 11:57:08,891  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:57:14,324  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:57:24,421  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 11:57:35,885  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 11:57:35,885  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 11:57:35,903  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 11:57:37,016  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_115736_result_PAN1.jpg.png
+2026-08-21 11:57:37,017  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 11:57:53,521  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 11:57:53,522  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 11:57:55,397  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 11:57:55,402  [INFO    ]  result_parser - JS parse: 4 fields
+2026-08-21 11:57:55,505  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_115755_extracted_PAN1.jpg.png
+2026-08-21 11:57:55,814  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 11:57:55,814  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 11:57:57,695  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 11:57:58,696  [INFO    ]  main - 
+[4/35] D:\ai_doc_automation\Test Data\PAN card for Testing\PAN2.jpg
+2026-08-21 11:57:58,696  [INFO    ]  main - ============================================================
+2026-08-21 11:57:58,697  [INFO    ]  main - Processing [4/35]: PAN2.jpg  |  PAN Card  |  Attempt 1
+2026-08-21 11:57:58,697  [INFO    ]  main - ============================================================
+2026-08-21 11:57:59,036  [INFO    ]  doc_uploader - Selecting document type: 'PAN Card'
+2026-08-21 11:57:59,100  [INFO    ]  doc_uploader - Selected by visible text: 'PAN Card'
+2026-08-21 11:57:59,101  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:58:04,526  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:58:04,529  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\PAN card for Testing\PAN2.jpg
+2026-08-21 11:58:04,550  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 11:58:17,011  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 11:58:17,012  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 11:58:27,192  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:58:32,612  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:58:42,677  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 11:58:54,159  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 11:58:54,159  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 11:58:54,184  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 11:58:55,376  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_115855_result_PAN2.jpg.png
+2026-08-21 11:58:55,377  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 11:59:11,858  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 11:59:11,858  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 11:59:13,757  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 11:59:13,764  [INFO    ]  result_parser - JS parse: 4 fields
+2026-08-21 11:59:13,880  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_115913_extracted_PAN2.jpg.png
+2026-08-21 11:59:14,205  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 11:59:14,205  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 11:59:16,094  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 11:59:17,097  [INFO    ]  main - 
+[5/35] D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard.jpg
+2026-08-21 11:59:17,097  [INFO    ]  main - ============================================================
+2026-08-21 11:59:17,099  [INFO    ]  main - Processing [5/35]: Pancard.jpg  |  PAN Card  |  Attempt 1
+2026-08-21 11:59:17,101  [INFO    ]  main - ============================================================
+2026-08-21 11:59:17,614  [INFO    ]  doc_uploader - Selecting document type: 'PAN Card'
+2026-08-21 11:59:17,657  [INFO    ]  doc_uploader - Selected by visible text: 'PAN Card'
+2026-08-21 11:59:17,657  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:59:23,115  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 11:59:23,117  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard.jpg
+2026-08-21 11:59:23,126  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 11:59:35,568  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 11:59:35,568  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 11:59:45,739  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 11:59:51,158  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:00:01,250  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:00:12,697  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:00:12,697  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:00:12,712  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:00:13,826  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120013_result_Pancard.jpg.png
+2026-08-21 12:00:13,826  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:00:30,349  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:00:30,349  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:00:32,217  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:00:32,224  [INFO    ]  result_parser - JS parse: 4 fields
+2026-08-21 12:00:32,392  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120032_extracted_Pancard.jpg.png
+2026-08-21 12:00:32,726  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:00:32,726  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:00:34,615  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:00:35,616  [INFO    ]  main - 
+[6/35] D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard2.jpg
+2026-08-21 12:00:35,617  [INFO    ]  main - ============================================================
+2026-08-21 12:00:35,617  [INFO    ]  main - Processing [6/35]: Pancard2.jpg  |  PAN Card  |  Attempt 1
+2026-08-21 12:00:35,617  [INFO    ]  main - ============================================================
+2026-08-21 12:00:35,947  [INFO    ]  doc_uploader - Selecting document type: 'PAN Card'
+2026-08-21 12:00:36,000  [INFO    ]  doc_uploader - Selected by visible text: 'PAN Card'
+2026-08-21 12:00:36,000  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:00:41,429  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:00:41,429  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard2.jpg
+2026-08-21 12:00:41,434  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:00:53,858  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:00:53,858  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:01:03,996  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:01:09,378  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:01:19,489  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:01:30,976  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:01:30,977  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:01:30,996  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:01:32,167  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120131_result_Pancard2.jpg.png
+2026-08-21 12:01:32,167  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:01:48,686  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:01:48,687  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:01:50,556  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:01:50,563  [INFO    ]  result_parser - JS parse: 4 fields
+2026-08-21 12:01:50,712  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120150_extracted_Pancard2.jpg.png
+2026-08-21 12:01:51,028  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:01:51,028  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:01:52,902  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:01:53,903  [INFO    ]  main - 
+[7/35] D:\ai_doc_automation\Test Data\Passport for Testing\Indianpassportbiopage2025.jpg
+2026-08-21 12:01:53,903  [INFO    ]  main - ============================================================
+2026-08-21 12:01:53,903  [INFO    ]  main - Processing [7/35]: Indianpassportbiopage2025.jpg  |  Indian Passport  |  Attempt 1
+2026-08-21 12:01:53,903  [INFO    ]  main - ============================================================
+2026-08-21 12:01:54,272  [INFO    ]  doc_uploader - Selecting document type: 'Indian Passport'
+2026-08-21 12:01:54,348  [INFO    ]  doc_uploader - Selected by visible text: 'Indian Passport'
+2026-08-21 12:01:54,348  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:01:59,768  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:01:59,769  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Passport for Testing\Indianpassportbiopage2025.jpg
+2026-08-21 12:01:59,774  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:02:12,172  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:02:12,172  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:02:22,304  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:02:27,708  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:02:37,758  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:02:49,200  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:02:49,201  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:02:49,215  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:02:50,373  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120250_result_Indianpassportbiopage2025.jpg.png
+2026-08-21 12:02:50,373  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:03:06,848  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:03:06,849  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:03:08,722  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:03:08,722  [INFO    ]  result_parser - JS parse: 9 fields
+2026-08-21 12:03:08,917  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120308_extracted_Indianpassportbiopage2025.jpg.png
+2026-08-21 12:03:08,917  [INFO    ]  excel_writer - Created sheet: 'Indian Passport'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Date Of Expiry', 'Date Of Issue', 'Dob', 'Given Name', 'Nationality', 'Passport Number', 'Place Of Birth', 'Place Of Issue', 'Surname']
+2026-08-21 12:03:09,271  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:03:09,271  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:03:11,162  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:03:12,163  [INFO    ]  main - 
+[8/35] D:\ai_doc_automation\Test Data\Passport for Testing\indianpp.jpg
+2026-08-21 12:03:12,163  [INFO    ]  main - ============================================================
+2026-08-21 12:03:12,163  [INFO    ]  main - Processing [8/35]: indianpp.jpg  |  Indian Passport  |  Attempt 1
+2026-08-21 12:03:12,164  [INFO    ]  main - ============================================================
+2026-08-21 12:03:12,434  [INFO    ]  doc_uploader - Selecting document type: 'Indian Passport'
+2026-08-21 12:03:12,474  [INFO    ]  doc_uploader - Selected by visible text: 'Indian Passport'
+2026-08-21 12:03:12,474  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:03:17,856  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:03:17,857  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Passport for Testing\indianpp.jpg
+2026-08-21 12:03:17,862  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:03:30,287  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:03:30,289  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:03:40,505  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:03:45,914  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:03:55,965  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:04:07,436  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:04:07,436  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:04:07,461  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:04:08,644  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120408_result_indianpp.jpg.png
+2026-08-21 12:04:08,644  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:04:25,174  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:04:25,174  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:04:27,055  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:04:27,055  [INFO    ]  result_parser - JS parse: 9 fields
+2026-08-21 12:04:27,174  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120427_extracted_indianpp.jpg.png
+2026-08-21 12:04:27,494  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:04:27,494  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:04:29,373  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:04:30,373  [INFO    ]  main - 
+[9/35] D:\ai_doc_automation\Test Data\Passport for Testing\sample-indian-passport-1.jpg
+2026-08-21 12:04:30,373  [INFO    ]  main - ============================================================
+2026-08-21 12:04:30,373  [INFO    ]  main - Processing [9/35]: sample-indian-passport-1.jpg  |  Indian Passport  |  Attempt 1
+2026-08-21 12:04:30,373  [INFO    ]  main - ============================================================
+2026-08-21 12:04:30,634  [INFO    ]  doc_uploader - Selecting document type: 'Indian Passport'
+2026-08-21 12:04:30,673  [INFO    ]  doc_uploader - Selected by visible text: 'Indian Passport'
+2026-08-21 12:04:30,674  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:04:36,089  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:04:36,091  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Passport for Testing\sample-indian-passport-1.jpg
+2026-08-21 12:04:36,091  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:04:48,473  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:04:48,473  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:04:58,638  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:05:04,044  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:05:14,135  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:05:25,625  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:05:25,625  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:05:25,641  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:05:26,748  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120526_result_sample-indian-passport-1.jpg.png
+2026-08-21 12:05:26,748  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:05:43,196  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:05:43,197  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:05:45,068  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:05:45,075  [INFO    ]  result_parser - JS parse: 9 fields
+2026-08-21 12:05:45,181  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120545_extracted_sample-indian-passport-1.jpg.png
+2026-08-21 12:05:45,496  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:05:45,496  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:05:47,378  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:05:48,379  [INFO    ]  main - 
+[10/35] D:\ai_doc_automation\Test Data\DL for Testing\Dl_Odisha.jpg
+2026-08-21 12:05:48,380  [INFO    ]  main - ============================================================
+2026-08-21 12:05:48,381  [INFO    ]  main - Processing [10/35]: Dl_Odisha.jpg  |  Driving Licence  |  Attempt 1
+2026-08-21 12:05:48,381  [INFO    ]  main - ============================================================
+2026-08-21 12:05:48,665  [INFO    ]  doc_uploader - Selecting document type: 'Driving Licence'
+2026-08-21 12:05:48,736  [INFO    ]  doc_uploader - Selected by visible text: 'Driving Licence'
+2026-08-21 12:05:48,736  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:05:54,151  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:05:54,157  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\DL for Testing\Dl_Odisha.jpg
+2026-08-21 12:05:54,168  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:06:06,583  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:06:06,584  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:06:16,738  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:06:22,159  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:06:32,272  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:06:43,718  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:06:43,720  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:06:43,739  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:06:44,846  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120644_result_Dl_Odisha.jpg.png
+2026-08-21 12:06:44,846  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:07:01,319  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:07:01,319  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:07:03,208  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:07:03,214  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-21 12:07:03,327  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120703_extracted_Dl_Odisha.jpg.png
+2026-08-21 12:07:03,329  [INFO    ]  excel_writer - Created sheet: 'Driving Licence'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Address', 'Date Of Expiry', 'Date Of Issue', 'Dl Number', 'Dob', 'Full Name', 'Vehicle Classes']
+2026-08-21 12:07:03,612  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:07:03,612  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:07:05,483  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:07:06,484  [INFO    ]  main - 
+[11/35] D:\ai_doc_automation\Test Data\DL for Testing\Driving Licence 2.jpg
+2026-08-21 12:07:06,484  [INFO    ]  main - ============================================================
+2026-08-21 12:07:06,486  [INFO    ]  main - Processing [11/35]: Driving Licence 2.jpg  |  Driving Licence  |  Attempt 1
+2026-08-21 12:07:06,486  [INFO    ]  main - ============================================================
+2026-08-21 12:07:06,760  [INFO    ]  doc_uploader - Selecting document type: 'Driving Licence'
+2026-08-21 12:07:06,805  [INFO    ]  doc_uploader - Selected by visible text: 'Driving Licence'
+2026-08-21 12:07:06,806  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:07:12,217  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:07:12,217  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\DL for Testing\Driving Licence 2.jpg
+2026-08-21 12:07:12,217  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:07:24,615  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:07:24,615  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:07:34,730  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:07:40,141  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:07:50,217  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:08:01,677  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:08:01,677  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:08:01,697  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:08:02,793  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120802_result_Driving Licence 2.jpg.png
+2026-08-21 12:08:02,793  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:08:19,271  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:08:19,271  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:08:21,144  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:08:21,148  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-21 12:08:21,257  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120821_extracted_Driving Licence 2.jpg.png
+2026-08-21 12:08:21,582  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:08:21,582  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:08:23,481  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:08:24,482  [INFO    ]  main - 
+[12/35] D:\ai_doc_automation\Test Data\DL for Testing\Driving Licence.pdf
+2026-08-21 12:08:24,482  [INFO    ]  main - ============================================================
+2026-08-21 12:08:24,482  [INFO    ]  main - Processing [12/35]: Driving Licence.pdf  |  Driving Licence  |  Attempt 1
+2026-08-21 12:08:24,482  [INFO    ]  main - ============================================================
+2026-08-21 12:08:24,783  [INFO    ]  doc_uploader - Selecting document type: 'Driving Licence'
+2026-08-21 12:08:24,824  [INFO    ]  doc_uploader - Selected by visible text: 'Driving Licence'
+2026-08-21 12:08:24,824  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:08:30,240  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:08:30,242  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\DL for Testing\Driving Licence.pdf
+2026-08-21 12:08:30,242  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:08:42,716  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:08:42,716  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:08:52,822  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:08:58,224  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:09:08,264  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:09:19,702  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:09:19,702  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:09:19,723  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:09:20,816  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120920_result_Driving Licence.pdf.png
+2026-08-21 12:09:20,816  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:09:37,246  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:09:37,248  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:09:39,117  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:09:39,124  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-21 12:09:39,220  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_120939_extracted_Driving Licence.pdf.png
+2026-08-21 12:09:39,535  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:09:39,535  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:09:41,418  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:09:42,418  [INFO    ]  main - 
+[13/35] D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1000_page_0.png
+2026-08-21 12:09:42,418  [INFO    ]  main - ============================================================
+2026-08-21 12:09:42,418  [INFO    ]  main - Processing [13/35]: Document10_1000_page_0.png  |  10th Marksheet  |  Attempt 1
+2026-08-21 12:09:42,418  [INFO    ]  main - ============================================================
+2026-08-21 12:09:42,657  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-21 12:09:42,731  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-21 12:09:42,731  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:09:48,139  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:09:48,139  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1000_page_0.png
+2026-08-21 12:09:48,155  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:10:00,542  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:10:00,542  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:10:10,651  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:10:16,062  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:10:26,124  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:10:37,639  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:10:37,639  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:11:02,867  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-21 12:11:04,018  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_121103_result_Document10_1000_page_0.png.png
+2026-08-21 12:11:04,018  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:11:20,499  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:11:20,499  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:11:22,394  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:11:22,400  [INFO    ]  result_parser - JS parse: 14 fields
+2026-08-21 12:11:22,518  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_121122_extracted_Document10_1000_page_0.png.png
+2026-08-21 12:11:22,521  [INFO    ]  excel_writer - Created sheet: '10th Marksheet'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Board Name', 'Cgpa Secured', 'Date Of Birth', 'Examination Name', 'Father Name', 'Grade', 'Mother Name', 'Percentage', 'Result', 'Roll Number', 'School Name', 'Student Name', 'Total Marks Secured', 'Year Of Passing']
+2026-08-21 12:11:22,824  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:11:22,824  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:11:24,711  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:11:25,712  [INFO    ]  main - 
+[14/35] D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1001_page_0.png
+2026-08-21 12:11:25,712  [INFO    ]  main - ============================================================
+2026-08-21 12:11:25,712  [INFO    ]  main - Processing [14/35]: Document10_1001_page_0.png  |  10th Marksheet  |  Attempt 1
+2026-08-21 12:11:25,712  [INFO    ]  main - ============================================================
+2026-08-21 12:11:25,974  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-21 12:11:26,004  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-21 12:11:26,004  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:11:31,393  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:11:31,394  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1001_page_0.png
+2026-08-21 12:11:31,399  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:11:43,804  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:11:43,804  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:11:53,907  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:11:59,283  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:12:09,332  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:12:20,550  [WARNING ]  doc_uploader - Upload error detected via XPath: Upload a JPEG, PNG, WebP, or PDF document up to 5 MB.
+2026-08-21 12:12:20,550  [WARNING ]  main - File upload rejected for Document10_1001_page_0.png: Upload a JPEG, PNG, WebP, or PDF document up to 5 MB.
+2026-08-21 12:12:20,848  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_121220_upload_rejected_Document10_1001_page_0.png.png
+2026-08-21 12:12:21,184  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:12:21,184  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:12:31,730  [INFO    ]  doc_uploader - Navigating to Verify Document page to reset form.
+2026-08-21 12:12:31,730  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-21 12:12:33,618  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-21 12:12:34,618  [INFO    ]  main - 
+[15/35] D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1002_page_0.png
+2026-08-21 12:12:34,618  [INFO    ]  main - ============================================================
+2026-08-21 12:12:34,618  [INFO    ]  main - Processing [15/35]: Document10_1002_page_0.png  |  10th Marksheet  |  Attempt 1
+2026-08-21 12:12:34,618  [INFO    ]  main - ============================================================
+2026-08-21 12:12:34,873  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-21 12:12:35,034  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-21 12:12:35,034  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:12:40,434  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:12:40,434  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1002_page_0.png
+2026-08-21 12:12:40,442  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:12:52,851  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:12:52,851  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:13:02,954  [WARNING ]  doc_uploader - Dropdown mismatch! Expected '10th Marksheet', found 'Aadhaar Card'. Re-selecting.
+2026-08-21 12:13:02,954  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-21 12:13:03,015  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-21 12:13:03,015  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:13:08,425  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:13:18,498  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:13:25,158  [WARNING ]  doc_uploader - Upload error detected via XPath: Upload a JPEG, PNG, WebP, or PDF document up to 5 MB.
+2026-08-21 12:13:25,159  [WARNING ]  main - File upload rejected for Document10_1002_page_0.png: Upload a JPEG, PNG, WebP, or PDF document up to 5 MB.
+2026-08-21 12:13:25,299  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_121325_upload_rejected_Document10_1002_page_0.png.png
+2026-08-21 12:13:25,610  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:13:25,610  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:13:36,172  [INFO    ]  doc_uploader - Navigating to Verify Document page to reset form.
+2026-08-21 12:13:36,172  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-21 12:13:38,040  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-21 12:13:39,041  [INFO    ]  main - 
+[16/35] D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_100_page_0.png
+2026-08-21 12:13:39,041  [INFO    ]  main - ============================================================
+2026-08-21 12:13:39,041  [INFO    ]  main - Processing [16/35]: Document11_100_page_0.png  |  12th Marksheet  |  Attempt 1
+2026-08-21 12:13:39,041  [INFO    ]  main - ============================================================
+2026-08-21 12:13:39,288  [INFO    ]  doc_uploader - Selecting document type: '12th Marksheet'
+2026-08-21 12:13:39,365  [INFO    ]  doc_uploader - Selected by visible text: '12th Marksheet'
+2026-08-21 12:13:39,365  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:13:44,779  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:13:44,780  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_100_page_0.png
+2026-08-21 12:13:44,781  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:13:57,195  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:13:57,195  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:14:07,295  [WARNING ]  doc_uploader - Dropdown mismatch! Expected '12th Marksheet', found 'Aadhaar Card'. Re-selecting.
+2026-08-21 12:14:07,295  [INFO    ]  doc_uploader - Selecting document type: '12th Marksheet'
+2026-08-21 12:14:07,369  [INFO    ]  doc_uploader - Selected by visible text: '12th Marksheet'
+2026-08-21 12:14:07,369  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:14:12,749  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:14:22,814  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:14:34,312  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:14:34,313  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:14:35,373  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:14:36,505  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_121436_result_Document11_100_page_0.png.png
+2026-08-21 12:14:36,505  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:14:53,009  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:14:53,009  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:14:54,909  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:14:54,909  [INFO    ]  result_parser - JS parse: 13 fields
+2026-08-21 12:14:55,020  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_121454_extracted_Document11_100_page_0.png.png
+2026-08-21 12:14:55,020  [INFO    ]  excel_writer - Created sheet: '12th Marksheet'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Board Name', 'Cgpa Secured', 'Father Name', 'Grade', 'Mother Name', 'Percentage', 'Result', 'Roll Number', 'School Name', 'Stream', 'Student Name', 'Total Marks Secured', 'Year Of Passing']
+2026-08-21 12:14:55,341  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:14:55,341  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:14:57,232  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:14:58,233  [INFO    ]  main - 
+[17/35] D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_101_page_0.png
+2026-08-21 12:14:58,233  [INFO    ]  main - ============================================================
+2026-08-21 12:14:58,233  [INFO    ]  main - Processing [17/35]: Document11_101_page_0.png  |  12th Marksheet  |  Attempt 1
+2026-08-21 12:14:58,233  [INFO    ]  main - ============================================================
+2026-08-21 12:14:58,478  [INFO    ]  doc_uploader - Selecting document type: '12th Marksheet'
+2026-08-21 12:14:58,520  [INFO    ]  doc_uploader - Selected by visible text: '12th Marksheet'
+2026-08-21 12:14:58,521  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:15:03,926  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:15:03,926  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_101_page_0.png
+2026-08-21 12:15:03,926  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:15:16,292  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:15:16,292  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:15:26,427  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:15:31,804  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:15:41,895  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:15:53,376  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:15:53,376  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:16:18,597  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-21 12:16:19,708  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_121619_result_Document11_101_page_0.png.png
+2026-08-21 12:16:19,708  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:16:36,143  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:16:36,143  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:16:38,022  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:16:38,023  [INFO    ]  result_parser - JS parse: 13 fields
+2026-08-21 12:16:38,138  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_121638_extracted_Document11_101_page_0.png.png
+2026-08-21 12:16:38,451  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:16:38,451  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:16:40,326  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:16:41,326  [INFO    ]  main - 
+[18/35] D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_102_page_0.png
+2026-08-21 12:16:41,326  [INFO    ]  main - ============================================================
+2026-08-21 12:16:41,326  [INFO    ]  main - Processing [18/35]: Document11_102_page_0.png  |  12th Marksheet  |  Attempt 1
+2026-08-21 12:16:41,326  [INFO    ]  main - ============================================================
+2026-08-21 12:16:41,566  [INFO    ]  doc_uploader - Selecting document type: '12th Marksheet'
+2026-08-21 12:16:41,626  [INFO    ]  doc_uploader - Selected by visible text: '12th Marksheet'
+2026-08-21 12:16:41,627  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:16:47,115  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:16:47,116  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_102_page_0.png
+2026-08-21 12:16:47,122  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:16:59,543  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:16:59,543  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:17:09,734  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:17:15,133  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:17:25,234  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:17:36,682  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:17:36,683  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:18:01,927  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-21 12:18:03,127  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_121802_result_Document11_102_page_0.png.png
+2026-08-21 12:18:03,127  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:18:19,615  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:18:19,615  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:18:21,485  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:18:21,492  [INFO    ]  result_parser - JS parse: 13 fields
+2026-08-21 12:18:21,591  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_121821_extracted_Document11_102_page_0.png.png
+2026-08-21 12:18:21,913  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:18:21,913  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:18:23,788  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:18:24,790  [INFO    ]  main - 
+[19/35] D:\ai_doc_automation\Test Data\Degree Certificate\Gangadhar Meher University.png
+2026-08-21 12:18:24,790  [INFO    ]  main - ============================================================
+2026-08-21 12:18:24,790  [INFO    ]  main - Processing [19/35]: Gangadhar Meher University.png  |  Graduation Certificate  |  Attempt 1
+2026-08-21 12:18:24,790  [INFO    ]  main - ============================================================
+2026-08-21 12:18:25,039  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 12:18:25,114  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 12:18:25,115  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:18:30,537  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:18:30,537  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Gangadhar Meher University.png
+2026-08-21 12:18:30,545  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:18:42,964  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:18:42,964  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:18:53,153  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:18:58,562  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:19:08,612  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:19:20,088  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:19:20,089  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:19:45,276  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-21 12:19:46,445  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_121946_result_Gangadhar Meher University.png.png
+2026-08-21 12:19:46,445  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:20:02,920  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:20:02,920  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:20:04,799  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:20:04,799  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-21 12:20:04,990  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_122004_extracted_Gangadhar Meher University.png.png
+2026-08-21 12:20:04,994  [INFO    ]  excel_writer - Created sheet: 'Graduation Certificate'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Cgpa Secured', 'College Name', 'Degree Name', 'Enrollment Number', 'Father Name', 'Grade', 'Mother Name', 'Percentage', 'Registration Number', 'Result', 'Roll Number', 'Stream Or Specialization', 'Student Name', 'Total Marks Secured', 'University Name', 'Year Of Passing']
+2026-08-21 12:20:05,332  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:20:05,332  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:20:07,216  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:20:08,217  [INFO    ]  main - 
+[20/35] D:\ai_doc_automation\Test Data\Degree Certificate\Indira Gandhi Naional Tribal University.png
+2026-08-21 12:20:08,217  [INFO    ]  main - ============================================================
+2026-08-21 12:20:08,217  [INFO    ]  main - Processing [20/35]: Indira Gandhi Naional Tribal University.png  |  Graduation Certificate  |  Attempt 1
+2026-08-21 12:20:08,217  [INFO    ]  main - ============================================================
+2026-08-21 12:20:08,469  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 12:20:08,494  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 12:20:08,494  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:20:13,901  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:20:13,902  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Indira Gandhi Naional Tribal University.png
+2026-08-21 12:20:13,907  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:20:26,325  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:20:26,325  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:20:36,491  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:20:41,896  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:20:51,965  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:21:03,452  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:21:03,452  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:21:28,745  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-21 12:21:29,848  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_122129_result_Indira Gandhi Naional Tribal University.png.png
+2026-08-21 12:21:29,848  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:21:46,382  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:21:46,382  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:21:48,255  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:21:48,255  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-21 12:21:48,363  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_122148_extracted_Indira Gandhi Naional Tribal University.png.png
+2026-08-21 12:21:48,699  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:21:48,699  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:21:50,572  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:21:51,574  [INFO    ]  main - 
+[21/35] D:\ai_doc_automation\Test Data\Degree Certificate\MCP Autonomous College Takhatpur Baripada.png
+2026-08-21 12:21:51,574  [INFO    ]  main - ============================================================
+2026-08-21 12:21:51,574  [INFO    ]  main - Processing [21/35]: MCP Autonomous College Takhatpur Baripada.png  |  Graduation Certificate  |  Attempt 1
+2026-08-21 12:21:51,574  [INFO    ]  main - ============================================================
+2026-08-21 12:21:51,820  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 12:21:51,846  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 12:21:51,846  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:21:57,255  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:21:57,256  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\MCP Autonomous College Takhatpur Baripada.png
+2026-08-21 12:21:57,261  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:22:09,664  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:22:09,664  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:22:19,826  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:22:25,217  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:22:35,320  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:22:46,786  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:22:46,786  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:23:11,996  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-21 12:23:13,142  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_122313_result_MCP Autonomous College Takhatpur Baripada.png.png
+2026-08-21 12:23:13,142  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:23:29,592  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:23:29,592  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:23:31,470  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:23:31,476  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-21 12:23:31,581  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_122331_extracted_MCP Autonomous College Takhatpur Baripada.png.png
+2026-08-21 12:23:31,899  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:23:31,899  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:23:33,787  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:23:34,787  [INFO    ]  main - 
+[22/35] D:\ai_doc_automation\Test Data\Degree Certificate\Prananath College Autonomous Khorda.png
+2026-08-21 12:23:34,787  [INFO    ]  main - ============================================================
+2026-08-21 12:23:34,787  [INFO    ]  main - Processing [22/35]: Prananath College Autonomous Khorda.png  |  Graduation Certificate  |  Attempt 1
+2026-08-21 12:23:34,787  [INFO    ]  main - ============================================================
+2026-08-21 12:23:35,036  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 12:23:35,079  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 12:23:35,079  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:23:40,453  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:23:40,453  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Prananath College Autonomous Khorda.png
+2026-08-21 12:23:40,453  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:23:52,865  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:23:52,865  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:24:03,013  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:24:08,395  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:24:18,440  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:24:29,924  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:24:29,924  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:24:55,152  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-21 12:24:56,253  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_122456_result_Prananath College Autonomous Khorda.png.png
+2026-08-21 12:24:56,253  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:25:12,794  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:25:12,794  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:25:14,670  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:25:14,671  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-21 12:25:14,775  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_122514_extracted_Prananath College Autonomous Khorda.png.png
+2026-08-21 12:25:15,111  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:25:15,111  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:25:16,999  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:25:18,000  [INFO    ]  main - 
+[23/35] D:\ai_doc_automation\Test Data\Degree Certificate\Ravenshaw University.png
+2026-08-21 12:25:18,000  [INFO    ]  main - ============================================================
+2026-08-21 12:25:18,000  [INFO    ]  main - Processing [23/35]: Ravenshaw University.png  |  Graduation Certificate  |  Attempt 1
+2026-08-21 12:25:18,000  [INFO    ]  main - ============================================================
+2026-08-21 12:25:18,281  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 12:25:18,328  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 12:25:18,328  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:25:23,701  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:25:23,701  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Ravenshaw University.png
+2026-08-21 12:25:23,707  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:25:36,077  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:25:36,077  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:25:46,194  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:25:51,618  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:26:01,727  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:26:13,215  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:26:13,215  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:26:38,465  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-21 12:26:39,573  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_122639_result_Ravenshaw University.png.png
+2026-08-21 12:26:39,573  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:26:56,105  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:26:56,105  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:26:57,991  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:26:57,991  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-21 12:26:58,134  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_122657_extracted_Ravenshaw University.png.png
+2026-08-21 12:26:58,452  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:26:58,452  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:27:00,339  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:27:01,339  [INFO    ]  main - 
+[24/35] D:\ai_doc_automation\Test Data\Degree Certificate\Sambalpur University Odisha Degree Certificate.pdf
+2026-08-21 12:27:01,339  [INFO    ]  main - ============================================================
+2026-08-21 12:27:01,340  [INFO    ]  main - Processing [24/35]: Sambalpur University Odisha Degree Certificate.pdf  |  Graduation Certificate  |  Attempt 1
+2026-08-21 12:27:01,340  [INFO    ]  main - ============================================================
+2026-08-21 12:27:01,589  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 12:27:01,627  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 12:27:01,627  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:27:07,031  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:27:07,031  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Sambalpur University Odisha Degree Certificate.pdf
+2026-08-21 12:27:07,031  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:27:19,471  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:27:19,472  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:27:29,598  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:27:34,996  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:27:45,076  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:27:56,495  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:27:56,495  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:28:21,652  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-21 12:28:22,797  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_122822_result_Sambalpur University Odisha Degree Certificate.pdf.png
+2026-08-21 12:28:22,797  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:28:39,235  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:28:39,235  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:28:41,131  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:28:41,139  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-21 12:28:41,275  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_122841_extracted_Sambalpur University Odisha Degree Certificate.pdf.png
+2026-08-21 12:28:41,619  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:28:41,619  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:28:43,504  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:28:44,506  [INFO    ]  main - 
+[25/35] D:\ai_doc_automation\Test Data\Degree Certificate\Utkal University Additional .png
+2026-08-21 12:28:44,506  [INFO    ]  main - ============================================================
+2026-08-21 12:28:44,507  [INFO    ]  main - Processing [25/35]: Utkal University Additional .png  |  Graduation Certificate  |  Attempt 1
+2026-08-21 12:28:44,507  [INFO    ]  main - ============================================================
+2026-08-21 12:28:44,908  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 12:28:44,959  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 12:28:44,959  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:28:50,382  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:28:50,383  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Utkal University Additional .png
+2026-08-21 12:28:50,388  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:29:02,790  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:29:02,790  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:29:12,942  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:29:18,386  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:29:28,453  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:29:39,981  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:29:39,982  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:30:05,150  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-21 12:30:06,252  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123006_result_Utkal University Additional .png.png
+2026-08-21 12:30:06,253  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:30:22,799  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:30:22,800  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:30:24,699  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:30:24,699  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-21 12:30:24,828  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123024_extracted_Utkal University Additional .png.png
+2026-08-21 12:30:25,488  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:30:25,488  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:30:27,384  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:30:28,385  [INFO    ]  main - 
+[26/35] D:\ai_doc_automation\Test Data\Degree Certificate\Utkal University.png
+2026-08-21 12:30:28,385  [INFO    ]  main - ============================================================
+2026-08-21 12:30:28,386  [INFO    ]  main - Processing [26/35]: Utkal University.png  |  Graduation Certificate  |  Attempt 1
+2026-08-21 12:30:28,386  [INFO    ]  main - ============================================================
+2026-08-21 12:30:28,648  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-21 12:30:28,699  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-21 12:30:28,699  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:30:34,129  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:30:34,130  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Utkal University.png
+2026-08-21 12:30:34,135  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:30:46,587  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:30:46,587  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:30:56,783  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:31:02,188  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:31:12,284  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:31:21,609  [WARNING ]  doc_uploader - Upload error detected via XPath: Upload a JPEG, PNG, WebP, or PDF document up to 5 MB.
+2026-08-21 12:31:21,609  [WARNING ]  main - File upload rejected for Utkal University.png: Upload a JPEG, PNG, WebP, or PDF document up to 5 MB.
+2026-08-21 12:31:21,764  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123121_upload_rejected_Utkal University.png.png
+2026-08-21 12:31:22,111  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:31:22,111  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:31:32,656  [INFO    ]  doc_uploader - Navigating to Verify Document page to reset form.
+2026-08-21 12:31:32,656  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-21 12:31:34,536  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-21 12:31:35,538  [INFO    ]  main - 
+[27/35] D:\ai_doc_automation\Test Data\Income Certificate for Testing\Income Cerificate.pdf
+2026-08-21 12:31:35,538  [INFO    ]  main - ============================================================
+2026-08-21 12:31:35,538  [INFO    ]  main - Processing [27/35]: Income Cerificate.pdf  |  Income Certificate  |  Attempt 1
+2026-08-21 12:31:35,538  [INFO    ]  main - ============================================================
+2026-08-21 12:31:35,813  [INFO    ]  doc_uploader - Selecting document type: 'Income Certificate'
+2026-08-21 12:31:35,894  [INFO    ]  doc_uploader - Selected by visible text: 'Income Certificate'
+2026-08-21 12:31:35,894  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:31:41,286  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:31:41,286  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Income Certificate for Testing\Income Cerificate.pdf
+2026-08-21 12:31:41,304  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:31:53,774  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:31:53,774  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:32:03,894  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'Income Certificate', found 'Aadhaar Card'. Re-selecting.
+2026-08-21 12:32:03,894  [INFO    ]  doc_uploader - Selecting document type: 'Income Certificate'
+2026-08-21 12:32:03,973  [INFO    ]  doc_uploader - Selected by visible text: 'Income Certificate'
+2026-08-21 12:32:03,974  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:32:09,411  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:32:19,511  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:32:31,001  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:32:31,002  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:32:31,014  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:32:32,154  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123232_result_Income Cerificate.pdf.png
+2026-08-21 12:32:32,155  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:32:48,662  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:32:48,662  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:32:50,553  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:32:50,559  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-21 12:32:50,675  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123250_extracted_Income Cerificate.pdf.png
+2026-08-21 12:32:50,677  [INFO    ]  excel_writer - Created sheet: 'Income Certificate'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Address', 'Annual Income', 'Applicant Name', 'Certificate Number', 'Father Name', 'Issue Date', 'Issuing Authority']
+2026-08-21 12:32:51,061  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:32:51,061  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:32:52,933  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:32:53,934  [INFO    ]  main - 
+[28/35] D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_1000_page_0.png
+2026-08-21 12:32:53,934  [INFO    ]  main - ============================================================
+2026-08-21 12:32:53,934  [INFO    ]  main - Processing [28/35]: IncomeCertificate_1000_page_0.png  |  Income Certificate  |  Attempt 1
+2026-08-21 12:32:53,934  [INFO    ]  main - ============================================================
+2026-08-21 12:32:54,376  [INFO    ]  doc_uploader - Selecting document type: 'Income Certificate'
+2026-08-21 12:32:54,435  [INFO    ]  doc_uploader - Selected by visible text: 'Income Certificate'
+2026-08-21 12:32:54,435  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:32:59,827  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:32:59,828  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_1000_page_0.png
+2026-08-21 12:32:59,833  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:33:12,256  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:33:12,256  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:33:22,445  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:33:27,915  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:33:37,985  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:33:49,428  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:33:49,429  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:33:51,375  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:33:52,484  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123352_result_IncomeCertificate_1000_page_0.png.png
+2026-08-21 12:33:52,484  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:34:09,042  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:34:09,042  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:34:10,914  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:34:10,921  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-21 12:34:11,063  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123410_extracted_IncomeCertificate_1000_page_0.png.png
+2026-08-21 12:34:11,437  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:34:11,437  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:34:13,319  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:34:14,319  [INFO    ]  main - 
+[29/35] D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_100_page_0.png
+2026-08-21 12:34:14,319  [INFO    ]  main - ============================================================
+2026-08-21 12:34:14,320  [INFO    ]  main - Processing [29/35]: IncomeCertificate_100_page_0.png  |  Income Certificate  |  Attempt 1
+2026-08-21 12:34:14,320  [INFO    ]  main - ============================================================
+2026-08-21 12:34:14,583  [INFO    ]  doc_uploader - Selecting document type: 'Income Certificate'
+2026-08-21 12:34:14,623  [INFO    ]  doc_uploader - Selected by visible text: 'Income Certificate'
+2026-08-21 12:34:14,624  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:34:20,043  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:34:20,043  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_100_page_0.png
+2026-08-21 12:34:20,049  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:34:32,444  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:34:32,445  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:34:42,606  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:34:47,971  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:34:58,071  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:35:09,539  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:35:09,539  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:35:10,001  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:35:11,130  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123511_result_IncomeCertificate_100_page_0.png.png
+2026-08-21 12:35:11,131  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:35:27,653  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:35:27,654  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:35:29,519  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:35:29,525  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-21 12:35:29,637  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123529_extracted_IncomeCertificate_100_page_0.png.png
+2026-08-21 12:35:30,011  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:35:30,011  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:35:31,891  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:35:32,892  [INFO    ]  main - 
+[30/35] D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_100_page_0.png
+2026-08-21 12:35:32,892  [INFO    ]  main - ============================================================
+2026-08-21 12:35:32,892  [INFO    ]  main - Processing [30/35]: CastCertificate_100_page_0.png  |  Caste Certificate  |  Attempt 1
+2026-08-21 12:35:32,892  [INFO    ]  main - ============================================================
+2026-08-21 12:35:33,213  [INFO    ]  doc_uploader - Selecting document type: 'Caste Certificate'
+2026-08-21 12:35:33,285  [INFO    ]  doc_uploader - Selected by visible text: 'Caste Certificate'
+2026-08-21 12:35:33,285  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:35:38,702  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:35:38,702  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_100_page_0.png
+2026-08-21 12:35:38,720  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:35:51,096  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:35:51,096  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:36:01,226  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:36:06,635  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:36:16,686  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:36:28,091  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:36:28,091  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:36:29,391  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:36:30,489  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123630_result_CastCertificate_100_page_0.png.png
+2026-08-21 12:36:30,489  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:36:46,998  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:36:46,998  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:36:48,880  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:36:48,891  [INFO    ]  result_parser - JS parse: 8 fields
+2026-08-21 12:36:49,003  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123648_extracted_CastCertificate_100_page_0.png.png
+2026-08-21 12:36:49,004  [INFO    ]  excel_writer - Created sheet: 'Caste Certificate'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Applicant Name', 'Caste', 'Certificate Number', 'Community', 'Father Name', 'Issue Date', 'Issuing Authority', 'Mother Name']
+2026-08-21 12:36:49,343  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:36:49,359  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:36:51,233  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:36:52,233  [INFO    ]  main - 
+[31/35] D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_101_page_0.png
+2026-08-21 12:36:52,233  [INFO    ]  main - ============================================================
+2026-08-21 12:36:52,233  [INFO    ]  main - Processing [31/35]: CastCertificate_101_page_0.png  |  Caste Certificate  |  Attempt 1
+2026-08-21 12:36:52,233  [INFO    ]  main - ============================================================
+2026-08-21 12:36:52,496  [INFO    ]  doc_uploader - Selecting document type: 'Caste Certificate'
+2026-08-21 12:36:52,544  [INFO    ]  doc_uploader - Selected by visible text: 'Caste Certificate'
+2026-08-21 12:36:52,544  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:36:57,974  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:36:57,974  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_101_page_0.png
+2026-08-21 12:36:57,980  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:37:10,351  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:37:10,351  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:37:20,515  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:37:25,927  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:37:35,966  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:37:47,463  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:37:47,463  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:37:48,207  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:37:49,332  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123749_result_CastCertificate_101_page_0.png.png
+2026-08-21 12:37:49,332  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:38:05,787  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:38:05,787  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:38:07,675  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:38:07,685  [INFO    ]  result_parser - JS parse: 8 fields
+2026-08-21 12:38:07,809  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123807_extracted_CastCertificate_101_page_0.png.png
+2026-08-21 12:38:08,164  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:38:08,164  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:38:10,047  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:38:11,048  [INFO    ]  main - 
+[32/35] D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_102_page_0.png
+2026-08-21 12:38:11,048  [INFO    ]  main - ============================================================
+2026-08-21 12:38:11,048  [INFO    ]  main - Processing [32/35]: CastCertificate_102_page_0.png  |  Caste Certificate  |  Attempt 1
+2026-08-21 12:38:11,048  [INFO    ]  main - ============================================================
+2026-08-21 12:38:11,302  [INFO    ]  doc_uploader - Selecting document type: 'Caste Certificate'
+2026-08-21 12:38:11,344  [INFO    ]  doc_uploader - Selected by visible text: 'Caste Certificate'
+2026-08-21 12:38:11,344  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:38:16,731  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:38:16,731  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_102_page_0.png
+2026-08-21 12:38:16,731  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:38:29,165  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:38:29,165  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:38:39,296  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:38:44,686  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:38:54,751  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:39:06,186  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:39:06,186  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:39:31,418  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-21 12:39:32,530  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123932_result_CastCertificate_102_page_0.png.png
+2026-08-21 12:39:32,530  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:39:49,035  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:39:49,035  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:39:50,908  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:39:50,910  [INFO    ]  result_parser - JS parse: 8 fields
+2026-08-21 12:39:51,017  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_123950_extracted_CastCertificate_102_page_0.png.png
+2026-08-21 12:39:51,374  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:39:51,374  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:39:53,256  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:39:54,256  [INFO    ]  main - 
+[33/35] D:\ai_doc_automation\Test Data\Residence Certificate for Testing\Residence Certificate (2).pdf
+2026-08-21 12:39:54,256  [INFO    ]  main - ============================================================
+2026-08-21 12:39:54,256  [INFO    ]  main - Processing [33/35]: Residence Certificate (2).pdf  |  Residence Certificate  |  Attempt 1
+2026-08-21 12:39:54,256  [INFO    ]  main - ============================================================
+2026-08-21 12:39:54,520  [INFO    ]  doc_uploader - Selecting document type: 'Residence Certificate'
+2026-08-21 12:39:54,593  [INFO    ]  doc_uploader - Selected by visible text: 'Residence Certificate'
+2026-08-21 12:39:54,593  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:39:59,980  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:39:59,980  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Residence Certificate for Testing\Residence Certificate (2).pdf
+2026-08-21 12:39:59,986  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:40:12,435  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:40:12,435  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:40:22,637  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:40:27,999  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:40:38,132  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:40:49,587  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:40:49,587  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:40:49,736  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:40:50,836  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_124050_result_Residence Certificate (2).pdf.png
+2026-08-21 12:40:50,836  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:41:07,290  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:41:07,290  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:41:09,165  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:41:09,171  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-21 12:41:09,268  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_124109_extracted_Residence Certificate (2).pdf.png
+2026-08-21 12:41:09,268  [INFO    ]  excel_writer - Created sheet: 'Residence Certificate'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Address', 'Applicant Name', 'Certificate Number', 'Father Name', 'Issue Date', 'Issuing Authority', 'Period Of Residence']
+2026-08-21 12:41:09,624  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:41:09,624  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:41:11,504  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:41:12,505  [INFO    ]  main - 
+[34/35] D:\ai_doc_automation\Test Data\Residence Certificate for Testing\Residence Certificate.pdf
+2026-08-21 12:41:12,505  [INFO    ]  main - ============================================================
+2026-08-21 12:41:12,505  [INFO    ]  main - Processing [34/35]: Residence Certificate.pdf  |  Residence Certificate  |  Attempt 1
+2026-08-21 12:41:12,505  [INFO    ]  main - ============================================================
+2026-08-21 12:41:12,745  [INFO    ]  doc_uploader - Selecting document type: 'Residence Certificate'
+2026-08-21 12:41:12,796  [INFO    ]  doc_uploader - Selected by visible text: 'Residence Certificate'
+2026-08-21 12:41:12,796  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:41:18,196  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:41:18,197  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Residence Certificate for Testing\Residence Certificate.pdf
+2026-08-21 12:41:18,201  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:41:30,604  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:41:30,609  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:41:40,764  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:41:46,160  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:41:56,185  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:42:07,653  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:42:07,653  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:42:07,673  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:42:08,775  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_124208_result_Residence Certificate.pdf.png
+2026-08-21 12:42:08,775  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:42:25,313  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:42:25,314  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:42:27,185  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:42:27,188  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-21 12:42:27,359  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_124227_extracted_Residence Certificate.pdf.png
+2026-08-21 12:42:27,728  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:42:27,728  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-21 12:42:29,605  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-21 12:42:30,605  [INFO    ]  main - 
+[35/35] D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_100_page_0.png
+2026-08-21 12:42:30,605  [INFO    ]  main - ============================================================
+2026-08-21 12:42:30,606  [INFO    ]  main - Processing [35/35]: ResidenceCertificate_100_page_0.png  |  Residence Certificate  |  Attempt 1
+2026-08-21 12:42:30,606  [INFO    ]  main - ============================================================
+2026-08-21 12:42:30,849  [INFO    ]  doc_uploader - Selecting document type: 'Residence Certificate'
+2026-08-21 12:42:30,890  [INFO    ]  doc_uploader - Selected by visible text: 'Residence Certificate'
+2026-08-21 12:42:30,890  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:42:36,249  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:42:36,249  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_100_page_0.png
+2026-08-21 12:42:36,264  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-21 12:42:48,653  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-21 12:42:48,653  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-21 12:42:58,858  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-21 12:43:04,240  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-21 12:43:14,268  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-21 12:43:25,692  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-21 12:43:25,693  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-21 12:43:26,525  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-21 12:43:27,625  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_124327_result_ResidenceCertificate_100_page_0.png.png
+2026-08-21 12:43:27,625  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-21 12:43:44,108  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-21 12:43:44,108  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-21 12:43:45,977  [INFO    ]  result_parser - On Extraction tab.
+2026-08-21 12:43:45,983  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-21 12:43:46,115  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260821_124345_extracted_ResidenceCertificate_100_page_0.png.png
+2026-08-21 12:43:46,465  [ERROR   ]  main - Top-level exception processing document: 'Processing Time (s)'
+2026-08-21 12:43:46,465  [INFO    ]  excel_writer - Summary sheet written with overall timing statistics.
+2026-08-21 12:43:46,579  [INFO    ]  excel_writer - Excel saved: D:\ai_doc_automation\output\ai_doc_results_20260821_115352.xlsx
+2026-08-21 12:43:46,579  [INFO    ]  main - 
+============================================================
+2026-08-21 12:43:46,579  [INFO    ]  main -   COMPLETE
+2026-08-21 12:43:46,579  [INFO    ]  main -   Total   : 35
+2026-08-21 12:43:46,579  [INFO    ]  main -   Success : 0
+2026-08-21 12:43:46,579  [INFO    ]  main -   Failed  : 0
+2026-08-21 12:43:46,579  [INFO    ]  main -   Errors  : 35
+2026-08-21 12:43:46,579  [INFO    ]  main -   Output  : D:\ai_doc_automation\output\ai_doc_results_20260821_115352.xlsx
+2026-08-21 12:43:46,579  [INFO    ]  main - ============================================================
+2026-08-21 12:43:48,926  [INFO    ]  main - Browser closed.

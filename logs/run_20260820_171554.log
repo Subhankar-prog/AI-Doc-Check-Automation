@@ -1,0 +1,61 @@
+2026-08-20 17:15:54,939  [INFO    ]  main - ============================================================
+2026-08-20 17:15:54,939  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-20 17:15:54,939  [INFO    ]  main - ============================================================
+2026-08-20 17:15:54,939  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-20 17:15:54,939  [INFO    ]  main - [--type]   Running only: 'Graduation Certificate'
+2026-08-20 17:15:55,076  [INFO    ]  main - Records to process: 1
+2026-08-20 17:15:56,945  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-20 17:15:56,945  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260820_171556.xlsx
+2026-08-20 17:15:56,954  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-20 17:16:01,208  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_171601_01_dashboard.png
+2026-08-20 17:16:01,208  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-20 17:16:03,134  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-20 17:16:03,251  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_171603_02_verify_form.png
+2026-08-20 17:16:03,267  [INFO    ]  main - 
+[1/1] D:\ai_doc_automation\Degree Certificate\Andhra University.png
+2026-08-20 17:16:03,267  [INFO    ]  main - ============================================================
+2026-08-20 17:16:03,267  [INFO    ]  main - Processing [1/1]: Andhra University.png  |  Graduation Certificate  |  Attempt 1
+2026-08-20 17:16:03,267  [INFO    ]  main - ============================================================
+2026-08-20 17:16:03,365  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-20 17:16:03,453  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-20 17:16:03,453  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-20 17:16:08,878  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-20 17:16:08,878  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Degree Certificate\Andhra University.png
+2026-08-20 17:16:08,887  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-20 17:16:11,225  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-20 17:16:11,225  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-20 17:16:11,282  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'Graduation Certificate', found 'Aadhaar Card'. Re-selecting.
+2026-08-20 17:16:11,282  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-20 17:16:11,360  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-20 17:16:11,360  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-20 17:16:16,746  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-20 17:16:16,746  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-20 17:16:17,118  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-20 17:16:17,118  [INFO    ]  doc_uploader - Waiting for engine result (timeout=180s)...
+2026-08-20 17:16:17,152  [INFO    ]  doc_uploader -   [0s] Engine processing...
+2026-08-20 17:16:22,166  [INFO    ]  doc_uploader -   [5s] Engine processing...
+2026-08-20 17:16:27,181  [INFO    ]  doc_uploader -   [10s] Engine processing...
+2026-08-20 17:16:32,197  [INFO    ]  doc_uploader -   [15s] Engine processing...
+2026-08-20 17:16:37,214  [INFO    ]  doc_uploader -   [20s] Engine processing...
+2026-08-20 17:16:47,266  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-20 17:16:48,380  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_171648_result_Andhra University.png.png
+2026-08-20 17:16:48,383  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-20 17:16:49,980  [INFO    ]  result_parser - Verdict: SUCCESS
+2026-08-20 17:16:49,980  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-20 17:16:51,867  [INFO    ]  result_parser - On Extraction tab.
+2026-08-20 17:16:51,867  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-20 17:16:51,979  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260820_171651_extracted_Andhra University.png.png
+2026-08-20 17:16:51,979  [INFO    ]  excel_writer - Created sheet: 'Graduation Certificate'  headers: ['Filename', 'Document Type', 'Status', 'Error Message', 'Screenshot', 'Processing Time (s)', 'Timestamp', 'Cgpa Secured', 'College Name', 'Degree Name', 'Enrollment Number', 'Father Name', 'Grade', 'Mother Name', 'Percentage', 'Registration Number', 'Result', 'Roll Number', 'Stream Or Specialization', 'Student Name', 'Total Marks Secured', 'University Name', 'Year Of Passing']
+2026-08-20 17:16:52,074  [INFO    ]  main - [OK] Andhra University.png: SUCCESS (44.9s)
+2026-08-20 17:16:52,074  [INFO    ]  excel_writer - Summary sheet written.
+2026-08-20 17:16:52,121  [INFO    ]  excel_writer - Excel saved: D:\ai_doc_automation\output\ai_doc_results_20260820_171556.xlsx
+2026-08-20 17:16:52,121  [INFO    ]  main - 
+============================================================
+2026-08-20 17:16:52,121  [INFO    ]  main -   COMPLETE
+2026-08-20 17:16:52,121  [INFO    ]  main -   Total   : 1
+2026-08-20 17:16:52,121  [INFO    ]  main -   Success : 1
+2026-08-20 17:16:52,121  [INFO    ]  main -   Failed  : 0
+2026-08-20 17:16:52,121  [INFO    ]  main -   Errors  : 0
+2026-08-20 17:16:52,121  [INFO    ]  main -   Output  : D:\ai_doc_automation\output\ai_doc_results_20260820_171556.xlsx
+2026-08-20 17:16:52,121  [INFO    ]  main - ============================================================
+2026-08-20 17:16:54,459  [INFO    ]  main - Browser closed.
