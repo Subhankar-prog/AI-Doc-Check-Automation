@@ -1,0 +1,314 @@
+2026-08-22 12:52:30,582  [INFO    ]  main - ============================================================
+2026-08-22 12:52:30,582  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-22 12:52:30,598  [INFO    ]  main - ============================================================
+2026-08-22 12:52:30,598  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-22 12:52:30,598  [INFO    ]  main - [--type]   Running only: '12th Marksheet'
+2026-08-22 12:52:30,916  [INFO    ]  main - Records to process: 50
+2026-08-22 12:52:32,914  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 12:52:32,918  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260822_125232.xlsx
+2026-08-22 12:52:32,922  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-22 12:52:37,226  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125237_01_dashboard.png
+2026-08-22 12:52:37,226  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 12:52:39,179  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 12:52:39,338  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125239_02_verify_form.png
+2026-08-22 12:52:39,354  [INFO    ]  main - 
+[1/50] D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_10_page_0.png
+2026-08-22 12:52:39,354  [INFO    ]  main - ============================================================
+2026-08-22 12:52:39,354  [INFO    ]  main - Processing [1/50]: Document11_10_page_0.png  |  12th Marksheet  |  Attempt 1
+2026-08-22 12:52:39,354  [INFO    ]  main - ============================================================
+2026-08-22 12:52:39,651  [INFO    ]  doc_uploader - Selecting document type: '12th Marksheet'
+2026-08-22 12:52:39,758  [INFO    ]  doc_uploader - Selected by visible text: '12th Marksheet'
+2026-08-22 12:52:39,758  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:52:45,221  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:52:45,222  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_10_page_0.png
+2026-08-22 12:52:45,239  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:52:55,699  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:53:05,752  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:53:05,752  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:53:15,882  [WARNING ]  doc_uploader - Dropdown mismatch! Expected '12th Marksheet', found 'Aadhaar Card'. Re-selecting.
+2026-08-22 12:53:15,882  [INFO    ]  doc_uploader - Selecting document type: '12th Marksheet'
+2026-08-22 12:53:15,968  [INFO    ]  doc_uploader - Selected by visible text: '12th Marksheet'
+2026-08-22 12:53:25,995  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:53:37,451  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:53:37,451  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:54:02,635  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 12:54:03,729  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125403_result_Document11_10_page_0.png.png
+2026-08-22 12:54:03,729  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:54:40,342  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:54:40,342  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:54:42,229  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:54:42,230  [INFO    ]  result_parser - JS parse: 13 fields
+2026-08-22 12:54:42,363  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125442_extracted_Document11_10_page_0.png.png
+2026-08-22 12:54:42,363  [INFO    ]  excel_writer - Created sheet: '12th Marksheet'  headers: ['Filename', 'Document Type', 'Expected Status', 'Actual Status', 'Final Output', 'Error Message', 'Board Name', 'Cgpa Secured', 'Father Name', 'Grade', 'Mother Name', 'Percentage', 'Result', 'Roll Number', 'School Name', 'Stream', 'Student Name', 'Total Marks Secured', 'Year Of Passing']
+2026-08-22 12:54:42,648  [INFO    ]  main - [OK] Document11_10_page_0.png: SUCCESS (84.0s)
+2026-08-22 12:54:42,648  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:54:44,546  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:54:44,573  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:54:44,574  [INFO    ]  main - 
+[2/50] D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_11_page_0.png
+2026-08-22 12:54:44,574  [INFO    ]  main - ============================================================
+2026-08-22 12:54:44,574  [INFO    ]  main - Processing [2/50]: Document11_11_page_0.png  |  12th Marksheet  |  Attempt 1
+2026-08-22 12:54:44,575  [INFO    ]  main - ============================================================
+2026-08-22 12:54:44,845  [INFO    ]  doc_uploader - Selecting document type: '12th Marksheet'
+2026-08-22 12:54:44,901  [INFO    ]  doc_uploader - Selected by visible text: '12th Marksheet'
+2026-08-22 12:54:44,901  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:54:50,330  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:54:50,332  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_11_page_0.png
+2026-08-22 12:54:50,343  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:55:00,785  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:55:10,853  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:55:10,853  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:55:31,185  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:55:43,099  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:55:43,099  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:56:08,778  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 12:56:09,925  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125609_result_Document11_11_page_0.png.png
+2026-08-22 12:56:09,925  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:56:46,635  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:56:46,635  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:56:48,603  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:56:48,617  [INFO    ]  result_parser - JS parse: 13 fields
+2026-08-22 12:56:48,801  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125648_extracted_Document11_11_page_0.png.png
+2026-08-22 12:56:49,536  [INFO    ]  main - [OK] Document11_11_page_0.png: SUCCESS (84.9s)
+2026-08-22 12:56:49,538  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:56:51,549  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:56:51,572  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:56:51,572  [INFO    ]  main - 
+[3/50] D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_12_page_0.png
+2026-08-22 12:56:51,572  [INFO    ]  main - ============================================================
+2026-08-22 12:56:51,572  [INFO    ]  main - Processing [3/50]: Document11_12_page_0.png  |  12th Marksheet  |  Attempt 1
+2026-08-22 12:56:51,572  [INFO    ]  main - ============================================================
+2026-08-22 12:56:52,005  [INFO    ]  doc_uploader - Selecting document type: '12th Marksheet'
+2026-08-22 12:56:52,072  [INFO    ]  doc_uploader - Selected by visible text: '12th Marksheet'
+2026-08-22 12:56:52,072  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:56:57,681  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:56:57,683  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_12_page_0.png
+2026-08-22 12:56:57,709  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:57:08,262  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:57:18,354  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:57:18,354  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:57:38,623  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:57:50,110  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:57:50,112  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:58:15,397  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 12:58:16,866  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125816_result_Document11_12_page_0.png.png
+2026-08-22 12:58:16,891  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:58:53,694  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:58:53,694  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:58:55,576  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:58:55,579  [INFO    ]  result_parser - JS parse: 13 fields
+2026-08-22 12:58:55,745  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125855_extracted_Document11_12_page_0.png.png
+2026-08-22 12:58:56,289  [INFO    ]  main - [OK] Document11_12_page_0.png: SUCCESS (84.4s)
+2026-08-22 12:58:56,290  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:58:58,214  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:58:58,241  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:58:58,241  [INFO    ]  main - 
+[4/50] D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_13_page_0.png
+2026-08-22 12:58:58,242  [INFO    ]  main - ============================================================
+2026-08-22 12:58:58,242  [INFO    ]  main - Processing [4/50]: Document11_13_page_0.png  |  12th Marksheet  |  Attempt 1
+2026-08-22 12:58:58,242  [INFO    ]  main - ============================================================
+2026-08-22 12:58:58,657  [INFO    ]  doc_uploader - Selecting document type: '12th Marksheet'
+2026-08-22 12:58:58,722  [INFO    ]  doc_uploader - Selected by visible text: '12th Marksheet'
+2026-08-22 12:58:58,722  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:59:04,150  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:59:04,153  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_13_page_0.png
+2026-08-22 12:59:04,163  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:59:14,603  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:59:24,636  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:59:24,636  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:59:44,893  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:59:56,429  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:59:56,429  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:00:21,693  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 13:00:22,805  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130022_result_Document11_13_page_0.png.png
+2026-08-22 13:00:22,805  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:00:59,720  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:00:59,720  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:01:01,611  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:01:01,616  [INFO    ]  result_parser - JS parse: 13 fields
+2026-08-22 13:01:01,747  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130101_extracted_Document11_13_page_0.png.png
+2026-08-22 13:01:02,113  [INFO    ]  main - [OK] Document11_13_page_0.png: SUCCESS (84.0s)
+2026-08-22 13:01:02,113  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:01:04,078  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:01:04,115  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:01:04,116  [INFO    ]  main - 
+[5/50] D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_14_page_0.png
+2026-08-22 13:01:04,117  [INFO    ]  main - ============================================================
+2026-08-22 13:01:04,117  [INFO    ]  main - Processing [5/50]: Document11_14_page_0.png  |  12th Marksheet  |  Attempt 1
+2026-08-22 13:01:04,117  [INFO    ]  main - ============================================================
+2026-08-22 13:01:04,601  [INFO    ]  doc_uploader - Selecting document type: '12th Marksheet'
+2026-08-22 13:01:04,667  [INFO    ]  doc_uploader - Selected by visible text: '12th Marksheet'
+2026-08-22 13:01:04,667  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:01:10,113  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:01:10,113  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_14_page_0.png
+2026-08-22 13:01:10,124  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:01:20,572  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:01:30,671  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:01:30,671  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:01:50,952  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:02:02,403  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:02:02,403  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:02:27,559  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 13:02:28,677  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130228_result_Document11_14_page_0.png.png
+2026-08-22 13:02:28,677  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:03:05,384  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:03:05,384  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:03:07,262  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:03:07,268  [INFO    ]  result_parser - JS parse: 13 fields
+2026-08-22 13:03:07,394  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130307_extracted_Document11_14_page_0.png.png
+2026-08-22 13:03:07,777  [INFO    ]  main - [OK] Document11_14_page_0.png: SUCCESS (84.0s)
+2026-08-22 13:03:07,777  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:03:09,661  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:03:09,686  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:03:09,686  [INFO    ]  main - 
+[6/50] D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_15_page_0.png
+2026-08-22 13:03:09,695  [INFO    ]  main - ============================================================
+2026-08-22 13:03:09,695  [INFO    ]  main - Processing [6/50]: Document11_15_page_0.png  |  12th Marksheet  |  Attempt 1
+2026-08-22 13:03:09,695  [INFO    ]  main - ============================================================
+2026-08-22 13:03:09,997  [INFO    ]  doc_uploader - Selecting document type: '12th Marksheet'
+2026-08-22 13:03:10,044  [INFO    ]  doc_uploader - Selected by visible text: '12th Marksheet'
+2026-08-22 13:03:10,044  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:03:15,446  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:03:15,446  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_15_page_0.png
+2026-08-22 13:03:15,463  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:03:25,952  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:03:36,070  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:03:36,072  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:03:56,396  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:04:08,049  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:04:08,049  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:04:33,367  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 13:04:34,529  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130434_result_Document11_15_page_0.png.png
+2026-08-22 13:04:34,529  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:05:11,640  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:05:11,642  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:05:14,322  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:05:14,334  [INFO    ]  result_parser - JS parse: 13 fields
+2026-08-22 13:05:14,578  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130514_extracted_Document11_15_page_0.png.png
+2026-08-22 13:05:15,606  [INFO    ]  main - [OK] Document11_15_page_0.png: SUCCESS (84.4s)
+2026-08-22 13:05:15,607  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:05:17,836  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:05:18,299  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:05:18,308  [INFO    ]  main - 
+[7/50] D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_16_page_0.png
+2026-08-22 13:05:18,310  [INFO    ]  main - ============================================================
+2026-08-22 13:05:18,314  [INFO    ]  main - Processing [7/50]: Document11_16_page_0.png  |  12th Marksheet  |  Attempt 1
+2026-08-22 13:05:18,316  [INFO    ]  main - ============================================================
+2026-08-22 13:05:19,407  [INFO    ]  doc_uploader - Selecting document type: '12th Marksheet'
+2026-08-22 13:05:19,585  [INFO    ]  doc_uploader - Selected by visible text: '12th Marksheet'
+2026-08-22 13:05:19,587  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:05:25,090  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:05:25,091  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_16_page_0.png
+2026-08-22 13:05:25,099  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:05:35,502  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:05:38,220  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:05:38,220  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:05:38,236  [WARNING ]  doc_uploader - Could not verify dropdown: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dad12833]
+	chromedriver!(No symbol) [0x7ff6dad49c12]
+	chromedriver!(No symbol) [0x7ff6dad43a22]
+	chromedriver!(No symbol) [0x7ff6dad431e2]
+	chromedriver!(No symbol) [0x7ff6dac8e2bb]
+	chromedriver!(No symbol) [0x7ff6dac8e912]
+	chromedriver!(No symbol) [0x7ff6dac8eed5]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6dac8d83c]
+	chromedriver!GetHandleVerifier [0x7ff6db9835e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+
+2026-08-22 13:05:38,244  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:05:38,253  [ERROR   ]  main - Exception on Document11_16_page_0.png: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dad12833]
+	chromedriver!(No symbol) [0x7ff6dad49c12]
+	chromedriver!(No symbol) [0x7ff6dad43a22]
+	chromedriver!(No symbol) [0x7ff6dad431e2]
+	chromedriver!(No symbol) [0x7ff6dac8e2bb]
+	chromedriver!(No symbol) [0x7ff6dac8e912]
+	chromedriver!(No symbol) [0x7ff6dac8eed5]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6dac8d83c]
+	chromedriver!GetHandleVerifier [0x7ff6db9835e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+Traceback (most recent call last):
+  File "D:\ai_doc_automation\main.py", line 111, in process_document
+    verify_and_submit(driver, doc_type, skip_plain_extraction_recheck=True)
+  File "D:\ai_doc_automation\doc_uploader.py", line 480, in verify_and_submit
+    submit_btn = _find_element(
+                 ^^^^^^^^^^^^^^
+  File "D:\ai_doc_automation\doc_uploader.py", line 35, in _find_element
+    el = driver.find_element(By.XPATH, xpath)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dad12833]
+	chromedriver!(No symbol) [0x7ff6dad49c12]
+	chromedriver!(No symbol) [0x7ff6dad43a22]
+	chromedriver!(No symbol) [0x7ff6dad431e2]
+	chromedriver!(No symbol) [0x7ff6dac8e2bb]
+	chromedriver!(No symbol) [0x7ff6dac8e912]
+	chromedriver!(No symbol) [0x7ff6dac8eed5]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6dac8d83c]
+	chromedriver!GetHandleVerifier [0x7ff6db9835e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+
+2026-08-22 13:05:38,955  [INFO    ]  main - [FAIL] Document11_16_page_0.png: ERROR (18.8s)
+2026-08-22 13:05:38,959  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:05:38,974  [WARNING ]  main - Error resetting form (Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dad12833]
+	chromedriver!(No symbol) [0x7ff6dad49c12]
+	chromedriver!(No symbol) [0x7ff6dad43a22]
+	chromedriver!(No symbol) [0x7ff6dad431e2]
+	chromedriver!(No symbol) [0x7ff6dac8e2bb]
+	chromedriver!(No symbol) [0x7ff6dac8e912]
+	chromedriver!(No symbol) [0x7ff6dac8eed5]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6dac8d83c]
+	chromedriver!GetHandleVerifier [0x7ff6db9835e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+). Restarting browser session...
+2026-08-22 13:05:44,198  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 13:05:47,678  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 13:05:51,447  [INFO    ]  main - Browser closed.

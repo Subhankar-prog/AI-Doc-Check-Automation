@@ -105,22 +105,62 @@ def get_status(driver: webdriver.Chrome) -> Tuple[str, str]:
 
 
 def _get_pipeline_error(driver: webdriver.Chrome) -> str:
-    """Extract pipeline failure banner text if present (e.g. PDF validation failed)."""
-    banner_xpaths = [
-        "//*[contains(text(),'Pipeline failure') or contains(text(),'PIPELINE FAILURE')]/ancestor::*[contains(@class,'alert') or contains(@class,'error') or contains(@class,'banner') or contains(@class,'card') or position() <= 3][1]",
-        "//*[contains(@class,'pipeline-failure') or contains(@class,'error-banner')]",
-        "//*[contains(text(),'Processing could not be completed')]/ancestor::*[position() <= 2]",
+    """
+    Extract the full pipeline failure reason text if present.
+
+    Previously this stopped at the first nearby container it found around
+    'Pipeline failure', which sometimes only captured the generic page
+    heading (e.g. "TRANSACTION COMPLETE — Pipeline failure result —
+    TXN-...") and missed the actual detailed reason shown below it
+    (e.g. "PDF validation failed: [PDF_MULTIPLE_PAGES]..." or
+    "Document type mismatch — Expected: X — Detected: Y").
+
+    Now it specifically looks for known detailed-reason phrases first, and
+    for each match walks up several ancestor levels, keeping the longest
+    (most detailed) surrounding text rather than the first/shallowest hit.
+    """
+    # Checked in order of specificity: exact reason phrases first, generic
+    # heading phrases last (only used as a fallback if nothing else matches).
+    trigger_phrases = [
+        "PDF validation failed",
+        "DOCUMENT_TYPE_MISMATCH",
+        "Document type mismatch",
+        "PDF_MULTIPLE_PAGES",
+        "Processing could not be completed",
+        "PIPELINE FAILURE",
+        "Pipeline failure",
     ]
-    for xp in banner_xpaths:
+
+    for phrase in trigger_phrases:
         try:
-            els = driver.find_elements(By.XPATH, xp)
-            for el in els:
-                if el.is_displayed():
-                    text = el.text.strip().replace("\n", " — ")
-                    if text and len(text) < 500:
-                        return text
+            els = driver.find_elements(By.XPATH, f"//*[contains(text(),'{phrase}')]")
         except Exception:
-            pass
+            continue
+
+        best_text = ""
+        for el in els:
+            if not el.is_displayed():
+                continue
+            # Walk up multiple ancestor levels and keep the longest text
+            # found — the more detailed reason box will have more content
+            # than just the short heading line.
+            candidates = [el]
+            try:
+                candidates += el.find_elements(By.XPATH, "ancestor::*[position()<=6]")
+            except Exception:
+                pass
+            for cand in candidates:
+                try:
+                    text = cand.text.strip().replace("\n", " — ")
+                except Exception:
+                    continue
+                if text and 0 < len(text) < 800 and len(text) > len(best_text):
+                    best_text = text
+
+        if best_text:
+            logger.info(f"Pipeline failure reason captured: {best_text}")
+            return best_text[:500]
+
     return ""
 
 
@@ -406,4 +446,3 @@ def parse_result(
         logger.info(f"Skipping extraction (status={status}).")
 
     return result
-

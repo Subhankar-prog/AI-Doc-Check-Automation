@@ -28,6 +28,12 @@ RETRY_ON_TIMEOUT   = 1      # number of retries if engine times out
 # --- Browser -------------------------------------------------
 HEADLESS_MODE = False        # Set True to hide Chrome window
 
+# --- Portal's stated upload rules (used for a PRE-upload prediction only —
+#     the file is still always uploaded so the real portal behavior is
+#     verified against this prediction, never skipped) -------------------
+MAX_UPLOAD_SIZE_MB       = 5
+ALLOWED_UPLOAD_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".pdf"}
+
 # --- Document Type Dropdown Values ---------------------------
 # Keys  = value you write in input_map.xlsx "Document Type" column
 # Values = exact text shown in portal dropdown
@@ -148,7 +154,21 @@ INPUT_EXCEL_COLUMNS = {
 FIXED_COLUMNS = [
     "Filename",
     "Document Type",
-    "Status",
+    "Expected Status",
+    "Actual Status",
+    "Final Output",
     "Error Message",
 ]
 
+# Error message substrings that indicate the portal correctly rejected bad
+# input (i.e. an expected/intentional negative-test scenario), rather than
+# a genuine bug. Matched case-insensitively against the Error Message text.
+KNOWN_VALIDATION_REJECTION_PATTERNS = [
+    "multiple_pages",
+    "multiple pages",
+    "document_type_mismatch",
+    "document type mismatch",
+    "upload a jpeg, png, webp, or pdf",
+    "up to 9 mb",
+    "up to 5 mb",
+]

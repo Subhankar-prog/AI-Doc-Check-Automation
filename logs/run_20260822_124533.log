@@ -1,0 +1,143 @@
+2026-08-22 12:45:33,044  [INFO    ]  main - ============================================================
+2026-08-22 12:45:33,044  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-22 12:45:33,044  [INFO    ]  main - ============================================================
+2026-08-22 12:45:33,044  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-22 12:45:33,044  [INFO    ]  main - [--resume] Skipping rows already marked SUCCESS/FAILED.
+2026-08-22 12:45:33,118  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar Card Test - Digi Locker.pdf
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar1.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar2.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar3.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Chinmaya Aadhara.pdf
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\PAN.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\PAN1.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\PAN2.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard2.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Passport for Testing\Indianpassportbiopage2025.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Passport for Testing\indianpp.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Passport for Testing\sample-indian-passport-1.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Dl_Odisha.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving Licence 2.jpg
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving Licence.pdf
+2026-08-22 12:45:33,118  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving License Image1.jpg
+2026-08-22 12:45:33,129  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving License Sample.jpg
+2026-08-22 12:45:33,129  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_10_page_0.png
+2026-08-22 12:45:33,129  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_11_page_0.png
+2026-08-22 12:45:33,129  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_12_page_0.png
+2026-08-22 12:45:33,131  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_13_page_0.png
+2026-08-22 12:45:33,132  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_14_page_0.png
+2026-08-22 12:45:33,132  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_15_page_0.png
+2026-08-22 12:45:33,132  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_16_page_0.png
+2026-08-22 12:45:33,132  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_17_page_0.png
+2026-08-22 12:45:33,132  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_18_page_0.png
+2026-08-22 12:45:33,132  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_19_page_0.png
+2026-08-22 12:45:33,134  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_1_page_0.png
+2026-08-22 12:45:33,134  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_20_page_0.png
+2026-08-22 12:45:33,134  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_21_page_0.png
+2026-08-22 12:45:33,135  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_22_page_0.png
+2026-08-22 12:45:33,135  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_23_page_0.png
+2026-08-22 12:45:33,135  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_24_page_0.png
+2026-08-22 12:45:33,135  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_25_page_0.png
+2026-08-22 12:45:33,136  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_26_page_0.png
+2026-08-22 12:45:33,136  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_27_page_0.png
+2026-08-22 12:45:33,136  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_28_page_0.png
+2026-08-22 12:45:33,136  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_29_page_0.png
+2026-08-22 12:45:33,137  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_2_page_0.png
+2026-08-22 12:45:33,137  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_30_page_0.png
+2026-08-22 12:45:33,137  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_31_page_0.png
+2026-08-22 12:45:33,137  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_32_page_0.png
+2026-08-22 12:45:33,138  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_33_page_0.png
+2026-08-22 12:45:33,138  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_34_page_0.png
+2026-08-22 12:45:33,138  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_35_page_0.png
+2026-08-22 12:45:33,139  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_36_page_0.png
+2026-08-22 12:45:33,139  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_37_page_0.png
+2026-08-22 12:45:33,139  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_38_page_0.png
+2026-08-22 12:45:33,139  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_39_page_0.png
+2026-08-22 12:45:33,141  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_3_page_0.png
+2026-08-22 12:45:33,141  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_40_page_0.png
+2026-08-22 12:45:33,141  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_41_page_0.png
+2026-08-22 12:45:33,141  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_42_page_0.png
+2026-08-22 12:45:33,142  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_43_page_0.png
+2026-08-22 12:45:33,142  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_44_page_0.png
+2026-08-22 12:45:33,142  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_45_page_0.png
+2026-08-22 12:45:33,142  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_46_page_0.png
+2026-08-22 12:45:33,142  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_47_page_0.png
+2026-08-22 12:45:33,143  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_48_page_0.png
+2026-08-22 12:45:33,144  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_49_page_0.png
+2026-08-22 12:45:33,144  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_4_page_0.png
+2026-08-22 12:45:33,144  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_50_page_0.png
+2026-08-22 12:45:33,145  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_5_page_0.png
+2026-08-22 12:45:33,145  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_6_page_0.png
+2026-08-22 12:45:33,145  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_7_page_0.png
+2026-08-22 12:45:33,146  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_8_page_0.png
+2026-08-22 12:45:33,146  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_9_page_0.png
+2026-08-22 12:45:33,147  [INFO    ]  main - Records to process: 250
+2026-08-22 12:45:36,484  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 12:45:36,490  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260822_124536.xlsx
+2026-08-22 12:45:36,494  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-22 12:45:40,628  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_124540_01_dashboard.png
+2026-08-22 12:45:40,628  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 12:45:42,605  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 12:45:42,782  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_124542_02_verify_form.png
+2026-08-22 12:45:42,782  [INFO    ]  main - 
+[1/250] D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_501_page_0.png
+2026-08-22 12:45:42,782  [INFO    ]  main - ============================================================
+2026-08-22 12:45:42,782  [INFO    ]  main - Processing [1/250]: Document10_501_page_0.png  |  10th Marksheet  |  Attempt 1
+2026-08-22 12:45:42,782  [INFO    ]  main - ============================================================
+2026-08-22 12:45:42,782  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-22 12:45:42,798  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-22 12:45:42,887  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-22 12:45:42,887  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:45:48,317  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:45:48,318  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_501_page_0.png
+2026-08-22 12:45:48,318  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:45:58,737  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:46:08,834  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:46:08,834  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:46:18,993  [WARNING ]  doc_uploader - Dropdown mismatch! Expected '10th Marksheet', found 'Aadhaar Card'. Re-selecting.
+2026-08-22 12:46:18,993  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-22 12:46:19,095  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-22 12:46:29,209  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:46:40,659  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:46:40,659  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:47:06,129  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 12:47:07,305  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_124707_result_Document10_501_page_0.png.png
+2026-08-22 12:47:07,305  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:47:43,974  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:47:43,975  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:47:45,857  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:47:45,867  [INFO    ]  result_parser - JS parse: 14 fields
+2026-08-22 12:47:46,001  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_124745_extracted_Document10_501_page_0.png.png
+2026-08-22 12:47:46,004  [INFO    ]  excel_writer - Created sheet: '10th Marksheet'  headers: ['Filename', 'Document Type', 'Expected Status', 'Actual Status', 'Final Output', 'Error Message', 'Board Name', 'Cgpa Secured', 'Date Of Birth', 'Examination Name', 'Father Name', 'Grade', 'Mother Name', 'Percentage', 'Result', 'Roll Number', 'School Name', 'Student Name', 'Total Marks Secured', 'Year Of Passing']
+2026-08-22 12:47:46,029  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-22 12:47:46,029  [INFO    ]  main - [OK] Document10_501_page_0.png: SUCCESS (84.3s)
+2026-08-22 12:47:46,029  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:47:47,925  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:47:47,948  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:47:47,949  [INFO    ]  main - 
+[2/250] D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_502_page_0.png
+2026-08-22 12:47:47,949  [INFO    ]  main - ============================================================
+2026-08-22 12:47:47,949  [INFO    ]  main - Processing [2/250]: Document10_502_page_0.png  |  10th Marksheet  |  Attempt 1
+2026-08-22 12:47:47,951  [INFO    ]  main - ============================================================
+2026-08-22 12:47:47,952  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-22 12:47:47,952  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-22 12:47:47,995  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-22 12:47:47,995  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:47:53,414  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:47:53,415  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_502_page_0.png
+2026-08-22 12:47:53,420  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:48:03,838  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:48:13,884  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:48:13,884  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:48:34,074  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:48:45,524  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:48:45,524  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:49:10,742  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 12:49:11,861  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_124911_result_Document10_502_page_0.png.png
+2026-08-22 12:49:11,861  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:49:40,060  [WARNING ]  main - Interrupted by user (Ctrl+C). Saving partial results...
+2026-08-22 12:49:40,076  [INFO    ]  excel_writer - Summary sheet written with overall timing statistics.
+2026-08-22 12:49:40,133  [INFO    ]  excel_writer - Excel saved: D:\ai_doc_automation\output\ai_doc_results_20260822_124536.xlsx
+2026-08-22 12:49:40,133  [INFO    ]  main - Partial results saved: D:\ai_doc_automation\output\ai_doc_results_20260822_124536.xlsx
+2026-08-22 12:49:40,133  [INFO    ]  main - Run with --resume to continue from where you stopped.

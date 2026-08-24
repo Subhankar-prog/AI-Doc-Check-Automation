@@ -79,8 +79,16 @@ python main.py --type "PAN Card"
 # Check file paths first without opening browser
 python main.py --dry-run
 
-# Continue after a crash (skips already-completed files)
+# Resume after stopping — continue where you left off
 python main.py --resume
+
+# Resume, but only for one specific document type
+
+python main.py --resume --type "Aadhaar Card"
+
+# Resume into a specific output file (instead of auto-detected latest)
+
+python main.py --resume --resume-output "outputs/ai_doc_results_20260822_100850.xlsx"
 
 # Run without visible Chrome window
 python main.py --headless

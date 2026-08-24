@@ -1,0 +1,282 @@
+2026-08-22 12:55:13,186  [INFO    ]  main - ============================================================
+2026-08-22 12:55:13,186  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-22 12:55:13,186  [INFO    ]  main - ============================================================
+2026-08-22 12:55:13,186  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-22 12:55:13,186  [INFO    ]  main - [--type]   Running only: 'Income Certificate'
+2026-08-22 12:55:13,570  [INFO    ]  main - Records to process: 50
+2026-08-22 12:55:16,007  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 12:55:16,011  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260822_125516.xlsx
+2026-08-22 12:55:16,015  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-22 12:55:19,955  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125519_01_dashboard.png
+2026-08-22 12:55:19,956  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 12:55:21,945  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 12:55:22,066  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125521_02_verify_form.png
+2026-08-22 12:55:22,082  [INFO    ]  main - 
+[1/50] D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_10_page_0.png
+2026-08-22 12:55:22,082  [INFO    ]  main - ============================================================
+2026-08-22 12:55:22,082  [INFO    ]  main - Processing [1/50]: IncomeCertificate_10_page_0.png  |  Income Certificate  |  Attempt 1
+2026-08-22 12:55:22,082  [INFO    ]  main - ============================================================
+2026-08-22 12:55:22,533  [INFO    ]  doc_uploader - Selecting document type: 'Income Certificate'
+2026-08-22 12:55:22,653  [INFO    ]  doc_uploader - Selected by visible text: 'Income Certificate'
+2026-08-22 12:55:22,653  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:55:28,094  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:55:28,132  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_10_page_0.png
+2026-08-22 12:55:28,143  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:55:38,581  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:55:48,736  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:55:48,736  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:55:59,167  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'Income Certificate', found 'Aadhaar Card'. Re-selecting.
+2026-08-22 12:55:59,167  [INFO    ]  doc_uploader - Selecting document type: 'Income Certificate'
+2026-08-22 12:55:59,323  [INFO    ]  doc_uploader - Selected by visible text: 'Income Certificate'
+2026-08-22 12:56:09,411  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:56:20,863  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:56:20,863  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:56:24,327  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-22 12:56:25,585  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125625_result_IncomeCertificate_10_page_0.png.png
+2026-08-22 12:56:25,585  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:57:03,370  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:57:03,373  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:57:05,354  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:57:05,354  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-22 12:57:05,620  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125705_extracted_IncomeCertificate_10_page_0.png.png
+2026-08-22 12:57:05,620  [INFO    ]  excel_writer - Created sheet: 'Income Certificate'  headers: ['Filename', 'Document Type', 'Expected Status', 'Actual Status', 'Final Output', 'Error Message', 'Address', 'Annual Income', 'Applicant Name', 'Certificate Number', 'Father Name', 'Issue Date', 'Issuing Authority']
+2026-08-22 12:57:06,210  [INFO    ]  main - [OK] IncomeCertificate_10_page_0.png: SUCCESS (62.8s)
+2026-08-22 12:57:06,210  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:57:08,153  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:57:08,250  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:57:08,251  [INFO    ]  main - 
+[2/50] D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_11_page_0.png
+2026-08-22 12:57:08,253  [INFO    ]  main - ============================================================
+2026-08-22 12:57:08,255  [INFO    ]  main - Processing [2/50]: IncomeCertificate_11_page_0.png  |  Income Certificate  |  Attempt 1
+2026-08-22 12:57:08,255  [INFO    ]  main - ============================================================
+2026-08-22 12:57:08,783  [INFO    ]  doc_uploader - Selecting document type: 'Income Certificate'
+2026-08-22 12:57:08,832  [INFO    ]  doc_uploader - Selected by visible text: 'Income Certificate'
+2026-08-22 12:57:08,832  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:57:14,273  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:57:14,275  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_11_page_0.png
+2026-08-22 12:57:14,286  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:57:24,769  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:57:34,845  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:57:34,845  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:57:55,072  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:58:06,865  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:58:06,866  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:58:07,616  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-22 12:58:08,835  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125808_result_IncomeCertificate_11_page_0.png.png
+2026-08-22 12:58:08,835  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:58:45,569  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:58:45,569  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:58:47,436  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:58:47,440  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-22 12:58:47,667  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125847_extracted_IncomeCertificate_11_page_0.png.png
+2026-08-22 12:58:48,006  [INFO    ]  main - [OK] IncomeCertificate_11_page_0.png: SUCCESS (59.8s)
+2026-08-22 12:58:48,006  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:58:50,002  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:58:50,783  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:58:50,784  [INFO    ]  main - 
+[3/50] D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_12_page_0.png
+2026-08-22 12:58:50,785  [INFO    ]  main - ============================================================
+2026-08-22 12:58:50,785  [INFO    ]  main - Processing [3/50]: IncomeCertificate_12_page_0.png  |  Income Certificate  |  Attempt 1
+2026-08-22 12:58:50,786  [INFO    ]  main - ============================================================
+2026-08-22 12:58:51,454  [INFO    ]  doc_uploader - Selecting document type: 'Income Certificate'
+2026-08-22 12:58:51,528  [INFO    ]  doc_uploader - Selected by visible text: 'Income Certificate'
+2026-08-22 12:58:51,528  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:58:56,949  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:58:56,988  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_12_page_0.png
+2026-08-22 12:58:57,006  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:59:07,420  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:59:17,510  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:59:17,510  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:59:37,698  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:59:49,160  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:59:49,160  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:59:50,262  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-22 12:59:51,478  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125951_result_IncomeCertificate_12_page_0.png.png
+2026-08-22 12:59:51,478  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:00:28,057  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:00:28,057  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:00:29,936  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:00:29,936  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-22 13:00:30,183  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130029_extracted_IncomeCertificate_12_page_0.png.png
+2026-08-22 13:00:30,641  [INFO    ]  main - [OK] IncomeCertificate_12_page_0.png: SUCCESS (59.8s)
+2026-08-22 13:00:30,642  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:00:32,662  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:00:32,712  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:00:32,712  [INFO    ]  main - 
+[4/50] D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_13_page_0.png
+2026-08-22 13:00:32,714  [INFO    ]  main - ============================================================
+2026-08-22 13:00:32,714  [INFO    ]  main - Processing [4/50]: IncomeCertificate_13_page_0.png  |  Income Certificate  |  Attempt 1
+2026-08-22 13:00:32,715  [INFO    ]  main - ============================================================
+2026-08-22 13:00:33,438  [INFO    ]  doc_uploader - Selecting document type: 'Income Certificate'
+2026-08-22 13:00:33,515  [INFO    ]  doc_uploader - Selected by visible text: 'Income Certificate'
+2026-08-22 13:00:33,516  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:00:39,002  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:00:39,003  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_13_page_0.png
+2026-08-22 13:00:39,012  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:00:49,455  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:00:59,521  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:00:59,521  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:01:19,846  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:01:31,606  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:01:31,606  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:01:57,063  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 13:01:58,364  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130158_result_IncomeCertificate_13_page_0.png.png
+2026-08-22 13:01:58,364  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:02:35,024  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:02:35,024  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:02:36,903  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:02:36,908  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-22 13:02:37,091  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130236_extracted_IncomeCertificate_13_page_0.png.png
+2026-08-22 13:02:37,658  [INFO    ]  main - [OK] IncomeCertificate_13_page_0.png: SUCCESS (84.6s)
+2026-08-22 13:02:37,658  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:02:39,548  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:02:39,574  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:02:39,574  [INFO    ]  main - 
+[5/50] D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_14_page_0.png
+2026-08-22 13:02:39,574  [INFO    ]  main - ============================================================
+2026-08-22 13:02:39,574  [INFO    ]  main - Processing [5/50]: IncomeCertificate_14_page_0.png  |  Income Certificate  |  Attempt 1
+2026-08-22 13:02:39,574  [INFO    ]  main - ============================================================
+2026-08-22 13:02:39,890  [INFO    ]  doc_uploader - Selecting document type: 'Income Certificate'
+2026-08-22 13:02:39,957  [INFO    ]  doc_uploader - Selected by visible text: 'Income Certificate'
+2026-08-22 13:02:39,957  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:02:45,379  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:02:45,379  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_14_page_0.png
+2026-08-22 13:02:45,393  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:02:55,817  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:03:05,903  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:03:05,903  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:03:26,200  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:03:37,827  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:03:37,827  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:04:03,147  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 13:04:04,295  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130404_result_IncomeCertificate_14_page_0.png.png
+2026-08-22 13:04:04,295  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:04:41,024  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:04:41,024  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:04:42,941  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:04:42,941  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-22 13:04:43,127  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130442_extracted_IncomeCertificate_14_page_0.png.png
+2026-08-22 13:04:43,598  [INFO    ]  main - [OK] IncomeCertificate_14_page_0.png: SUCCESS (84.3s)
+2026-08-22 13:04:43,598  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:04:45,487  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:04:45,510  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:04:45,510  [INFO    ]  main - 
+[6/50] D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_15_page_0.png
+2026-08-22 13:04:45,510  [INFO    ]  main - ============================================================
+2026-08-22 13:04:45,510  [INFO    ]  main - Processing [6/50]: IncomeCertificate_15_page_0.png  |  Income Certificate  |  Attempt 1
+2026-08-22 13:04:45,510  [INFO    ]  main - ============================================================
+2026-08-22 13:04:45,789  [INFO    ]  doc_uploader - Selecting document type: 'Income Certificate'
+2026-08-22 13:04:45,852  [INFO    ]  doc_uploader - Selected by visible text: 'Income Certificate'
+2026-08-22 13:04:45,852  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:04:51,385  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:04:51,386  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_15_page_0.png
+2026-08-22 13:04:51,399  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:05:02,407  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:05:12,593  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:05:12,596  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:05:33,035  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:05:39,912  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:05:39,918  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:05:39,923  [ERROR   ]  main - Exception on IncomeCertificate_15_page_0.png: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dad12833]
+	chromedriver!(No symbol) [0x7ff6dad49c12]
+	chromedriver!(No symbol) [0x7ff6dad43a22]
+	chromedriver!(No symbol) [0x7ff6dad431e2]
+	chromedriver!(No symbol) [0x7ff6dac8e2bb]
+	chromedriver!(No symbol) [0x7ff6dac8e912]
+	chromedriver!(No symbol) [0x7ff6dac8eed5]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6dac8d83c]
+	chromedriver!GetHandleVerifier [0x7ff6db9835e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+Traceback (most recent call last):
+  File "D:\ai_doc_automation\main.py", line 114, in process_document
+    result_appeared = wait_for_result(driver)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai_doc_automation\doc_uploader.py", line 516, in wait_for_result
+    el = driver.find_element(By.XPATH, XPATHS["result_appeared"])
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dad12833]
+	chromedriver!(No symbol) [0x7ff6dad49c12]
+	chromedriver!(No symbol) [0x7ff6dad43a22]
+	chromedriver!(No symbol) [0x7ff6dad431e2]
+	chromedriver!(No symbol) [0x7ff6dac8e2bb]
+	chromedriver!(No symbol) [0x7ff6dac8e912]
+	chromedriver!(No symbol) [0x7ff6dac8eed5]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6dac8d83c]
+	chromedriver!GetHandleVerifier [0x7ff6db9835e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+
+2026-08-22 13:05:42,153  [INFO    ]  main - [FAIL] IncomeCertificate_15_page_0.png: ERROR (54.1s)
+2026-08-22 13:05:42,155  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:05:42,159  [WARNING ]  main - Error resetting form (Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dad12833]
+	chromedriver!(No symbol) [0x7ff6dad49c12]
+	chromedriver!(No symbol) [0x7ff6dad43a22]
+	chromedriver!(No symbol) [0x7ff6dad431e2]
+	chromedriver!(No symbol) [0x7ff6dac8e2bb]
+	chromedriver!(No symbol) [0x7ff6dac8e912]
+	chromedriver!(No symbol) [0x7ff6dac8eed5]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6dac8d83c]
+	chromedriver!GetHandleVerifier [0x7ff6db9835e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+). Restarting browser session...
+2026-08-22 13:05:48,651  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 13:05:53,189  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 13:05:55,167  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 13:05:59,242  [INFO    ]  main - 
+[7/50] D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_16_page_0.png
+2026-08-22 13:05:59,253  [INFO    ]  main - ============================================================
+2026-08-22 13:05:59,253  [INFO    ]  main - Processing [7/50]: IncomeCertificate_16_page_0.png  |  Income Certificate  |  Attempt 1
+2026-08-22 13:05:59,255  [INFO    ]  main - ============================================================
+2026-08-22 13:06:00,140  [INFO    ]  doc_uploader - Selecting document type: 'Income Certificate'
+2026-08-22 13:06:00,953  [INFO    ]  doc_uploader - Selected by visible text: 'Income Certificate'
+2026-08-22 13:06:00,961  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:06:07,628  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:06:07,631  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_16_page_0.png
+2026-08-22 13:06:07,698  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:06:18,239  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:06:28,433  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:06:28,434  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:06:29,051  [WARNING ]  main - Interrupted by user (Ctrl+C). Saving partial results...
+2026-08-22 13:06:29,057  [INFO    ]  excel_writer - Summary sheet written with overall timing statistics.
+2026-08-22 13:06:29,175  [INFO    ]  excel_writer - Excel saved: D:\ai_doc_automation\output\ai_doc_results_20260822_125516.xlsx
+2026-08-22 13:06:29,177  [INFO    ]  main - Partial results saved: D:\ai_doc_automation\output\ai_doc_results_20260822_125516.xlsx
+2026-08-22 13:06:29,178  [INFO    ]  main - Run with --resume to continue from where you stopped.

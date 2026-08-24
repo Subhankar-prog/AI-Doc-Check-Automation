@@ -1,0 +1,118 @@
+2026-08-22 12:35:16,505  [INFO    ]  main - ============================================================
+2026-08-22 12:35:16,506  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-22 12:35:16,506  [INFO    ]  main - ============================================================
+2026-08-22 12:35:16,507  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-22 12:35:16,507  [INFO    ]  main - [--resume] Skipping rows already marked SUCCESS/FAILED.
+2026-08-22 12:35:16,896  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar Card Test - Digi Locker.pdf
+2026-08-22 12:35:16,897  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar1.jpg
+2026-08-22 12:35:16,899  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar2.jpg
+2026-08-22 12:35:16,899  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar3.jpg
+2026-08-22 12:35:16,899  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Chinmaya Aadhara.pdf
+2026-08-22 12:35:16,900  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\PAN.jpg
+2026-08-22 12:35:16,900  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\PAN1.jpg
+2026-08-22 12:35:16,900  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\PAN2.jpg
+2026-08-22 12:35:16,900  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard.jpg
+2026-08-22 12:35:16,900  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard2.jpg
+2026-08-22 12:35:16,901  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Passport for Testing\Indianpassportbiopage2025.jpg
+2026-08-22 12:35:16,901  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Passport for Testing\indianpp.jpg
+2026-08-22 12:35:16,901  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Passport for Testing\sample-indian-passport-1.jpg
+2026-08-22 12:35:16,901  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Dl_Odisha.jpg
+2026-08-22 12:35:16,902  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving Licence 2.jpg
+2026-08-22 12:35:16,902  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving Licence.pdf
+2026-08-22 12:35:16,902  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving License Image1.jpg
+2026-08-22 12:35:16,902  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving License Sample.jpg
+2026-08-22 12:35:16,904  [INFO    ]  main - Records to process: 300
+2026-08-22 12:35:18,851  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 12:35:18,855  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260822_123518.xlsx
+2026-08-22 12:35:18,855  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-22 12:35:22,975  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_123522_01_dashboard.png
+2026-08-22 12:35:22,975  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 12:35:24,899  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 12:35:25,026  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_123524_02_verify_form.png
+2026-08-22 12:35:25,045  [INFO    ]  main - 
+[1/300] D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_501_page_0.png
+2026-08-22 12:35:25,045  [INFO    ]  main - ============================================================
+2026-08-22 12:35:25,046  [INFO    ]  main - Processing [1/300]: Document10_501_page_0.png  |  10th Marksheet  |  Attempt 1
+2026-08-22 12:35:25,047  [INFO    ]  main - ============================================================
+2026-08-22 12:35:25,425  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-22 12:35:25,522  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-22 12:35:25,522  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:35:30,934  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:35:30,934  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_501_page_0.png
+2026-08-22 12:35:30,934  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:35:41,428  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:35:51,518  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:35:51,518  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:36:01,635  [WARNING ]  doc_uploader - Dropdown mismatch! Expected '10th Marksheet', found 'Aadhaar Card'. Re-selecting.
+2026-08-22 12:36:01,635  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-22 12:36:01,711  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-22 12:36:11,798  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:36:23,296  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:36:23,296  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:36:48,537  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 12:36:49,657  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_123649_result_Document10_501_page_0.png.png
+2026-08-22 12:36:49,657  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:37:26,359  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:37:26,359  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:37:28,260  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:37:28,262  [INFO    ]  result_parser - JS parse: 14 fields
+2026-08-22 12:37:28,433  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_123728_extracted_Document10_501_page_0.png.png
+2026-08-22 12:37:28,437  [INFO    ]  excel_writer - Created sheet: '10th Marksheet'  headers: ['Filename', 'Document Type', 'Expected Status', 'Actual Status', 'Final Output', 'Error Message', 'Board Name', 'Cgpa Secured', 'Date Of Birth', 'Examination Name', 'Father Name', 'Grade', 'Mother Name', 'Percentage', 'Result', 'Roll Number', 'School Name', 'Student Name', 'Total Marks Secured', 'Year Of Passing']
+2026-08-22 12:37:28,822  [INFO    ]  main - [OK] Document10_501_page_0.png: SUCCESS (84.1s)
+2026-08-22 12:37:28,822  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:37:30,719  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:37:30,745  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:37:30,747  [INFO    ]  main - 
+[2/300] D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_502_page_0.png
+2026-08-22 12:37:30,747  [INFO    ]  main - ============================================================
+2026-08-22 12:37:30,747  [INFO    ]  main - Processing [2/300]: Document10_502_page_0.png  |  10th Marksheet  |  Attempt 1
+2026-08-22 12:37:30,747  [INFO    ]  main - ============================================================
+2026-08-22 12:37:31,124  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-22 12:37:31,176  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-22 12:37:31,176  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:37:36,597  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:37:36,603  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_502_page_0.png
+2026-08-22 12:37:36,609  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:37:47,040  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:37:57,154  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:37:57,154  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:38:17,364  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:38:28,853  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:38:28,853  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:38:54,020  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 12:38:55,123  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_123855_result_Document10_502_page_0.png.png
+2026-08-22 12:38:55,123  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:39:31,781  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:39:31,781  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:39:33,659  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:39:33,659  [INFO    ]  result_parser - JS parse: 14 fields
+2026-08-22 12:39:33,769  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_123933_extracted_Document10_502_page_0.png.png
+2026-08-22 12:39:34,043  [INFO    ]  main - [OK] Document10_502_page_0.png: SUCCESS (83.9s)
+2026-08-22 12:39:34,043  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:39:35,930  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:39:35,952  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:39:35,953  [INFO    ]  main - 
+[3/300] D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_503_page_0.png
+2026-08-22 12:39:35,953  [INFO    ]  main - ============================================================
+2026-08-22 12:39:35,955  [INFO    ]  main - Processing [3/300]: Document10_503_page_0.png  |  10th Marksheet  |  Attempt 1
+2026-08-22 12:39:35,955  [INFO    ]  main - ============================================================
+2026-08-22 12:39:36,302  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-22 12:39:36,359  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-22 12:39:36,359  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:39:41,765  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:39:41,765  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_503_page_0.png
+2026-08-22 12:39:41,783  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:39:52,201  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:40:02,273  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:40:02,273  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:40:22,433  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:40:33,914  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:40:33,915  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:40:59,183  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 12:41:00,305  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_124100_result_Document10_503_page_0.png.png
+2026-08-22 12:41:00,305  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:41:24,949  [WARNING ]  main - Interrupted by user (Ctrl+C). Saving partial results...
+2026-08-22 12:41:24,963  [INFO    ]  excel_writer - Summary sheet written with overall timing statistics.
+2026-08-22 12:41:25,003  [INFO    ]  excel_writer - Excel saved: D:\ai_doc_automation\output\ai_doc_results_20260822_123518.xlsx
+2026-08-22 12:41:25,003  [INFO    ]  main - Partial results saved: D:\ai_doc_automation\output\ai_doc_results_20260822_123518.xlsx
+2026-08-22 12:41:25,004  [INFO    ]  main - Run with --resume to continue from where you stopped.

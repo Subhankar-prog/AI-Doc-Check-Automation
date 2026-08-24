@@ -1,0 +1,363 @@
+2026-08-22 12:55:44,783  [INFO    ]  main - ============================================================
+2026-08-22 12:55:44,783  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-22 12:55:44,783  [INFO    ]  main - ============================================================
+2026-08-22 12:55:44,783  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-22 12:55:44,783  [INFO    ]  main - [--type]   Running only: 'Caste Certificate'
+2026-08-22 12:55:45,657  [INFO    ]  main - Records to process: 50
+2026-08-22 12:55:48,832  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 12:55:48,840  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260822_125548.xlsx
+2026-08-22 12:55:48,842  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-22 12:55:53,391  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125553_01_dashboard.png
+2026-08-22 12:55:53,391  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 12:55:55,411  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 12:55:55,528  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125555_02_verify_form.png
+2026-08-22 12:55:55,544  [INFO    ]  main - 
+[1/50] D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_10_page_0.png
+2026-08-22 12:55:55,544  [INFO    ]  main - ============================================================
+2026-08-22 12:55:55,544  [INFO    ]  main - Processing [1/50]: CastCertificate_10_page_0.png  |  Caste Certificate  |  Attempt 1
+2026-08-22 12:55:55,544  [INFO    ]  main - ============================================================
+2026-08-22 12:55:55,826  [INFO    ]  doc_uploader - Selecting document type: 'Caste Certificate'
+2026-08-22 12:55:55,919  [INFO    ]  doc_uploader - Selected by visible text: 'Caste Certificate'
+2026-08-22 12:55:55,920  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:56:01,625  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:56:01,630  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_10_page_0.png
+2026-08-22 12:56:01,646  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:56:12,117  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:56:22,189  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:56:22,189  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:56:32,342  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'Caste Certificate', found 'Aadhaar Card'. Re-selecting.
+2026-08-22 12:56:32,342  [INFO    ]  doc_uploader - Selecting document type: 'Caste Certificate'
+2026-08-22 12:56:32,412  [INFO    ]  doc_uploader - Selected by visible text: 'Caste Certificate'
+2026-08-22 12:56:42,520  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:56:54,329  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:56:54,329  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:56:57,530  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-22 12:56:58,758  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125658_result_CastCertificate_10_page_0.png.png
+2026-08-22 12:56:58,758  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:57:35,467  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:57:35,468  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:57:37,421  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:57:37,430  [INFO    ]  result_parser - JS parse: 8 fields
+2026-08-22 12:57:37,597  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125737_extracted_CastCertificate_10_page_0.png.png
+2026-08-22 12:57:37,597  [INFO    ]  excel_writer - Created sheet: 'Caste Certificate'  headers: ['Filename', 'Document Type', 'Expected Status', 'Actual Status', 'Final Output', 'Error Message', 'Applicant Name', 'Caste', 'Certificate Number', 'Community', 'Father Name', 'Issue Date', 'Issuing Authority', 'Mother Name']
+2026-08-22 12:57:38,052  [INFO    ]  main - [OK] CastCertificate_10_page_0.png: SUCCESS (62.7s)
+2026-08-22 12:57:38,052  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:57:39,958  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:57:39,996  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:57:39,997  [INFO    ]  main - 
+[2/50] D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_11_page_0.png
+2026-08-22 12:57:39,998  [INFO    ]  main - ============================================================
+2026-08-22 12:57:39,999  [INFO    ]  main - Processing [2/50]: CastCertificate_11_page_0.png  |  Caste Certificate  |  Attempt 1
+2026-08-22 12:57:40,000  [INFO    ]  main - ============================================================
+2026-08-22 12:57:40,522  [INFO    ]  doc_uploader - Selecting document type: 'Caste Certificate'
+2026-08-22 12:57:40,584  [INFO    ]  doc_uploader - Selected by visible text: 'Caste Certificate'
+2026-08-22 12:57:40,584  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:57:46,234  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:57:46,237  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_11_page_0.png
+2026-08-22 12:57:46,286  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:57:56,850  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:58:06,928  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:58:06,928  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:58:27,427  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:58:38,900  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:58:38,901  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:58:39,965  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-22 12:58:41,222  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125840_result_CastCertificate_11_page_0.png.png
+2026-08-22 12:58:41,223  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:59:17,865  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:59:17,865  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:59:19,796  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:59:19,809  [INFO    ]  result_parser - JS parse: 8 fields
+2026-08-22 12:59:20,002  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125919_extracted_CastCertificate_11_page_0.png.png
+2026-08-22 12:59:20,519  [INFO    ]  main - [OK] CastCertificate_11_page_0.png: SUCCESS (60.4s)
+2026-08-22 12:59:20,519  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:59:22,439  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:59:22,458  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:59:22,458  [INFO    ]  main - 
+[3/50] D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_12_page_0.png
+2026-08-22 12:59:22,467  [INFO    ]  main - ============================================================
+2026-08-22 12:59:22,468  [INFO    ]  main - Processing [3/50]: CastCertificate_12_page_0.png  |  Caste Certificate  |  Attempt 1
+2026-08-22 12:59:22,468  [INFO    ]  main - ============================================================
+2026-08-22 12:59:22,770  [INFO    ]  doc_uploader - Selecting document type: 'Caste Certificate'
+2026-08-22 12:59:22,825  [INFO    ]  doc_uploader - Selected by visible text: 'Caste Certificate'
+2026-08-22 12:59:22,826  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:59:28,240  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:59:28,241  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_12_page_0.png
+2026-08-22 12:59:28,247  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:59:38,657  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:59:48,731  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:59:48,731  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:00:09,018  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:00:20,495  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:00:20,495  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:00:21,890  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-22 13:00:23,024  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130022_result_CastCertificate_12_page_0.png.png
+2026-08-22 13:00:23,024  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:00:43,375  [INFO    ]  result_parser - Pipeline failure reason captured: VERIFAI — Document Intelligence — Dashboard — Verify Document — Plain Extraction — Golden Record — Document Linking — Transactions — API Playground — Settings — About — Collapse menu — AI DOCUMENT VERIFICATION ENGINE — Plain extraction — Backend online — AE — TRANSACTION COMPLETE — Pipeline failure result — TXN-20260822-9533565489 — Copy ID — New submission — PIPELINE FAILURE — Processing could not be completed — Decryption failed: fernet_key not present in Kafka payload — Overview — Raw JSON — OVERALL VERDICT — FAILED — SUCCESS — DOCUMENT TYPE — Unknown documentProcessing time not returned — QR CODE RESULTS — No QR code detected. QR presence is optional and does not indicate document validity.
+2026-08-22 13:00:43,375  [INFO    ]  result_parser - Verdict: FAILED (Pipeline Failure banner detected: VERIFAI — Document Intelligence — Dashboard — Verify Document — Plain Extraction — Golden Record — Document Linking — Transactions — API Playground — Settings — About — Collapse menu — AI DOCUMENT VERIFICATION ENGINE — Plain extraction — Backend online — AE — TRANSACTION COMPLETE — Pipeline failure result — TXN-20260822-9533565489 — Copy ID — New submission — PIPELINE FAILURE — Processing could not be completed — Decryption failed: fernet_key not present in Kafka payload — Overview — Raw JSON — )
+2026-08-22 13:00:43,375  [INFO    ]  result_parser - Skipping extraction (status=FAILED).
+2026-08-22 13:00:43,706  [INFO    ]  main - [FAIL] CastCertificate_12_page_0.png: FAILED (60.1s)
+2026-08-22 13:00:43,706  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:00:45,599  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:00:45,623  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:00:45,623  [INFO    ]  main - 
+[4/50] D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_13_page_0.png
+2026-08-22 13:00:45,623  [INFO    ]  main - ============================================================
+2026-08-22 13:00:45,623  [INFO    ]  main - Processing [4/50]: CastCertificate_13_page_0.png  |  Caste Certificate  |  Attempt 1
+2026-08-22 13:00:45,623  [INFO    ]  main - ============================================================
+2026-08-22 13:00:45,992  [INFO    ]  doc_uploader - Selecting document type: 'Caste Certificate'
+2026-08-22 13:00:46,048  [INFO    ]  doc_uploader - Selected by visible text: 'Caste Certificate'
+2026-08-22 13:00:46,055  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:00:51,448  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:00:51,449  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_13_page_0.png
+2026-08-22 13:00:51,454  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:01:01,891  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:01:11,958  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:01:11,959  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:01:32,171  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:01:43,665  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:01:43,665  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:02:08,894  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 13:02:10,033  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130209_result_CastCertificate_13_page_0.png.png
+2026-08-22 13:02:10,033  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:02:46,772  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:02:46,772  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:02:48,675  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:02:48,681  [INFO    ]  result_parser - JS parse: 8 fields
+2026-08-22 13:02:48,825  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130248_extracted_CastCertificate_13_page_0.png.png
+2026-08-22 13:02:49,386  [INFO    ]  main - [OK] CastCertificate_13_page_0.png: SUCCESS (83.9s)
+2026-08-22 13:02:49,387  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:02:51,679  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:02:51,697  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:02:51,697  [INFO    ]  main - 
+[5/50] D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_14_page_0.png
+2026-08-22 13:02:51,697  [INFO    ]  main - ============================================================
+2026-08-22 13:02:51,697  [INFO    ]  main - Processing [5/50]: CastCertificate_14_page_0.png  |  Caste Certificate  |  Attempt 1
+2026-08-22 13:02:51,697  [INFO    ]  main - ============================================================
+2026-08-22 13:02:52,016  [INFO    ]  doc_uploader - Selecting document type: 'Caste Certificate'
+2026-08-22 13:02:52,073  [INFO    ]  doc_uploader - Selected by visible text: 'Caste Certificate'
+2026-08-22 13:02:52,073  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:02:57,501  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:02:57,502  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_14_page_0.png
+2026-08-22 13:02:57,511  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:03:07,951  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:03:18,051  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:03:18,053  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:03:38,652  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:03:50,197  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:03:50,197  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:04:15,376  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 13:04:16,476  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130416_result_CastCertificate_14_page_0.png.png
+2026-08-22 13:04:16,476  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:04:53,765  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:04:53,765  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:04:55,836  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:04:55,844  [INFO    ]  result_parser - JS parse: 8 fields
+2026-08-22 13:04:55,989  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130455_extracted_CastCertificate_14_page_0.png.png
+2026-08-22 13:04:56,747  [INFO    ]  main - [OK] CastCertificate_14_page_0.png: SUCCESS (84.4s)
+2026-08-22 13:04:56,748  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:04:58,961  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:04:59,362  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:04:59,364  [INFO    ]  main - 
+[6/50] D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_15_page_0.png
+2026-08-22 13:04:59,364  [INFO    ]  main - ============================================================
+2026-08-22 13:04:59,365  [INFO    ]  main - Processing [6/50]: CastCertificate_15_page_0.png  |  Caste Certificate  |  Attempt 1
+2026-08-22 13:04:59,366  [INFO    ]  main - ============================================================
+2026-08-22 13:05:00,249  [INFO    ]  doc_uploader - Selecting document type: 'Caste Certificate'
+2026-08-22 13:05:00,401  [INFO    ]  doc_uploader - Selected by visible text: 'Caste Certificate'
+2026-08-22 13:05:00,401  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:05:05,944  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:05:05,945  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_15_page_0.png
+2026-08-22 13:05:05,959  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:05:16,458  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:05:26,558  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:05:26,559  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:05:47,880  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:05:48,529  [ERROR   ]  main - Exception on CastCertificate_15_page_0.png: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=151.0.7922.170)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dacb2900]
+	chromedriver!(No symbol) [0x7ff6dacb17d6]
+	chromedriver!(No symbol) [0x7ff6dacd74a1]
+	chromedriver!(No symbol) [0x7ff6dacd677b]
+	chromedriver!(No symbol) [0x7ff6dad6ead3]
+	chromedriver!(No symbol) [0x7ff6dad137cc]
+	chromedriver!(No symbol) [0x7ff6dad146f3]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4d64+1f364]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4ef4+1f4f4]
+	chromedriver!GetHandleVerifier [0x7ff6db187d97+2397]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+Traceback (most recent call last):
+  File "D:\ai_doc_automation\main.py", line 111, in process_document
+    verify_and_submit(driver, doc_type, skip_plain_extraction_recheck=True)
+  File "D:\ai_doc_automation\doc_uploader.py", line 480, in verify_and_submit
+    submit_btn = _find_element(
+                 ^^^^^^^^^^^^^^
+  File "D:\ai_doc_automation\doc_uploader.py", line 35, in _find_element
+    el = driver.find_element(By.XPATH, xpath)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=151.0.7922.170)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dacb2900]
+	chromedriver!(No symbol) [0x7ff6dacb17d6]
+	chromedriver!(No symbol) [0x7ff6dacd74a1]
+	chromedriver!(No symbol) [0x7ff6dacd677b]
+	chromedriver!(No symbol) [0x7ff6dad6ead3]
+	chromedriver!(No symbol) [0x7ff6dad137cc]
+	chromedriver!(No symbol) [0x7ff6dad146f3]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4d64+1f364]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4ef4+1f4f4]
+	chromedriver!GetHandleVerifier [0x7ff6db187d97+2397]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+
+2026-08-22 13:05:52,566  [INFO    ]  main - [FAIL] CastCertificate_15_page_0.png: ERROR (48.3s)
+2026-08-22 13:05:52,566  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:05:52,570  [WARNING ]  main - Error resetting form (Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dad12833]
+	chromedriver!(No symbol) [0x7ff6dad49c12]
+	chromedriver!(No symbol) [0x7ff6dad43a22]
+	chromedriver!(No symbol) [0x7ff6dad431e2]
+	chromedriver!(No symbol) [0x7ff6dac8e2bb]
+	chromedriver!(No symbol) [0x7ff6dac8e912]
+	chromedriver!(No symbol) [0x7ff6dac8eed5]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6dac8d83c]
+	chromedriver!GetHandleVerifier [0x7ff6db9835e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+). Restarting browser session...
+2026-08-22 13:05:57,195  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 13:05:59,620  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 13:06:02,369  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 13:06:06,449  [INFO    ]  main - 
+[7/50] D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_16_page_0.png
+2026-08-22 13:06:06,454  [INFO    ]  main - ============================================================
+2026-08-22 13:06:06,462  [INFO    ]  main - Processing [7/50]: CastCertificate_16_page_0.png  |  Caste Certificate  |  Attempt 1
+2026-08-22 13:06:06,469  [INFO    ]  main - ============================================================
+2026-08-22 13:06:07,658  [INFO    ]  doc_uploader - Selecting document type: 'Caste Certificate'
+2026-08-22 13:06:07,789  [ERROR   ]  main - Exception on CastCertificate_16_page_0.png: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=151.0.7922.170)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5d6d]
+	chromedriver!(No symbol) [0x7ff6dacb15c2]
+	chromedriver!(No symbol) [0x7ff6dacd74a1]
+	chromedriver!(No symbol) [0x7ff6dad51320]
+	chromedriver!(No symbol) [0x7ff6dad6e4f2]
+	chromedriver!(No symbol) [0x7ff6dad137cc]
+	chromedriver!(No symbol) [0x7ff6dad146f3]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4d64+1f364]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4ef4+1f4f4]
+	chromedriver!GetHandleVerifier [0x7ff6db187d97+2397]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+Traceback (most recent call last):
+  File "D:\ai_doc_automation\main.py", line 100, in process_document
+    select_document_type(driver, doc_type)
+  File "D:\ai_doc_automation\doc_uploader.py", line 96, in select_document_type
+    select_el = _find_element(
+                ^^^^^^^^^^^^^^
+  File "D:\ai_doc_automation\doc_uploader.py", line 35, in _find_element
+    el = driver.find_element(By.XPATH, xpath)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=151.0.7922.170)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5d6d]
+	chromedriver!(No symbol) [0x7ff6dacb15c2]
+	chromedriver!(No symbol) [0x7ff6dacd74a1]
+	chromedriver!(No symbol) [0x7ff6dad51320]
+	chromedriver!(No symbol) [0x7ff6dad6e4f2]
+	chromedriver!(No symbol) [0x7ff6dad137cc]
+	chromedriver!(No symbol) [0x7ff6dad146f3]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4d64+1f364]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4ef4+1f4f4]
+	chromedriver!GetHandleVerifier [0x7ff6db187d97+2397]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+
+2026-08-22 13:06:08,758  [INFO    ]  main - [FAIL] CastCertificate_16_page_0.png: ERROR (0.1s)
+2026-08-22 13:06:08,760  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:06:08,765  [WARNING ]  main - Error resetting form (Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dad12833]
+	chromedriver!(No symbol) [0x7ff6dad49c12]
+	chromedriver!(No symbol) [0x7ff6dad43a22]
+	chromedriver!(No symbol) [0x7ff6dad431e2]
+	chromedriver!(No symbol) [0x7ff6dac8e2bb]
+	chromedriver!(No symbol) [0x7ff6dac8e912]
+	chromedriver!(No symbol) [0x7ff6dac8eed5]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6dac8d83c]
+	chromedriver!GetHandleVerifier [0x7ff6db9835e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+). Restarting browser session...
+2026-08-22 13:06:13,816  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 13:06:17,134  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 13:06:19,257  [INFO    ]  main - Browser closed.

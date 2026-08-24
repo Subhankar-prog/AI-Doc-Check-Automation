@@ -16,7 +16,8 @@ from selenium.common.exceptions import (
 
 from config import (
     PORTAL_URL, XPATHS, ENGINE_TIMEOUT, POLL_INTERVAL,
-    RETRY_ON_TIMEOUT, SCREENSHOTS_DIR, DOCUMENT_TYPES
+    RETRY_ON_TIMEOUT, SCREENSHOTS_DIR, DOCUMENT_TYPES,
+    MAX_UPLOAD_SIZE_MB, ALLOWED_UPLOAD_EXTENSIONS
 )
 
 logger = logging.getLogger(__name__)
@@ -191,6 +192,42 @@ def ensure_plain_extraction(driver: webdriver.Chrome):
 # ──────────────────────────────────────────────────────────
 # Step 4: Upload the document file
 # ──────────────────────────────────────────────────────────
+def pre_check_file(file_path: str):
+    """
+    Check the file's size and extension BEFORE uploading, purely to PREDICT
+    whether the portal is expected to reject it based on its stated rules
+    ("Upload a JPEG, PNG, WebP, or PDF document up to 5 MB.").
+
+    IMPORTANT: this never skips the actual upload. The file is always
+    uploaded and submitted exactly as normal — this prediction is only
+    recorded alongside the real result afterward, so we can confirm the
+    portal's own validation is actually working (and catch it if a file
+    that should have been rejected somehow gets accepted).
+
+    Returns:
+        (expected_to_be_rejected: bool, reason: str)
+    """
+    p = Path(file_path)
+    reasons = []
+
+    try:
+        size_mb = p.stat().st_size / (1024 * 1024)
+        if size_mb > MAX_UPLOAD_SIZE_MB:
+            reasons.append(f"File size {size_mb:.2f}MB exceeds {MAX_UPLOAD_SIZE_MB}MB limit")
+    except OSError:
+        pass  # can't stat the file — leave size check out, extension check still applies
+
+    if p.suffix.lower() not in ALLOWED_UPLOAD_EXTENSIONS:
+        reasons.append(f"File extension '{p.suffix}' not in allowed types (JPEG, PNG, WebP, PDF)")
+
+    if reasons:
+        reason_text = "; ".join(reasons)
+        logger.info(f"Pre-upload check: expecting REJECT for {p.name} — {reason_text}")
+        return True, reason_text
+
+    return False, ""
+
+
 def upload_file(driver: webdriver.Chrome, file_path: str):
     """
     Upload a file to the portal.
@@ -240,7 +277,7 @@ def upload_file(driver: webdriver.Chrome, file_path: str):
     )
     time.sleep(0.3)
     file_input.send_keys(abs_path)
-    time.sleep(2)  # wait for preview/thumbnail to render
+    _wait_for_upload_ready(driver)
 
     # Check if portal rejected the file (size / format / multi-page error)
     # Screenshot 2 shows a pink banner: "Upload a JPEG, PNG, WebP, or PDF document: up to 9 MB."
@@ -249,6 +286,30 @@ def upload_file(driver: webdriver.Chrome, file_path: str):
         raise UploadRejectedError(error_msg)
 
     logger.info("File uploaded successfully.")
+
+
+def _wait_for_upload_ready(driver: webdriver.Chrome, timeout: float = 4.0):
+    """
+    After sending the file path to the file input, the portal needs a moment
+    to render the preview/thumbnail. Instead of a flat sleep, poll for the
+    earliest real signal that the upload finished:
+      - an error banner appears (fail fast, let the caller handle it), or
+      - the 'Submit to engine' button becomes visible (upload accepted).
+    Falls back to returning after `timeout` seconds regardless, as a safety net.
+    """
+    deadline = time.time() + timeout
+    while time.time() < deadline:
+        if _check_upload_error(driver):
+            return
+        try:
+            btn = driver.find_element(By.XPATH, XPATHS["submit_to_engine_v2"])
+            if btn.is_displayed():
+                logger.info("Upload preview ready (submit button visible).")
+                return
+        except NoSuchElementException:
+            pass
+        time.sleep(0.3)
+    logger.debug("Upload readiness check timed out — proceeding anyway.")
 
 
 class UploadRejectedError(Exception):
@@ -368,11 +429,14 @@ def _click_upload_trigger(driver: webdriver.Chrome):
 # ──────────────────────────────────────────────────────────
 # Step 5: Verify state, then click Submit to Engine
 # ──────────────────────────────────────────────────────────
-def verify_and_submit(driver: webdriver.Chrome, doc_type: str):
+def verify_and_submit(driver: webdriver.Chrome, doc_type: str,
+                       skip_plain_extraction_recheck: bool = False):
     """
     Final pre-submit checks:
       - Dropdown shows correct doc type
-      - Plain extraction is selected
+      - Plain extraction is selected (skipped if already confirmed moments
+        earlier in the flow and skip_plain_extraction_recheck=True — uploading
+        a file does not affect this setting, so re-checking it here is redundant)
       - Check for upload rejection error banners
     Then click Submit to engine.
     """
@@ -402,8 +466,9 @@ def verify_and_submit(driver: webdriver.Chrome, doc_type: str):
     except Exception as e:
         logger.warning(f"Could not verify dropdown: {e}")
 
-    # Check plain extraction
-    ensure_plain_extraction(driver)
+    # Check plain extraction (skip if already confirmed earlier this flow)
+    if not skip_plain_extraction_recheck:
+        ensure_plain_extraction(driver)
 
     # Re-check upload error before submit
     upload_err = _check_upload_error(driver)
@@ -518,3 +583,32 @@ def click_new_submission(driver: webdriver.Chrome):
     logger.info("Navigating to Verify Document page to reset form.")
     navigate_to_upload(driver)
 
+
+# ──────────────────────────────────────────────────────────
+# Wait for the upload form to be reset and ready for the next document
+# ──────────────────────────────────────────────────────────
+def wait_for_form_ready(driver: webdriver.Chrome, timeout: int = 15) -> bool:
+    """
+    After clicking 'New submission', the portal needs a moment to redraw
+    the upload form (document type dropdown, plain extraction option, etc.).
+
+    Instead of a flat sleep, actively poll until the document type dropdown
+    is present, visible, and enabled — i.e. the form is actually ready to
+    accept input for the next document.
+
+    Returns True as soon as the form is ready, False if it never became
+    ready within the timeout (caller can decide how to handle that).
+    """
+    deadline = time.time() + timeout
+    while time.time() < deadline:
+        try:
+            el = driver.find_element(By.XPATH, XPATHS["doc_type_select"])
+            if el.is_displayed() and el.is_enabled():
+                logger.info("Upload form is ready for next document.")
+                return True
+        except (NoSuchElementException, StaleElementReferenceException):
+            pass
+        time.sleep(0.5)
+
+    logger.warning(f"Upload form did not become ready within {timeout}s.")
+    return False

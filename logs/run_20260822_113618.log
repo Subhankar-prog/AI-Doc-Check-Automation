@@ -1,0 +1,103 @@
+2026-08-22 11:36:18,258  [INFO    ]  main - ============================================================
+2026-08-22 11:36:18,266  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-22 11:36:18,266  [INFO    ]  main - ============================================================
+2026-08-22 11:36:18,266  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-22 11:36:18,266  [INFO    ]  main - [--resume] Skipping rows already marked SUCCESS/FAILED.
+2026-08-22 11:36:18,266  [INFO    ]  main - [--type]   Running only: '10th Marksheet'
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_501_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_502_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_503_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_504_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_505_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_506_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_508_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_509_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_510_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_512_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_513_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_514_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_515_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_516_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_517_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_518_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_519_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_520_page_0.png
+2026-08-22 11:36:18,663  [INFO    ]  main - Records to process: 2
+2026-08-22 11:36:25,621  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 11:36:25,621  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260822_113625.xlsx
+2026-08-22 11:36:25,621  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-22 11:36:30,283  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_113630_01_dashboard.png
+2026-08-22 11:36:30,283  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 11:36:32,423  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 11:36:32,592  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_113632_02_verify_form.png
+2026-08-22 11:36:32,623  [INFO    ]  main - 
+[1/2] D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_507_page_0.png
+2026-08-22 11:36:32,623  [INFO    ]  main - ============================================================
+2026-08-22 11:36:32,623  [INFO    ]  main - Processing [1/2]: Document10_507_page_0.png  |  10th Marksheet  |  Attempt 1
+2026-08-22 11:36:32,623  [INFO    ]  main - ============================================================
+2026-08-22 11:36:32,949  [INFO    ]  doc_uploader - Pre-upload check: expecting REJECT for Document10_507_page_0.png — File size 5.60MB exceeds 5MB limit
+2026-08-22 11:36:32,949  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-22 11:36:33,068  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-22 11:36:33,068  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 11:36:38,535  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 11:36:38,539  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_507_page_0.png
+2026-08-22 11:36:38,558  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 11:36:49,046  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 11:36:59,154  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 11:36:59,154  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 11:37:09,308  [WARNING ]  doc_uploader - Dropdown mismatch! Expected '10th Marksheet', found 'Aadhaar Card'. Re-selecting.
+2026-08-22 11:37:09,308  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-22 11:37:09,397  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-22 11:37:19,467  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 11:37:31,015  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 11:37:31,015  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 11:38:01,372  [WARNING ]  doc_uploader - Upload error detected via JS: Upload a JPEG, PNG, WebP, or PDF document up to 5 MB.
+2026-08-22 11:38:01,372  [WARNING ]  doc_uploader - Upload rejection banner detected during wait: Upload a JPEG, PNG, WebP, or PDF document up to 5 MB.
+2026-08-22 11:38:01,372  [WARNING ]  main - File upload rejected for Document10_507_page_0.png: Upload a JPEG, PNG, WebP, or PDF document up to 5 MB.
+2026-08-22 11:38:01,563  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_113801_upload_rejected_Document10_507_page_0.png.png
+2026-08-22 11:38:01,563  [INFO    ]  excel_writer - Created sheet: '10th Marksheet'  headers: ['Filename', 'Document Type', 'Expected Status', 'Actual Status', 'Final Output', 'Error Message']
+2026-08-22 11:38:01,929  [INFO    ]  main - [FAIL] Document10_507_page_0.png: FAILED (88.4s)
+2026-08-22 11:38:01,929  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 11:38:12,484  [INFO    ]  doc_uploader - Navigating to Verify Document page to reset form.
+2026-08-22 11:38:12,484  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 11:38:14,440  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 11:38:14,476  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 11:38:14,496  [INFO    ]  main - 
+[2/2] D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_511_page_0.png
+2026-08-22 11:38:14,496  [INFO    ]  main - ============================================================
+2026-08-22 11:38:14,496  [INFO    ]  main - Processing [2/2]: Document10_511_page_0.png  |  10th Marksheet  |  Attempt 1
+2026-08-22 11:38:14,496  [INFO    ]  main - ============================================================
+2026-08-22 11:38:14,841  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-22 11:38:14,923  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-22 11:38:14,923  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 11:38:20,358  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 11:38:20,358  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_511_page_0.png
+2026-08-22 11:38:20,368  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 11:38:30,812  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 11:38:40,861  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 11:38:40,861  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 11:38:51,074  [WARNING ]  doc_uploader - Dropdown mismatch! Expected '10th Marksheet', found 'Aadhaar Card'. Re-selecting.
+2026-08-22 11:38:51,074  [INFO    ]  doc_uploader - Selecting document type: '10th Marksheet'
+2026-08-22 11:38:51,249  [INFO    ]  doc_uploader - Selected by visible text: '10th Marksheet'
+2026-08-22 11:39:01,347  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 11:39:12,860  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 11:39:12,860  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 11:39:16,514  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-22 11:39:17,822  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_113917_result_Document10_511_page_0.png.png
+2026-08-22 11:39:17,822  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 11:39:28,116  [INFO    ]  result_parser - Pipeline failure reason captured: VERIFAI — Document Intelligence — Dashboard — Verify Document — Plain Extraction — Golden Record — Document Linking — Transactions — API Playground — Settings — About — Collapse menu — AI DOCUMENT VERIFICATION ENGINE — Plain extraction — Backend online — AE — TRANSACTION COMPLETE — Pipeline failure result — TXN-20260821-4443347189 — Copy ID — New submission — PIPELINE FAILURE · DOCUMENT_TYPE_MISMATCH — Document type mismatch — Requested document type: — Expected document — Marksheet 10th — Detected document — UNKOWN_DOCUMENT — Overview — Raw JSON — OVERALL VERDICT — FAILED — SUCCESS — DOCUMENT TYPE — Marksheet 10thProcessing time not returned — QR CODE RESULTS — No QR code detected. QR presence is optional and does not indicate document validity.
+2026-08-22 11:39:28,121  [INFO    ]  result_parser - Verdict: FAILED (Pipeline Failure banner detected: VERIFAI — Document Intelligence — Dashboard — Verify Document — Plain Extraction — Golden Record — Document Linking — Transactions — API Playground — Settings — About — Collapse menu — AI DOCUMENT VERIFICATION ENGINE — Plain extraction — Backend online — AE — TRANSACTION COMPLETE — Pipeline failure result — TXN-20260821-4443347189 — Copy ID — New submission — PIPELINE FAILURE · DOCUMENT_TYPE_MISMATCH — Document type mismatch — Requested document type: — Expected document — Marksheet 10th — Detec)
+2026-08-22 11:39:28,121  [INFO    ]  result_parser - Skipping extraction (status=FAILED).
+2026-08-22 11:39:28,428  [INFO    ]  main - [FAIL] Document10_511_page_0.png: FAILED (62.7s)
+2026-08-22 11:39:28,437  [INFO    ]  excel_writer - Summary sheet written with overall timing statistics.
+2026-08-22 11:39:28,479  [INFO    ]  excel_writer - Excel saved: D:\ai_doc_automation\output\ai_doc_results_20260822_113625.xlsx
+2026-08-22 11:39:28,479  [INFO    ]  main - 
+============================================================
+2026-08-22 11:39:28,479  [INFO    ]  main -   COMPLETE
+2026-08-22 11:39:28,479  [INFO    ]  main -   Total   : 2
+2026-08-22 11:39:28,479  [INFO    ]  main -   Success : 0
+2026-08-22 11:39:28,479  [INFO    ]  main -   Failed  : 2
+2026-08-22 11:39:28,479  [INFO    ]  main -   Errors  : 0
+2026-08-22 11:39:28,479  [INFO    ]  main -   Output  : D:\ai_doc_automation\output\ai_doc_results_20260822_113625.xlsx
+2026-08-22 11:39:28,479  [INFO    ]  main - ============================================================
+2026-08-22 11:39:30,838  [INFO    ]  main - Browser closed.

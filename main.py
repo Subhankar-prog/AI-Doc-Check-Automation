@@ -28,7 +28,8 @@ from doc_uploader   import (
     navigate_to_upload, select_document_type,
     ensure_plain_extraction, upload_file,
     verify_and_submit, wait_for_result,
-    click_new_submission, take_screenshot,
+    click_new_submission, wait_for_form_ready, take_screenshot,
+    pre_check_file,
     UploadRejectedError
 )
 from result_parser  import parse_result
@@ -90,6 +91,10 @@ def process_document(driver, record: dict, excel: ExcelWriter,
 
     start_time = time.time()
 
+    # Pre-upload prediction only (never skips the actual upload) — lets us
+    # later confirm the portal really rejects what it's supposed to reject.
+    pre_check_reject, pre_check_reason = pre_check_file(file_path)
+
     try:
         # Step 1: Select document type
         select_document_type(driver, doc_type)
@@ -101,7 +106,9 @@ def process_document(driver, record: dict, excel: ExcelWriter,
         upload_file(driver, file_path)
 
         # Step 4: Verify state and submit
-        verify_and_submit(driver, doc_type)
+        # (Plain Extraction was already confirmed in Step 2 — uploading a file
+        #  doesn't affect it, so we skip re-checking it here.)
+        verify_and_submit(driver, doc_type, skip_plain_extraction_recheck=True)
 
         # Step 5: Wait for result (detected by TRANSACTION COMPLETE / Pipeline failure / result-tabs)
         result_appeared = wait_for_result(driver)
@@ -157,6 +164,12 @@ def process_document(driver, record: dict, excel: ExcelWriter,
         }
 
 
+    # Attach the pre-upload prediction to the result (used by excel_writer to
+    # strengthen the Expected Status classification — and to flag it as a
+    # real issue if a file we predicted should be rejected got accepted).
+    result["_pre_check_reject"] = pre_check_reject
+    result["_pre_check_reason"] = pre_check_reason
+
     # Step 7: Write to OUTPUT Excel (crash-safe, saves immediately)
     excel.append_row(result)
 
@@ -165,7 +178,7 @@ def process_document(driver, record: dict, excel: ExcelWriter,
     tracker.mark_done(sheet_name, row_num, status)
 
     icon = "[OK]" if status == "SUCCESS" else "[FAIL]"
-    logger.info(f"{icon} {filename}: {status} ({result['Processing Time (s)']}s)")
+    logger.info(f"{icon} {filename}: {status} ({result['_processing_time']}s)")
 
     return result
 
@@ -199,6 +212,15 @@ def main():
         help=(
             "Skip rows already marked SUCCESS/FAILED in input Excel.\n"
             "Use this to continue after a crash without re-processing done files."
+        )
+    )
+    parser.add_argument(
+        "--resume-output", type=str, default=None,
+        help=(
+            "Path to an existing OUTPUT Excel file to continue appending to,\n"
+            "instead of creating a brand-new one. Use together with --resume.\n"
+            "If omitted while --resume is set, the most recently modified\n"
+            "output file in the outputs folder is used automatically."
         )
     )
     parser.add_argument(
@@ -268,7 +290,28 @@ def main():
 
     # ── Start browser + output Excel ──────────────────────
     driver = create_driver()
-    excel  = ExcelWriter()
+
+    resume_output_path = None
+    if args.resume:
+        if args.resume_output:
+            resume_output_path = args.resume_output
+            if not Path(resume_output_path).exists():
+                logger.warning(f"--resume-output file not found: {resume_output_path}. Creating a new output file instead.")
+                resume_output_path = None
+        else:
+            # Auto-detect: most recently modified output file in OUTPUT_DIR
+            import config
+            existing = sorted(
+                config.OUTPUT_DIR.glob(f"{config.OUTPUT_EXCEL_PREFIX}_*.xlsx"),
+                key=lambda p: p.stat().st_mtime, reverse=True
+            )
+            if existing:
+                resume_output_path = str(existing[0])
+                logger.info(f"[--resume] Auto-detected most recent output file: {resume_output_path}")
+            else:
+                logger.info("[--resume] No existing output file found — creating a new one.")
+
+    excel  = ExcelWriter(resume_path=resume_output_path)
     stats  = {"success": 0, "failed": 0, "error": 0}
 
     try:
@@ -291,7 +334,7 @@ def main():
                 result = process_document(driver, record, excel, tracker)
             except Exception as e:
                 logger.error(f"Top-level exception processing document: {e}")
-                result = {"Status": "ERROR", "Processing Time (s)": 0}
+                result = {"Status": "ERROR", "_processing_time": 0}
 
             s = result.get("Status", "ERROR").upper()
             if s == "SUCCESS":
@@ -305,7 +348,7 @@ def main():
             if idx < total:
                 try:
                     click_new_submission(driver)
-                    time.sleep(1)
+                    wait_for_form_ready(driver)
                 except Exception as ex:
                     logger.warning(f"Error resetting form ({ex}). Restarting browser session...")
                     try:

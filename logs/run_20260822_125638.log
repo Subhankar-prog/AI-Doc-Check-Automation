@@ -1,0 +1,271 @@
+2026-08-22 12:56:38,048  [INFO    ]  main - ============================================================
+2026-08-22 12:56:38,048  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-22 12:56:38,048  [INFO    ]  main - ============================================================
+2026-08-22 12:56:38,048  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-22 12:56:38,048  [INFO    ]  main - [--type]   Running only: 'Residence Certificate'
+2026-08-22 12:56:38,487  [INFO    ]  main - Records to process: 50
+2026-08-22 12:56:41,518  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 12:56:41,526  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260822_125641.xlsx
+2026-08-22 12:56:41,530  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-22 12:56:46,023  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125645_01_dashboard.png
+2026-08-22 12:56:46,023  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 12:56:48,054  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 12:56:48,462  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125648_02_verify_form.png
+2026-08-22 12:56:48,499  [INFO    ]  main - 
+[1/50] D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_10_page_0.png
+2026-08-22 12:56:48,500  [INFO    ]  main - ============================================================
+2026-08-22 12:56:48,500  [INFO    ]  main - Processing [1/50]: ResidenceCertificate_10_page_0.png  |  Residence Certificate  |  Attempt 1
+2026-08-22 12:56:48,500  [INFO    ]  main - ============================================================
+2026-08-22 12:56:49,173  [INFO    ]  doc_uploader - Selecting document type: 'Residence Certificate'
+2026-08-22 12:56:49,329  [INFO    ]  doc_uploader - Selected by visible text: 'Residence Certificate'
+2026-08-22 12:56:49,329  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:56:54,946  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:56:54,986  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_10_page_0.png
+2026-08-22 12:56:55,066  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:57:06,133  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:57:16,214  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:57:16,215  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:57:26,317  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'Residence Certificate', found 'Aadhaar Card'. Re-selecting.
+2026-08-22 12:57:26,317  [INFO    ]  doc_uploader - Selecting document type: 'Residence Certificate'
+2026-08-22 12:57:26,384  [INFO    ]  doc_uploader - Selected by visible text: 'Residence Certificate'
+2026-08-22 12:57:36,408  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:57:47,887  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:57:47,887  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:57:49,098  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-22 12:57:50,523  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125750_result_ResidenceCertificate_10_page_0.png.png
+2026-08-22 12:57:50,525  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:58:27,244  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:58:27,245  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:58:29,155  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:58:29,167  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-22 12:58:29,435  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125829_extracted_ResidenceCertificate_10_page_0.png.png
+2026-08-22 12:58:29,437  [INFO    ]  excel_writer - Created sheet: 'Residence Certificate'  headers: ['Filename', 'Document Type', 'Expected Status', 'Actual Status', 'Final Output', 'Error Message', 'Address', 'Applicant Name', 'Certificate Number', 'Father Name', 'Issue Date', 'Issuing Authority', 'Period Of Residence']
+2026-08-22 12:58:29,775  [INFO    ]  main - [OK] ResidenceCertificate_10_page_0.png: SUCCESS (60.9s)
+2026-08-22 12:58:29,775  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:58:31,722  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:58:31,762  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:58:31,762  [INFO    ]  main - 
+[2/50] D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_11_page_0.png
+2026-08-22 12:58:31,762  [INFO    ]  main - ============================================================
+2026-08-22 12:58:31,762  [INFO    ]  main - Processing [2/50]: ResidenceCertificate_11_page_0.png  |  Residence Certificate  |  Attempt 1
+2026-08-22 12:58:31,762  [INFO    ]  main - ============================================================
+2026-08-22 12:58:32,225  [INFO    ]  doc_uploader - Selecting document type: 'Residence Certificate'
+2026-08-22 12:58:32,282  [INFO    ]  doc_uploader - Selected by visible text: 'Residence Certificate'
+2026-08-22 12:58:32,282  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:58:37,823  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:58:37,825  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_11_page_0.png
+2026-08-22 12:58:37,839  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:58:48,664  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:58:58,780  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:58:58,780  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:59:19,069  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:59:30,503  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:59:30,504  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:59:55,797  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 12:59:57,075  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125956_result_ResidenceCertificate_11_page_0.png.png
+2026-08-22 12:59:57,075  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:59:57,779  [ERROR   ]  main - Exception on ResidenceCertificate_11_page_0.png: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dad12833]
+	chromedriver!(No symbol) [0x7ff6dad49c12]
+	chromedriver!(No symbol) [0x7ff6dad43a22]
+	chromedriver!(No symbol) [0x7ff6dad431e2]
+	chromedriver!(No symbol) [0x7ff6dac8e2bb]
+	chromedriver!(No symbol) [0x7ff6dac8e912]
+	chromedriver!(No symbol) [0x7ff6dac8eed5]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6dac8d83c]
+	chromedriver!GetHandleVerifier [0x7ff6db9835e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+Traceback (most recent call last):
+  File "D:\ai_doc_automation\main.py", line 134, in process_document
+    result = parse_result(driver, filename, doc_type, elapsed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai_doc_automation\result_parser.py", line 431, in parse_result
+    status, error_msg = get_status(driver)
+                        ^^^^^^^^^^^^^^^^^^
+  File "D:\ai_doc_automation\result_parser.py", line 46, in get_status
+    overview = _find_element(driver, XPATHS["overview_tab"], timeout=5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai_doc_automation\doc_uploader.py", line 35, in _find_element
+    el = driver.find_element(By.XPATH, xpath)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dad12833]
+	chromedriver!(No symbol) [0x7ff6dad49c12]
+	chromedriver!(No symbol) [0x7ff6dad43a22]
+	chromedriver!(No symbol) [0x7ff6dad431e2]
+	chromedriver!(No symbol) [0x7ff6dac8e2bb]
+	chromedriver!(No symbol) [0x7ff6dac8e912]
+	chromedriver!(No symbol) [0x7ff6dac8eed5]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6dac8d83c]
+	chromedriver!GetHandleVerifier [0x7ff6db9835e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+
+2026-08-22 12:59:57,929  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-22 12:59:57,929  [INFO    ]  main - [FAIL] ResidenceCertificate_11_page_0.png: ERROR (85.6s)
+2026-08-22 12:59:57,929  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:59:57,929  [WARNING ]  main - Error resetting form (Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5b56]
+	chromedriver!(No symbol) [0x7ff6dad12833]
+	chromedriver!(No symbol) [0x7ff6dad49c12]
+	chromedriver!(No symbol) [0x7ff6dad43a22]
+	chromedriver!(No symbol) [0x7ff6dad431e2]
+	chromedriver!(No symbol) [0x7ff6dac8e2bb]
+	chromedriver!(No symbol) [0x7ff6dac8e912]
+	chromedriver!(No symbol) [0x7ff6dac8eed5]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!(No symbol) [0x7ff6dac8d83c]
+	chromedriver!GetHandleVerifier [0x7ff6db9835e8+7fdbe8]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+). Restarting browser session...
+2026-08-22 13:00:02,668  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 13:00:05,801  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 13:00:07,810  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 13:00:11,862  [INFO    ]  main - 
+[3/50] D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_12_page_0.png
+2026-08-22 13:00:11,862  [INFO    ]  main - ============================================================
+2026-08-22 13:00:11,862  [INFO    ]  main - Processing [3/50]: ResidenceCertificate_12_page_0.png  |  Residence Certificate  |  Attempt 1
+2026-08-22 13:00:11,862  [INFO    ]  main - ============================================================
+2026-08-22 13:00:12,204  [INFO    ]  doc_uploader - Selecting document type: 'Residence Certificate'
+2026-08-22 13:00:12,313  [INFO    ]  doc_uploader - Selected by visible text: 'Residence Certificate'
+2026-08-22 13:00:12,314  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:00:17,881  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:00:17,883  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_12_page_0.png
+2026-08-22 13:00:17,901  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:00:28,368  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:00:38,413  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:00:38,413  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:00:48,556  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'Residence Certificate', found 'Aadhaar Card'. Re-selecting.
+2026-08-22 13:00:48,556  [INFO    ]  doc_uploader - Selecting document type: 'Residence Certificate'
+2026-08-22 13:00:48,630  [INFO    ]  doc_uploader - Selected by visible text: 'Residence Certificate'
+2026-08-22 13:00:58,715  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:01:10,193  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:01:10,193  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:01:10,304  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-22 13:01:11,426  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130111_result_ResidenceCertificate_12_page_0.png.png
+2026-08-22 13:01:11,427  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:01:48,174  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:01:48,176  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:01:50,142  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:01:50,167  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-22 13:01:50,363  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130150_extracted_ResidenceCertificate_12_page_0.png.png
+2026-08-22 13:01:50,459  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-22 13:01:50,459  [INFO    ]  main - [OK] ResidenceCertificate_12_page_0.png: SUCCESS (59.1s)
+2026-08-22 13:01:50,461  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:01:52,369  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:01:52,397  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:01:52,397  [INFO    ]  main - 
+[4/50] D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_13_page_0.png
+2026-08-22 13:01:52,397  [INFO    ]  main - ============================================================
+2026-08-22 13:01:52,397  [INFO    ]  main - Processing [4/50]: ResidenceCertificate_13_page_0.png  |  Residence Certificate  |  Attempt 1
+2026-08-22 13:01:52,397  [INFO    ]  main - ============================================================
+2026-08-22 13:01:52,397  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-22 13:01:52,397  [INFO    ]  doc_uploader - Selecting document type: 'Residence Certificate'
+2026-08-22 13:01:52,447  [INFO    ]  doc_uploader - Selected by visible text: 'Residence Certificate'
+2026-08-22 13:01:52,447  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:01:57,853  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:01:57,854  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_13_page_0.png
+2026-08-22 13:01:57,862  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:02:08,423  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:02:18,482  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:02:18,482  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:02:38,845  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:02:50,384  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:02:50,384  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:02:52,005  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-22 13:02:53,132  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130253_result_ResidenceCertificate_13_page_0.png.png
+2026-08-22 13:02:53,132  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:03:29,933  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:03:29,933  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:03:31,894  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:03:31,899  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-22 13:03:32,018  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130331_extracted_ResidenceCertificate_13_page_0.png.png
+2026-08-22 13:03:32,018  [ERROR   ]  main - Top-level exception processing document: [Errno 13] Permission denied: 'D:\\ai_doc_automation\\output\\ai_doc_results_20260822_125641.xlsx'
+2026-08-22 13:03:32,033  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:03:33,937  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:03:33,951  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:03:33,951  [INFO    ]  main - 
+[5/50] D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_14_page_0.png
+2026-08-22 13:03:33,951  [INFO    ]  main - ============================================================
+2026-08-22 13:03:33,951  [INFO    ]  main - Processing [5/50]: ResidenceCertificate_14_page_0.png  |  Residence Certificate  |  Attempt 1
+2026-08-22 13:03:33,951  [INFO    ]  main - ============================================================
+2026-08-22 13:03:34,342  [INFO    ]  doc_uploader - Selecting document type: 'Residence Certificate'
+2026-08-22 13:03:34,390  [INFO    ]  doc_uploader - Selected by visible text: 'Residence Certificate'
+2026-08-22 13:03:34,390  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:03:39,881  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:03:39,927  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_14_page_0.png
+2026-08-22 13:03:39,941  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:03:50,413  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:04:00,480  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:04:00,480  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:04:20,733  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:04:32,242  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:04:32,242  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:04:33,381  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-22 13:04:34,515  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130434_result_ResidenceCertificate_14_page_0.png.png
+2026-08-22 13:04:34,515  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:05:11,639  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:05:11,641  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:05:14,310  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:05:14,318  [INFO    ]  result_parser - JS parse: 7 fields
+2026-08-22 13:05:14,547  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130514_extracted_ResidenceCertificate_14_page_0.png.png
+2026-08-22 13:05:14,553  [ERROR   ]  main - Top-level exception processing document: [Errno 13] Permission denied: 'D:\\ai_doc_automation\\output\\ai_doc_results_20260822_125641.xlsx'
+2026-08-22 13:05:14,554  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:05:16,664  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:05:16,719  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:05:16,720  [INFO    ]  main - 
+[6/50] D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_15_page_0.png
+2026-08-22 13:05:16,721  [INFO    ]  main - ============================================================
+2026-08-22 13:05:16,722  [INFO    ]  main - Processing [6/50]: ResidenceCertificate_15_page_0.png  |  Residence Certificate  |  Attempt 1
+2026-08-22 13:05:16,722  [INFO    ]  main - ============================================================
+2026-08-22 13:05:18,059  [INFO    ]  doc_uploader - Selecting document type: 'Residence Certificate'
+2026-08-22 13:05:18,595  [INFO    ]  doc_uploader - Selected by visible text: 'Residence Certificate'
+2026-08-22 13:05:18,596  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:05:24,287  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:05:24,291  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_15_page_0.png
+2026-08-22 13:05:24,309  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:05:34,837  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:05:45,077  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:05:45,079  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:06:06,187  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:06:18,281  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:06:18,281  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:06:18,297  [INFO    ]  doc_uploader - Result appeared after 0s.
+2026-08-22 13:06:19,578  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130619_result_ResidenceCertificate_15_page_0.png.png
+2026-08-22 13:06:19,578  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:06:34,848  [WARNING ]  main - Interrupted by user (Ctrl+C). Saving partial results...
+2026-08-22 13:06:34,848  [INFO    ]  excel_writer - Summary sheet written with overall timing statistics.

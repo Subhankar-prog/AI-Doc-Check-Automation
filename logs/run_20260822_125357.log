@@ -1,0 +1,283 @@
+2026-08-22 12:53:57,092  [INFO    ]  main - ============================================================
+2026-08-22 12:53:57,092  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-22 12:53:57,092  [INFO    ]  main - ============================================================
+2026-08-22 12:53:57,092  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-22 12:53:57,092  [INFO    ]  main - [--type]   Running only: 'Graduation Certificate'
+2026-08-22 12:53:57,431  [INFO    ]  main - Records to process: 50
+2026-08-22 12:53:59,377  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 12:53:59,403  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260822_125359.xlsx
+2026-08-22 12:53:59,409  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-22 12:54:03,927  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125403_01_dashboard.png
+2026-08-22 12:54:03,927  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 12:54:05,861  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 12:54:05,995  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125405_02_verify_form.png
+2026-08-22 12:54:06,016  [INFO    ]  main - 
+[1/50] D:\ai_doc_automation\Test Data\Degree Certificate\Document12_10_page_0.png
+2026-08-22 12:54:06,017  [INFO    ]  main - ============================================================
+2026-08-22 12:54:06,017  [INFO    ]  main - Processing [1/50]: Document12_10_page_0.png  |  Graduation Certificate  |  Attempt 1
+2026-08-22 12:54:06,017  [INFO    ]  main - ============================================================
+2026-08-22 12:54:06,421  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-22 12:54:06,514  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-22 12:54:06,514  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:54:11,961  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:54:12,001  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Document12_10_page_0.png
+2026-08-22 12:54:12,014  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:54:22,489  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:54:32,574  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:54:32,575  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:54:42,706  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'Graduation Certificate', found 'Aadhaar Card'. Re-selecting.
+2026-08-22 12:54:42,706  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-22 12:54:42,807  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-22 12:54:52,922  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:55:04,427  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:55:04,427  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:55:29,643  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 12:55:30,935  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125530_result_Document12_10_page_0.png.png
+2026-08-22 12:55:30,936  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:56:07,611  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:56:07,611  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:56:09,505  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:56:09,513  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-22 12:56:09,611  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125609_extracted_Document12_10_page_0.png.png
+2026-08-22 12:56:09,611  [INFO    ]  excel_writer - Created sheet: 'Graduation Certificate'  headers: ['Filename', 'Document Type', 'Expected Status', 'Actual Status', 'Final Output', 'Error Message', 'Cgpa Secured', 'College Name', 'Degree Name', 'Enrollment Number', 'Father Name', 'Grade', 'Mother Name', 'Percentage', 'Registration Number', 'Result', 'Roll Number', 'Stream Or Specialization', 'Student Name', 'Total Marks Secured', 'University Name', 'Year Of Passing']
+2026-08-22 12:56:09,925  [INFO    ]  main - [OK] Document12_10_page_0.png: SUCCESS (84.2s)
+2026-08-22 12:56:09,925  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:56:11,821  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:56:11,841  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:56:11,843  [INFO    ]  main - 
+[2/50] D:\ai_doc_automation\Test Data\Degree Certificate\Document12_11_page_0.png
+2026-08-22 12:56:11,843  [INFO    ]  main - ============================================================
+2026-08-22 12:56:11,843  [INFO    ]  main - Processing [2/50]: Document12_11_page_0.png  |  Graduation Certificate  |  Attempt 1
+2026-08-22 12:56:11,843  [INFO    ]  main - ============================================================
+2026-08-22 12:56:12,290  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-22 12:56:12,352  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-22 12:56:12,361  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:56:17,815  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:56:17,845  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Document12_11_page_0.png
+2026-08-22 12:56:17,863  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:56:28,710  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:56:38,822  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:56:38,824  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:56:59,375  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:57:11,098  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:57:11,098  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:57:36,344  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 12:57:37,504  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125737_result_Document12_11_page_0.png.png
+2026-08-22 12:57:37,505  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 12:58:14,222  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 12:58:14,222  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 12:58:16,102  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 12:58:16,114  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-22 12:58:16,388  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125816_extracted_Document12_11_page_0.png.png
+2026-08-22 12:58:17,546  [INFO    ]  main - [OK] Document12_11_page_0.png: SUCCESS (85.1s)
+2026-08-22 12:58:17,551  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 12:58:19,540  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 12:58:19,589  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 12:58:19,590  [INFO    ]  main - 
+[3/50] D:\ai_doc_automation\Test Data\Degree Certificate\Document12_12_page_0.png
+2026-08-22 12:58:19,590  [INFO    ]  main - ============================================================
+2026-08-22 12:58:19,591  [INFO    ]  main - Processing [3/50]: Document12_12_page_0.png  |  Graduation Certificate  |  Attempt 1
+2026-08-22 12:58:19,592  [INFO    ]  main - ============================================================
+2026-08-22 12:58:20,190  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-22 12:58:20,266  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-22 12:58:20,267  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:58:25,820  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:58:25,822  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Document12_12_page_0.png
+2026-08-22 12:58:25,833  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:58:36,347  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:58:46,390  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:58:46,390  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:59:06,724  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:59:18,169  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 12:59:18,169  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 12:59:43,353  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 12:59:44,553  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_125944_result_Document12_12_page_0.png.png
+2026-08-22 12:59:44,553  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:00:21,276  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:00:21,277  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:00:23,159  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:00:23,162  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-22 13:00:23,290  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130023_extracted_Document12_12_page_0.png.png
+2026-08-22 13:00:23,570  [INFO    ]  main - [OK] Document12_12_page_0.png: SUCCESS (84.2s)
+2026-08-22 13:00:23,570  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:00:25,457  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:00:25,486  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:00:25,486  [INFO    ]  main - 
+[4/50] D:\ai_doc_automation\Test Data\Degree Certificate\Document12_13_page_0.png
+2026-08-22 13:00:25,486  [INFO    ]  main - ============================================================
+2026-08-22 13:00:25,493  [INFO    ]  main - Processing [4/50]: Document12_13_page_0.png  |  Graduation Certificate  |  Attempt 1
+2026-08-22 13:00:25,493  [INFO    ]  main - ============================================================
+2026-08-22 13:00:25,892  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-22 13:00:25,932  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-22 13:00:25,932  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:00:31,376  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:00:31,376  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Document12_13_page_0.png
+2026-08-22 13:00:31,387  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:00:41,960  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:00:52,024  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:00:52,024  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:01:12,206  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:01:23,667  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:01:23,667  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:01:48,947  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 13:01:50,181  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130149_result_Document12_13_page_0.png.png
+2026-08-22 13:01:50,185  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:02:26,759  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:02:26,759  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:02:28,648  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:02:28,648  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-22 13:02:28,776  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130228_extracted_Document12_13_page_0.png.png
+2026-08-22 13:02:29,078  [INFO    ]  main - [OK] Document12_13_page_0.png: SUCCESS (84.1s)
+2026-08-22 13:02:29,078  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:02:30,974  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:02:30,995  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:02:30,996  [INFO    ]  main - 
+[5/50] D:\ai_doc_automation\Test Data\Degree Certificate\Document12_14_page_0.png
+2026-08-22 13:02:30,996  [INFO    ]  main - ============================================================
+2026-08-22 13:02:30,996  [INFO    ]  main - Processing [5/50]: Document12_14_page_0.png  |  Graduation Certificate  |  Attempt 1
+2026-08-22 13:02:30,996  [INFO    ]  main - ============================================================
+2026-08-22 13:02:31,342  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-22 13:02:31,375  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-22 13:02:31,375  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:02:36,792  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:02:36,793  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Document12_14_page_0.png
+2026-08-22 13:02:36,800  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:02:47,272  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:02:57,339  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:02:57,339  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:03:17,573  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:03:29,122  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:03:29,122  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:03:54,346  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-22 13:03:55,446  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130355_result_Document12_14_page_0.png.png
+2026-08-22 13:03:55,446  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-22 13:04:32,141  [INFO    ]  result_parser - Verdict: SUCCESS (from verdict card)
+2026-08-22 13:04:32,141  [INFO    ]  result_parser - Clicking Extraction tab...
+2026-08-22 13:04:34,017  [INFO    ]  result_parser - On Extraction tab.
+2026-08-22 13:04:34,027  [INFO    ]  result_parser - JS parse: 16 fields
+2026-08-22 13:04:34,150  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_130434_extracted_Document12_14_page_0.png.png
+2026-08-22 13:04:34,529  [INFO    ]  main - [OK] Document12_14_page_0.png: SUCCESS (84.0s)
+2026-08-22 13:04:34,529  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:04:36,403  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-22 13:04:36,424  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-22 13:04:36,424  [INFO    ]  main - 
+[6/50] D:\ai_doc_automation\Test Data\Degree Certificate\Document12_15_page_0.png
+2026-08-22 13:04:36,424  [INFO    ]  main - ============================================================
+2026-08-22 13:04:36,424  [INFO    ]  main - Processing [6/50]: Document12_15_page_0.png  |  Graduation Certificate  |  Attempt 1
+2026-08-22 13:04:36,424  [INFO    ]  main - ============================================================
+2026-08-22 13:04:36,708  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-22 13:04:36,756  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-22 13:04:36,756  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:04:42,207  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:04:42,207  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Document12_15_page_0.png
+2026-08-22 13:04:42,207  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:04:52,702  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:05:02,906  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 13:05:02,906  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 13:05:23,333  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 13:05:34,881  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-22 13:05:34,885  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-22 13:05:41,004  [ERROR   ]  main - Exception on Document12_15_page_0.png: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=151.0.7922.170)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5d6d]
+	chromedriver!(No symbol) [0x7ff6dac9cc52]
+	chromedriver!(No symbol) [0x7ff6dad510c6]
+	chromedriver!(No symbol) [0x7ff6dad6e4f2]
+	chromedriver!(No symbol) [0x7ff6dad137cc]
+	chromedriver!(No symbol) [0x7ff6dad146f3]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4d64+1f364]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4ef4+1f4f4]
+	chromedriver!GetHandleVerifier [0x7ff6db187d97+2397]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+Traceback (most recent call last):
+  File "D:\ai_doc_automation\main.py", line 114, in process_document
+    result_appeared = wait_for_result(driver)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai_doc_automation\doc_uploader.py", line 542, in wait_for_result
+    proc = driver.find_element(By.XPATH, XPATHS["processing_indicator"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\secuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=151.0.7922.170)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5d6d]
+	chromedriver!(No symbol) [0x7ff6dac9cc52]
+	chromedriver!(No symbol) [0x7ff6dad510c6]
+	chromedriver!(No symbol) [0x7ff6dad6e4f2]
+	chromedriver!(No symbol) [0x7ff6dad137cc]
+	chromedriver!(No symbol) [0x7ff6dad146f3]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4d64+1f364]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4ef4+1f4f4]
+	chromedriver!GetHandleVerifier [0x7ff6db187d97+2397]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+
+2026-08-22 13:05:42,433  [INFO    ]  main - [FAIL] Document12_15_page_0.png: ERROR (64.3s)
+2026-08-22 13:05:42,435  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-22 13:05:42,440  [WARNING ]  main - Error resetting form (Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=151.0.7922.170)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6db19abb5+151b5]
+	chromedriver!GetHandleVerifier [0x7ff6db19ac10+15210]
+	chromedriver!(No symbol) [0x7ff6dacc5d6d]
+	chromedriver!(No symbol) [0x7ff6dac9cc52]
+	chromedriver!(No symbol) [0x7ff6dad510c6]
+	chromedriver!(No symbol) [0x7ff6dad6e4f2]
+	chromedriver!(No symbol) [0x7ff6dad137cc]
+	chromedriver!(No symbol) [0x7ff6dad146f3]
+	chromedriver!GetHandleVerifier [0x7ff6db7bb79b+635d9b]
+	chromedriver!GetHandleVerifier [0x7ff6db7b5ac6+6300c6]
+	chromedriver!GetHandleVerifier [0x7ff6db7dbcee+6562ee]
+	chromedriver!GetHandleVerifier [0x7ff6db1b8ffe+335fe]
+	chromedriver!GetHandleVerifier [0x7ff6db1c147c+3ba7c]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4d64+1f364]
+	chromedriver!GetHandleVerifier [0x7ff6db1a4ef4+1f4f4]
+	chromedriver!GetHandleVerifier [0x7ff6db187d97+2397]
+	KERNEL32!BaseThreadInitThunk [0x7ffbe7e0ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffbe964ad6c+2c]
+). Restarting browser session...
+2026-08-22 13:05:49,777  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 13:05:52,161  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 13:05:54,362  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 13:05:58,450  [INFO    ]  main - 
+[7/50] D:\ai_doc_automation\Test Data\Degree Certificate\Document12_16_page_0.png
+2026-08-22 13:05:58,461  [INFO    ]  main - ============================================================
+2026-08-22 13:05:58,463  [INFO    ]  main - Processing [7/50]: Document12_16_page_0.png  |  Graduation Certificate  |  Attempt 1
+2026-08-22 13:05:58,465  [INFO    ]  main - ============================================================
+2026-08-22 13:05:59,812  [INFO    ]  doc_uploader - Selecting document type: 'Graduation Certificate'
+2026-08-22 13:06:00,062  [INFO    ]  doc_uploader - Selected by visible text: 'Graduation Certificate'
+2026-08-22 13:06:00,066  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 13:06:06,367  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 13:06:06,378  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Degree Certificate\Document12_16_page_0.png
+2026-08-22 13:06:06,670  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 13:06:17,678  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 13:06:19,268  [WARNING ]  main - Interrupted by user (Ctrl+C). Saving partial results...
+2026-08-22 13:06:19,270  [INFO    ]  excel_writer - Summary sheet written with overall timing statistics.
+2026-08-22 13:06:19,497  [INFO    ]  excel_writer - Excel saved: D:\ai_doc_automation\output\ai_doc_results_20260822_125359.xlsx
+2026-08-22 13:06:19,498  [INFO    ]  main - Partial results saved: D:\ai_doc_automation\output\ai_doc_results_20260822_125359.xlsx
+2026-08-22 13:06:19,498  [INFO    ]  main - Run with --resume to continue from where you stopped.

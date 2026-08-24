@@ -23,6 +23,10 @@ def create_driver() -> webdriver.Chrome:
 
     if HEADLESS_MODE:
         options.add_argument("--headless=new")
+        # --start-maximized doesn't reliably apply in headless mode, so set
+        # an explicit desktop-sized window to avoid the portal rendering
+        # differently (e.g. a smaller/mobile layout) than in normal mode.
+        options.add_argument("--window-size=1920,1080")
 
     options.add_argument("--start-maximized")
     options.add_argument("--disable-notifications")

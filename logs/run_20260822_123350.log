@@ -1,0 +1,50 @@
+2026-08-22 12:33:50,360  [INFO    ]  main - ============================================================
+2026-08-22 12:33:50,361  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-22 12:33:50,361  [INFO    ]  main - ============================================================
+2026-08-22 12:33:50,361  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-22 12:33:50,362  [INFO    ]  main - [--resume] Skipping rows already marked SUCCESS/FAILED.
+2026-08-22 12:33:50,429  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-22 12:33:50,430  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar Card Test - Digi Locker.pdf
+2026-08-22 12:33:50,433  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar1.jpg
+2026-08-22 12:33:50,433  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar2.jpg
+2026-08-22 12:33:50,433  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar3.jpg
+2026-08-22 12:33:50,434  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Chinmaya Aadhara.pdf
+2026-08-22 12:33:50,434  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\PAN2.jpg
+2026-08-22 12:33:50,434  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard.jpg
+2026-08-22 12:33:50,434  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard2.jpg
+2026-08-22 12:33:50,434  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Passport for Testing\Indianpassportbiopage2025.jpg
+2026-08-22 12:33:50,435  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Passport for Testing\indianpp.jpg
+2026-08-22 12:33:50,435  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Passport for Testing\sample-indian-passport-1.jpg
+2026-08-22 12:33:50,435  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Dl_Odisha.jpg
+2026-08-22 12:33:50,435  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving Licence 2.jpg
+2026-08-22 12:33:50,436  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving Licence.pdf
+2026-08-22 12:33:50,436  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving License Image1.jpg
+2026-08-22 12:33:50,437  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving License Sample.jpg
+2026-08-22 12:33:50,438  [INFO    ]  main - Records to process: 302
+2026-08-22 12:33:52,769  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-22 12:33:52,769  [INFO    ]  excel_writer - Output Excel: D:\ai_doc_automation\output\ai_doc_results_20260822_123352.xlsx
+2026-08-22 12:33:52,769  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-22 12:33:56,972  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_123356_01_dashboard.png
+2026-08-22 12:33:56,972  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-22 12:33:58,912  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-22 12:33:59,071  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260822_123358_02_verify_form.png
+2026-08-22 12:33:59,088  [INFO    ]  main - 
+[1/302] D:\ai_doc_automation\Test Data\PAN card for Testing\PAN.jpg
+2026-08-22 12:33:59,088  [INFO    ]  main - ============================================================
+2026-08-22 12:33:59,088  [INFO    ]  main - Processing [1/302]: PAN.jpg  |  PAN Card  |  Attempt 1
+2026-08-22 12:33:59,088  [INFO    ]  main - ============================================================
+2026-08-22 12:33:59,088  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-22 12:33:59,088  [INFO    ]  doc_uploader - Selecting document type: 'PAN Card'
+2026-08-22 12:33:59,207  [INFO    ]  doc_uploader - Selected by visible text: 'PAN Card'
+2026-08-22 12:33:59,208  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-22 12:34:04,645  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-22 12:34:04,645  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\PAN card for Testing\PAN.jpg
+2026-08-22 12:34:04,657  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-22 12:34:15,080  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-22 12:34:25,140  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-22 12:34:25,140  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-22 12:34:35,277  [WARNING ]  doc_uploader - Dropdown mismatch! Expected 'PAN Card', found 'Aadhaar Card'. Re-selecting.
+2026-08-22 12:34:35,277  [INFO    ]  doc_uploader - Selecting document type: 'PAN Card'
+2026-08-22 12:34:35,361  [INFO    ]  doc_uploader - Selected by visible text: 'PAN Card'
+2026-08-22 12:34:45,429  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-22 12:34:47,850  [WARNING ]  main - Interrupted by user (Ctrl+C). Saving partial results...

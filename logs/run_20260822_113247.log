@@ -1,0 +1,5 @@
+2026-08-22 11:32:47,515  [INFO    ]  main - ============================================================
+2026-08-22 11:32:47,515  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-22 11:32:47,515  [INFO    ]  main - ============================================================
+2026-08-22 11:32:47,518  [ERROR   ]  main - Input file not found: Document10_507_page_0.png
+2026-08-22 11:32:47,518  [ERROR   ]  main - Run:  python create_input_map.py  to create the template.
