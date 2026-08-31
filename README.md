@@ -93,8 +93,14 @@ python main.py --resume --resume-output "outputs/ai_doc_results_20260822_100850.
 # Run without visible Chrome window
 python main.py --headless
 
+# Resume + headless together — common for long unattended overnight runs
+python main.py --resume --headless
+
 # Use a different input file
 python main.py --input "D:\my_docs\batch2.xlsx"
+
+# Resume, one doc type, custom input, headless
+python main.py --resume --type "PAN Card" --input "batch2_map.xlsx" --headless
 ```
 
 ---

@@ -9,15 +9,20 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# --- Paths ---------------------------------------------------
+# --- Paths -----------------------------------------------------
+# Each can be overridden in .env. If not set there, these defaults are used
+# (same folders as before — nothing changes unless you add them to .env).
 BASE_DIR        = Path(__file__).parent.resolve()
 INPUT_MAP_FILE  = BASE_DIR / "input" / "input_map.xlsx"
-OUTPUT_DIR      = BASE_DIR / "output"
+
+OUTPUT_DIR      = Path(os.getenv("OUTPUT_DIR", str(BASE_DIR / "output")))
+LOGS_DIR        = Path(os.getenv("LOGS_DIR", str(BASE_DIR / "logs")))
+TEST_DATA_DIR   = Path(os.getenv("TEST_DATA_DIR", str(BASE_DIR / "Test Data")))
+
 SCREENSHOTS_DIR = OUTPUT_DIR / "screenshots"
-LOGS_DIR        = BASE_DIR / "logs"
 
 # --- Portal --------------------------------------------------
-PORTAL_URL = "https://aiprojects.odisha.gov.in/demo"
+PORTAL_URL = os.getenv("PORTAL_URL", "https://aiprojects.odisha.gov.in/demo")
 
 # --- Timeouts ------------------------------------------------
 PAGE_LOAD_TIMEOUT  = 30     # seconds for page load
