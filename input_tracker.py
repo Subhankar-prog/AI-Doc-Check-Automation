@@ -28,6 +28,8 @@ from typing import List, Dict, Any
 import openpyxl
 from openpyxl.styles import PatternFill, Font, Alignment
 
+from config import TEST_DATA_DIR
+
 logger = logging.getLogger(__name__)
 
 # Column indices in each sheet (1-based)
@@ -130,6 +132,12 @@ class InputTracker:
                 file_path = str(file_path).strip()
                 if not file_path or "<" in file_path or ">" in file_path or file_path == "None":
                     continue
+
+                # If a relative path was given, resolve it against
+                # TEST_DATA_DIR (configurable in .env). Absolute paths
+                # (the usual case) are left exactly as typed.
+                if not Path(file_path).is_absolute():
+                    file_path = str(TEST_DATA_DIR / file_path)
 
                 current_status = ws.cell(row=row_num, column=COL_STATUS).value or STATUS_PENDING
 
