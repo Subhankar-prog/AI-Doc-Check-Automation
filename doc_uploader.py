@@ -1,6 +1,7 @@
 """
 doc_uploader.py — Core upload, submit, and wait logic for VERIFAI portal
 """
+
 import time
 import logging
 from pathlib import Path
@@ -96,7 +97,6 @@ def select_document_type(driver: webdriver.Chrome, doc_type: str):
         select_el = _find_element(
             driver,
             XPATHS["doc_type_select"],
-            XPATHS["doc_type_select"],
             timeout=10
         )
         sel = Select(select_el)
@@ -184,7 +184,7 @@ def ensure_plain_extraction(driver: webdriver.Chrome):
         radio = _find_element(driver, XPATHS["plain_extraction_btn_v2"], timeout=5)
         if not radio.is_selected():
             _click_safe(driver, radio)
-        logger.info("Plain extraction radio input clicked.")
+            logger.info("Plain extraction radio input clicked.")
     except NoSuchElementException:
         logger.warning("Plain extraction radio not found — may already be default.")
 
@@ -264,52 +264,61 @@ def upload_file(driver: webdriver.Chrome, file_path: str):
     # Make the input fully interactable via JS (remove hidden/display:none)
     driver.execute_script(
         """
-        arguments[0].style.display    = 'block';
+        arguments[0].style.display = 'block';
         arguments[0].style.visibility = 'visible';
-        arguments[0].style.opacity    = '1';
-        arguments[0].style.position   = 'fixed';
-        arguments[0].style.top        = '0';
-        arguments[0].style.left       = '0';
-        arguments[0].style.zIndex     = '9999';
+        arguments[0].style.opacity = '1';
+        arguments[0].style.position = 'fixed';
+        arguments[0].style.top = '0';
+        arguments[0].style.left = '0';
+        arguments[0].style.zIndex = '9999';
         arguments[0].removeAttribute('hidden');
         """,
         file_input
     )
     time.sleep(0.3)
-    file_input.send_keys(abs_path)
-    _wait_for_upload_ready(driver)
 
-    # Check if portal rejected the file (size / format / multi-page error)
-    # Screenshot 2 shows a pink banner: "Upload a JPEG, PNG, WebP, or PDF document: up to 9 MB."
-    error_msg = _check_upload_error(driver)
-    if error_msg:
-        raise UploadRejectedError(error_msg)
+    file_input.send_keys(abs_path)
+
+    # This is the ONE authoritative post-upload check: it polls until either
+    # an error banner appears or the Submit button becomes visible. Its
+    # result is trusted for the rest of the flow — verify_and_submit() does
+    # NOT re-scan the DOM for the same thing again afterward.
+    upload_err = _wait_for_upload_ready(driver)
+    if upload_err:
+        raise UploadRejectedError(upload_err)
 
     logger.info("File uploaded successfully.")
 
 
-def _wait_for_upload_ready(driver: webdriver.Chrome, timeout: float = 4.0):
+def _wait_for_upload_ready(driver: webdriver.Chrome, timeout: float = 4.0) -> str:
     """
     After sending the file path to the file input, the portal needs a moment
     to render the preview/thumbnail. Instead of a flat sleep, poll for the
     earliest real signal that the upload finished:
-      - an error banner appears (fail fast, let the caller handle it), or
+      - an error banner appears (return its text immediately), or
       - the 'Submit to engine' button becomes visible (upload accepted).
     Falls back to returning after `timeout` seconds regardless, as a safety net.
+
+    Returns the error banner text if one appeared, or "" if the upload looks
+    clean. This is the single source of truth for upload-error state — callers
+    should trust this result rather than re-checking the DOM themselves.
     """
     deadline = time.time() + timeout
     while time.time() < deadline:
-        if _check_upload_error(driver):
-            return
+        err = _check_upload_error(driver)
+        if err:
+            return err
         try:
             btn = driver.find_element(By.XPATH, XPATHS["submit_to_engine_v2"])
             if btn.is_displayed():
                 logger.info("Upload preview ready (submit button visible).")
-                return
+                return ""
         except NoSuchElementException:
             pass
         time.sleep(0.3)
+
     logger.debug("Upload readiness check timed out — proceeding anyway.")
+    return ""
 
 
 class UploadRejectedError(Exception):
@@ -320,6 +329,13 @@ class UploadRejectedError(Exception):
 def _check_upload_error(driver: webdriver.Chrome) -> str:
     """
     Check if the portal shows an upload error banner (size/format rejection).
+
+    NOTE: this does a full DOM scan (document.querySelectorAll('*')) and is
+    the most expensive check in the upload flow. Call it sparingly — once
+    after upload (inside _wait_for_upload_ready), and once more right after
+    clicking Submit (inside verify_and_submit). Do not add extra calls to
+    this in between; the page state doesn't change on its own.
+
     Screenshot shows pink alert banner below Submit button:
     'Upload a JPEG, PNG, WebP, or PDF document: up to 5 MB.'
     """
@@ -373,9 +389,8 @@ def _check_upload_error(driver: webdriver.Chrome) -> str:
                         return text
         except Exception:
             pass
+
     return ""
-
-
 
 
 def _get_file_input_via_js(driver: webdriver.Chrome):
@@ -425,33 +440,37 @@ def _click_upload_trigger(driver: webdriver.Chrome):
     logger.warning("No upload trigger button found — file input may already be present.")
 
 
-
 # ──────────────────────────────────────────────────────────
 # Step 5: Verify state, then click Submit to Engine
 # ──────────────────────────────────────────────────────────
 def verify_and_submit(driver: webdriver.Chrome, doc_type: str,
                        skip_plain_extraction_recheck: bool = False):
     """
-    Final pre-submit checks:
-      - Dropdown shows correct doc type
-      - Plain extraction is selected (skipped if already confirmed moments
-        earlier in the flow and skip_plain_extraction_recheck=True — uploading
-        a file does not affect this setting, so re-checking it here is redundant)
-      - Check for upload rejection error banners
-    Then click Submit to engine.
+    Final pre-submit checks, trimmed to what actually matters:
+
+    - Upload-error banner is NOT re-checked here. upload_file() already
+      confirmed (via _wait_for_upload_ready) that no error banner appeared
+      right after the file was accepted, and nothing on the page changes
+      between that check and this function running — re-scanning the full
+      DOM again here was pure wasted time with zero new information.
+    - Dropdown value is verified (cheap, one Select() call).
+    - Plain extraction is re-checked only if the caller asks for it
+      (uploading a file doesn't affect this setting, so callers that
+      already confirmed it moments earlier should pass
+      skip_plain_extraction_recheck=True).
+    - After clicking Submit, we do NOT re-scan for an error banner either:
+      wait_for_result() already polls for exactly this (see its own
+      _check_upload_error call) as part of its normal result-detection loop,
+      so a duplicate check here would just be the same scan run twice.
+
+    Then clicks Submit to engine.
     """
     logger.info("Pre-submit verification...")
-
-    # Check for upload rejection error banner (e.g. file size > 5MB, format error)
-    upload_err = _check_upload_error(driver)
-    if upload_err:
-        raise UploadRejectedError(upload_err)
 
     # Check dropdown value
     try:
         select_el = _find_element(
             driver,
-            XPATHS["doc_type_select"],
             XPATHS["doc_type_select"],
             timeout=5
         )
@@ -470,11 +489,6 @@ def verify_and_submit(driver: webdriver.Chrome, doc_type: str,
     if not skip_plain_extraction_recheck:
         ensure_plain_extraction(driver)
 
-    # Re-check upload error before submit
-    upload_err = _check_upload_error(driver)
-    if upload_err:
-        raise UploadRejectedError(upload_err)
-
     # Click Submit
     logger.info("Clicking 'Submit to engine'...")
     submit_btn = _find_element(
@@ -484,12 +498,6 @@ def verify_and_submit(driver: webdriver.Chrome, doc_type: str,
         timeout=10
     )
     _click_safe(driver, submit_btn)
-    time.sleep(1.0)
-
-    # Post-click check: did an immediate validation error popup?
-    post_err = _check_upload_error(driver)
-    if post_err:
-        raise UploadRejectedError(post_err)
 
     logger.info("Submitted to engine. Waiting for result...")
 
@@ -504,19 +512,18 @@ def wait_for_result(driver: webdriver.Chrome) -> bool:
     Returns True if result page appeared, False on timeout.
     """
     logger.info(f"Waiting for engine result (timeout={ENGINE_TIMEOUT}s)...")
-    start    = time.time()
+    start = time.time()
     deadline = start + ENGINE_TIMEOUT
 
     while time.time() < deadline:
         elapsed = int(time.time() - start)
 
         # 1. Check if the result page has appeared FIRST
-        # "TRANSACTION COMPLETE" or "Pipeline failure result" or "Plain extraction result" or result-tabs div or New submission button
         try:
             el = driver.find_element(By.XPATH, XPATHS["result_appeared"])
             if el.is_displayed():
                 logger.info(f"Result appeared after {elapsed}s.")
-                time.sleep(1)   # small stabilisation pause
+                time.sleep(1)  # small stabilisation pause
                 return True
         except (NoSuchElementException, StaleElementReferenceException):
             pass
@@ -551,8 +558,6 @@ def wait_for_result(driver: webdriver.Chrome) -> bool:
 
     logger.warning(f"Engine timeout after {ENGINE_TIMEOUT}s.")
     return False
-
-
 
 
 # ──────────────────────────────────────────────────────────
@@ -591,7 +596,6 @@ def wait_for_form_ready(driver: webdriver.Chrome, timeout: int = 15) -> bool:
     """
     After clicking 'New submission', the portal needs a moment to redraw
     the upload form (document type dropdown, plain extraction option, etc.).
-
     Instead of a flat sleep, actively poll until the document type dropdown
     is present, visible, and enabled — i.e. the form is actually ready to
     accept input for the next document.

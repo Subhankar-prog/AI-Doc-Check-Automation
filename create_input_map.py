@@ -2,9 +2,18 @@
 create_input_map.py - Generate input_map.xlsx with one sheet per document type
 
 Structure:
-    Sheet "Aadhaar Card"         <- paste all Aadhaar image paths here
-    Sheet "PAN Card"             <- paste all PAN image paths here
-    Sheet "Indian Passport"      <- etc.
+    Sheet "Aadhaar Card"                  <- paste all Aadhaar image paths here
+    Sheet "PAN Card"                      <- paste all PAN image paths here
+    Sheet "Indian Passport"               <- etc.
+    Sheet "College Id"                    <- new
+    # Sheet "Destitute Certificate"         <- new
+    Sheet "HIV Certificate"               <- new
+    # Sheet "Without Shelter Certificate"   <- new
+    # Sheet "Manual Scavangers Certificate" <- new
+    Sheet "Vulnerable Tribal Certificate" <- new
+    Sheet "Bonded Labour Certificate"     <- new
+    Sheet "Single Mother Certificate"     <- new
+    Sheet "Bank Passbook"                 <- new
     ...
 
 Each sheet has:
@@ -36,19 +45,77 @@ THIN_BORDER  = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 
 # One distinct light colour per document type sheet tab
 SHEET_COLORS = {
-    "Aadhaar Card":           ("E8F4FD", "1565C0"),  # blue
-    "PAN Card":               ("FDE8F4", "880E4F"),  # pink
-    "Indian Passport":        ("E8FDE8", "1B5E20"),  # green
-    "Driving Licence":        ("FDF5E8", "E65100"),  # orange
-    "10th Marksheet":         ("F0E8FD", "4A148C"),  # purple
-    "12th Marksheet":         ("FDE8E8", "B71C1C"),  # red
-    "Graduation Certificate": ("E8FDF5", "004D40"),  # teal
-    "Income Certificate":     ("FDEEE8", "BF360C"),  # deep orange
-    "Caste Certificate":      ("E8EAFD", "1A237E"),  # indigo
-    "Residence Certificate":  ("F5FDE8", "33691E"),  # light green
+    # --- Original 10 types ---
+    "Aadhaar Card":                  ("E8F4FD", "1565C0"),  # blue
+    "PAN Card":                      ("FDE8F4", "880E4F"),  # pink
+    "Indian Passport":               ("E8FDE8", "1B5E20"),  # green
+    "Driving Licence":               ("FDF5E8", "E65100"),  # orange
+    "10th Marksheet":                ("F0E8FD", "4A148C"),  # purple
+    "12th Marksheet":                ("FDE8E8", "B71C1C"),  # red
+    "Graduation Certificate":        ("E8FDF5", "004D40"),  # teal
+    "Income Certificate":            ("FDEEE8", "BF360C"),  # deep orange
+    "Caste Certificate":             ("E8EAFD", "1A237E"),  # indigo
+    "Residence Certificate":         ("F5FDE8", "33691E"),  # light green
+
+    # --- Newly added types (added 2026-09-05) ---
+    "College Id":                    ("FFF8E1", "F57F17"),  # amber
+    # "Destitute Certificate":         ("FCE4EC", "880E4F"),  # deep pink
+    "HIV Certificate":               ("F3E5F5", "6A1B9A"),  # deep purple
+    # "Without Shelter Certificate":   ("E0F7FA", "006064"),  # cyan
+    # "Manual Scavangers Certificate": ("FBE9E7", "BF360C"),  # deep orange 2
+    "Vulnerable Tribal Certificate": ("E8F5E9", "2E7D32"),  # dark green
+    "Bonded Labour Certificate":     ("EDE7F6", "4527A0"),  # deep purple 2
+    "Single Mother Certificate":     ("FFF3E0", "E65100"),  # orange 2
+    "Bank Passbook":                 ("E1F5FE", "01579B"),  # light blue
 }
 
-PLACEHOLDER_ROWS = 10   # blank rows pre-created in each sheet
+PLACEHOLDER_ROWS = 10   # blank rows pre-created when folder is empty
+
+# Maps each document type -> its Test Data subfolder name.
+# The folder is scanned at creation time; found files are pre-filled
+# into Column A so you don't have to type paths manually.
+TEST_DATA_DIR = Path(__file__).parent / "Test Data"
+TEST_DATA_FOLDERS = {
+    # --- Original 10 types ---
+    "Aadhaar Card":                  "Adhar card  for Testing",
+    "PAN Card":                      "PAN card for Testing",
+    "Indian Passport":               "Passport for Testing",
+    "Driving Licence":               "DL for Testing",
+    "10th Marksheet":                "10th Marksheet for Testing",
+    "12th Marksheet":                "12th Certificate for Testing",
+    "Graduation Certificate":        "Degree Certificate",
+    "Income Certificate":            "Income Certificate for Testing",
+    "Caste Certificate":             "Cast Certificate for Testing",
+    "Residence Certificate":         "Residence Certificate for Testing",
+
+    # --- Newly added types ---
+    "College Id":                    "College Id for Testing",
+    "HIV Certificate":               "HIV Certificate for Testing",
+    "Vulnerable Tribal Certificate": "Vulnerable Tribal Certificate for Testing",
+    "Bonded Labour Certificate":     "Bonded Labour Certificate for Testing",
+    "Single Mother Certificate":     "Single Mother Certificate for Testing",
+    "Bank Passbook":                 "Bank Passbook for Testing",
+}
+
+
+def _scan_folder(doc_type: str):
+    """
+    Return sorted list of absolute file paths found in the Test Data folder
+    for this document type. Only picks up allowed extensions.
+    Returns [] if folder is missing or empty.
+    """
+    ALLOWED = {".jpg", ".jpeg", ".png", ".webp", ".pdf"}
+    folder_name = TEST_DATA_FOLDERS.get(doc_type)
+    if not folder_name:
+        return []
+    folder = TEST_DATA_DIR / folder_name
+    if not folder.is_dir():
+        return []
+    files = sorted(
+        p for p in folder.iterdir()
+        if p.is_file() and p.suffix.lower() in ALLOWED
+    )
+    return [str(p.resolve()) for p in files]
 
 
 def _write_header(ws, doc_type: str, bg: str, accent: str):
@@ -132,6 +199,7 @@ def create():
     wb = openpyxl.Workbook()
     wb.remove(wb.active)   # remove default empty sheet
 
+    total_files = 0
     for doc_type, (bg, accent) in SHEET_COLORS.items():
         ws = wb.create_sheet(title=doc_type)
 
@@ -145,18 +213,41 @@ def create():
         ws.column_dimensions["D"].width = 12
 
         _write_header(ws, doc_type, bg, accent)
-        _write_placeholder_rows(ws, doc_type, bg)
 
+        # --- Auto-fill from Test Data folder ---
+        files = _scan_folder(doc_type)
+        if files:
+            bg_fill  = PatternFill("solid", fgColor=bg)
+            for i, fpath in enumerate(files):
+                row = i + 3  # data starts at row 3
+                a = ws.cell(row=row, column=1, value=fpath)
+                a.fill      = bg_fill
+                a.font      = DATA_FONT
+                a.alignment = LEFT
+                a.border    = THIN_BORDER
+                for col in (2, 3, 4):
+                    c = ws.cell(row=row, column=col,
+                                value="PENDING" if col == 3 else "")
+                    c.fill      = PatternFill("solid", fgColor="F5F5F5") if col == 3 else bg_fill
+                    c.font      = Font(name="Calibri", size=10,
+                                      italic=True, color="888888") if col == 3 else DATA_FONT
+                    c.alignment = Alignment(horizontal="center", vertical="center")
+                    c.border    = THIN_BORDER
+                ws.row_dimensions[row].height = 18
+            total_files += len(files)
+            print(f"  [{doc_type}]  {len(files)} file(s) pre-filled from Test Data folder")
+        else:
+            # Folder empty or not yet populated — use placeholder rows
+            _write_placeholder_rows(ws, doc_type, bg)
+            print(f"  [{doc_type}]  no files found — placeholder rows added")
 
     wb.save(OUTPUT_FILE)
 
+    print()
     print(f"[OK] input_map.xlsx created at: {OUTPUT_FILE}")
+    print(f"     {total_files} file path(s) pre-filled from Test Data folders.")
     print()
-    print("Sheets created (one per document type):")
-    for dt in SHEET_COLORS:
-        print(f"    - {dt}")
-    print()
-    print("HOW TO FILL:")
+    print("HOW TO FILL (for empty sheets):")
     print("  1. Open the sheet for your document type (e.g. 'Aadhaar Card')")
     print("  2. Replace the grey placeholder paths in Column A with real file paths")
     print("  3. You can add as many rows as needed (100s is fine)")

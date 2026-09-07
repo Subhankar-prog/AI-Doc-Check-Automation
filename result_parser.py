@@ -2,12 +2,27 @@
 result_parser.py - Scrape results from VERIFAI result page
 
 From the portal screenshots:
-  Overview tab: shows OVERALL VERDICT = SUCCESS/FAILED
-  Extraction tab: shows a list of "EXTRACTABLE FIELDS" as label | value rows
-    - Label: left cell, grey text  (e.g. "Grade", "Result", "Student Name")
-    - Value: right cell, bold/colored (e.g. "A+", "FIRST CLASS WITH DISTINCTION")
-    - Some values are "Not detected"
+Overview tab: shows OVERALL VERDICT = SUCCESS/FAILED
+Extraction tab: shows a list of "EXTRACTABLE FIELDS" as label | value rows
+  - Label: left cell, grey text (e.g. "Grade", "Result", "Student Name")
+  - Value: right cell, bold/colored (e.g. "A+", "FIRST CLASS WITH DISTINCTION")
+  - Some values are "Not detected"
+
+FAST-PATH LOGIC:
+The Extraction tab only exists on the result page when the document was
+processed successfully. So instead of always reading the Overview tab's
+verdict text (a tab click + sleep + several XPath/body-text scans) and
+THEN deciding whether to open Extraction, we try to open Extraction first:
+
+  - Extraction tab present  -> it's a SUCCESS, scrape fields directly.
+    No Overview click, no verdict-text reading, no body-text scan.
+  - Extraction tab absent   -> genuinely failed/unknown, NOW it's worth
+    paying for the slower Overview / verdict / failure-reason read.
+
+This means the expensive diagnostic path only runs for the minority of
+documents that actually failed, instead of running for every document.
 """
+
 import time
 import logging
 from typing import Dict, Tuple
@@ -23,7 +38,8 @@ logger = logging.getLogger(__name__)
 
 
 # ─────────────────────────────────────────────────────────────
-# Detect overall verdict from Overview tab
+# Detect overall verdict from Overview tab (slow path — only used
+# when the Extraction tab is not present, i.e. failure/unknown cases)
 # ─────────────────────────────────────────────────────────────
 def get_status(driver: webdriver.Chrome) -> Tuple[str, str]:
     """
@@ -108,16 +124,9 @@ def _get_pipeline_error(driver: webdriver.Chrome) -> str:
     """
     Extract the full pipeline failure reason text if present.
 
-    Previously this stopped at the first nearby container it found around
-    'Pipeline failure', which sometimes only captured the generic page
-    heading (e.g. "TRANSACTION COMPLETE — Pipeline failure result —
-    TXN-...") and missed the actual detailed reason shown below it
-    (e.g. "PDF validation failed: [PDF_MULTIPLE_PAGES]..." or
-    "Document type mismatch — Expected: X — Detected: Y").
-
-    Now it specifically looks for known detailed-reason phrases first, and
-    for each match walks up several ancestor levels, keeping the longest
-    (most detailed) surrounding text rather than the first/shallowest hit.
+    Looks for known detailed-reason phrases first, and for each match walks
+    up several ancestor levels, keeping the longest (most detailed)
+    surrounding text rather than the first/shallowest hit.
     """
     # Checked in order of specificity: exact reason phrases first, generic
     # heading phrases last (only used as a fallback if nothing else matches).
@@ -141,6 +150,7 @@ def _get_pipeline_error(driver: webdriver.Chrome) -> str:
         for el in els:
             if not el.is_displayed():
                 continue
+
             # Walk up multiple ancestor levels and keep the longest text
             # found — the more detailed reason box will have more content
             # than just the short heading line.
@@ -149,6 +159,7 @@ def _get_pipeline_error(driver: webdriver.Chrome) -> str:
                 candidates += el.find_elements(By.XPATH, "ancestor::*[position()<=6]")
             except Exception:
                 pass
+
             for cand in candidates:
                 try:
                     text = cand.text.strip().replace("\n", " — ")
@@ -185,26 +196,36 @@ def _get_error_text(driver: webdriver.Chrome) -> str:
                         return t
         except Exception:
             pass
+
     return "Verification failed on portal"
 
 
+# ─────────────────────────────────────────────────────────────
+# Scrape all label-value pairs from an already-open Extraction tab
+# ─────────────────────────────────────────────────────────────
+def _scrape_fields_only(driver: webdriver.Chrome) -> Dict[str, str]:
+    """
+    Runs the parsing strategies only — assumes the Extraction tab is
+    already open (the caller is responsible for clicking it). Kept
+    separate from get_extracted_fields() so the fast success path in
+    parse_result() doesn't have to click the tab twice.
+    """
+    for parser in (_parse_via_javascript, _parse_table, _parse_div_rows, _parse_dl, _parse_generic_text):
+        fields = parser(driver)
+        if fields:
+            logger.info(f"{parser.__name__}: {len(fields)} fields")
+            return fields
 
-# ─────────────────────────────────────────────────────────────
-# Navigate to Extraction tab & scrape all label-value pairs
-# ─────────────────────────────────────────────────────────────
+    logger.warning("No fields could be extracted.")
+    return {}
+
+
 def get_extracted_fields(driver: webdriver.Chrome) -> Dict[str, str]:
     """
     Click the Extraction tab and dynamically scrape all label-value rows.
-
-    From screenshot, the page shows:
-        "EXTRACTABLE FIELDS  |  14 fields detected"
-    followed by rows like:
-        Grade              | A+
-        Result             | FIRST CLASS WITH DISTINCTION
-        Percentage         | 93.20
-        Student Name       | SUNAMANTA SAHOO
-        University Name    | Utkal University, Odisha
-        ...
+    Kept for any caller that needs the "click tab + scrape" behavior in one
+    step. parse_result() below uses _scrape_fields_only() directly instead,
+    since it has usually already clicked the tab as part of its fast path.
     """
     logger.info("Clicking Extraction tab...")
     try:
@@ -215,34 +236,7 @@ def get_extracted_fields(driver: webdriver.Chrome) -> Dict[str, str]:
     except NoSuchElementException:
         logger.warning("Extraction tab not found — attempting to read current page.")
 
-    # Try strategies in order; return first successful parse
-    fields = _parse_via_javascript(driver)
-    if fields:
-        logger.info(f"JS parse: {len(fields)} fields")
-        return fields
-
-    fields = _parse_table(driver)
-    if fields:
-        logger.info(f"Table parse: {len(fields)} fields")
-        return fields
-
-    fields = _parse_div_rows(driver)
-    if fields:
-        logger.info(f"Div-row parse: {len(fields)} fields")
-        return fields
-
-    fields = _parse_dl(driver)
-    if fields:
-        logger.info(f"DL parse: {len(fields)} fields")
-        return fields
-
-    fields = _parse_generic_text(driver)
-    if fields:
-        logger.info(f"Generic text parse: {len(fields)} fields")
-        return fields
-
-    logger.warning("No fields could be extracted.")
-    return {}
+    return _scrape_fields_only(driver)
 
 
 # ─────────────────────────────────────────────────────────────
@@ -296,7 +290,6 @@ def _parse_via_javascript(driver: webdriver.Chrome) -> Dict[str, str]:
         var value = dds[i] ? dds[i].innerText.trim() : '';
         if (label) result[label] = value;
     }
-
     return result;
     """
     try:
@@ -402,8 +395,8 @@ def _parse_generic_text(driver: webdriver.Chrome) -> Dict[str, str]:
                     # Only accept short labels (field names are typically < 40 chars)
                     if label and len(label) < 50:
                         fields[label] = value
-                if fields:
-                    return fields
+            if fields:
+                return fields
     except Exception as e:
         logger.debug(f"Generic text parse: {e}")
     return fields
@@ -419,30 +412,43 @@ def parse_result(
     processing_time: float
 ) -> Dict[str, str]:
     """
-    Collect the full result for one document:
-      1. Read verdict from Overview tab
-      2. If SUCCESS -> click Extraction tab -> scrape fields
-      3. Take screenshot for logs
+    Collect the full result for one document — FAST PATH FIRST:
 
-    Returns a flat dict ready for excel_writer.append_row()
+    1. Try to click the Extraction tab directly.
+       - If it exists: the document succeeded. Scrape fields immediately.
+         No Overview tab click, no verdict-text reading, no body-text scan.
+         One screenshot only (of the extracted fields).
+       - If it doesn't exist (NoSuchElementException): fall back to the
+         slower Overview/verdict read, since this is now a genuine
+         failure/unknown case worth the extra diagnostic cost.
     """
-    take_screenshot(driver, f"result_{filename}")
+    try:
+        ext_tab = _find_element(driver, XPATHS["extraction_tab"], timeout=6)
+        _click_safe(driver, ext_tab)
+        time.sleep(1.0)
 
-    status, error_msg = get_status(driver)
-
-    result = {
-        "Filename":         filename,
-        "Document Type":    doc_type,
-        "Status":           status,
-        "Error Message":    error_msg,
-        "_processing_time": round(processing_time, 1),
-    }
-
-    if status == "SUCCESS":
-        fields = get_extracted_fields(driver)
-        result.update(fields)
+        fields = _scrape_fields_only(driver)
         take_screenshot(driver, f"extracted_{filename}")
-    else:
-        logger.info(f"Skipping extraction (status={status}).")
 
-    return result
+        return {
+            "Filename": filename,
+            "Document Type": doc_type,
+            "Status": "SUCCESS",
+            "Error Message": "",
+            "_processing_time": round(processing_time, 1),
+            **fields,
+        }
+
+    except NoSuchElementException:
+        # No Extraction tab -> genuinely failed/unknown, worth the slow read
+        logger.info("Extraction tab not present — reading Overview for failure reason.")
+        take_screenshot(driver, f"result_{filename}")
+        status, error_msg = get_status(driver)
+
+        return {
+            "Filename": filename,
+            "Document Type": doc_type,
+            "Status": status,
+            "Error Message": error_msg,
+            "_processing_time": round(processing_time, 1),
+        }

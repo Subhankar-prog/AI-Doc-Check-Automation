@@ -43,16 +43,28 @@ ALLOWED_UPLOAD_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".pdf"}
 # Keys  = value you write in input_map.xlsx "Document Type" column
 # Values = exact text shown in portal dropdown
 DOCUMENT_TYPES = {
-    "Aadhaar Card":           "Aadhaar Card",
-    "PAN Card":               "PAN Card",
-    "Indian Passport":        "Indian Passport",
-    "Driving Licence":        "Driving Licence",
-    "10th Marksheet":         "10th Marksheet",
-    "12th Marksheet":         "12th Marksheet",
-    "Graduation Certificate": "Graduation Certificate",
-    "Income Certificate":     "Income Certificate",
-    "Caste Certificate":      "Caste Certificate",
-    "Residence Certificate":  "Residence Certificate",
+    # --- Original 10 types ---
+    "Aadhaar Card":                  "Aadhaar Card",
+    "PAN Card":                      "PAN Card",
+    "Indian Passport":               "Indian Passport",
+    "Driving Licence":               "Driving Licence",
+    "10th Marksheet":                "10th Marksheet",
+    "12th Marksheet":                "12th Marksheet",
+    "Graduation Certificate":        "Graduation Certificate",
+    "Income Certificate":            "Income Certificate",
+    "Caste Certificate":             "Caste Certificate",
+    "Residence Certificate":         "Residence Certificate",
+
+    # --- Newly added types (added 2026-09-05) ---
+    "College Id":                    "College Id",
+    # "Destitute Certificate":         "Destitute Certificate",
+    "HIV Certificate":               "HIV Certificate",
+    # "Without Shelter Certificate":   "Without Shelter Certificate",
+    # "Manual Scavangers Certificate": "Manual Scavangers Certificate",
+    "Vulnerable Tribal Certificate": "Vulnerable Tribal Certificate",
+    "Bonded Labour Certificate":     "Bonded Labour Certificate",
+    "Single Mother Certificate":     "Single Mother Certificate",
+    "Bank Passbook":  "Bank Passbook",
 }
 
 # --- XPaths (verified from VERIFAI portal console) -----------
