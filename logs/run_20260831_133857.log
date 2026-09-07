@@ -1,0 +1,541 @@
+2026-08-31 13:38:57,121  [INFO    ]  main - ============================================================
+2026-08-31 13:38:57,121  [INFO    ]  main -   VERIFAI Document Automation - Starting
+2026-08-31 13:38:57,126  [INFO    ]  main - ============================================================
+2026-08-31 13:38:57,126  [INFO    ]  main - Input file : D:\ai_doc_automation\input\input_map.xlsx
+2026-08-31 13:38:57,126  [INFO    ]  main - [--resume] Skipping rows already marked SUCCESS/FAILED.
+2026-08-31 13:38:57,247  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-31 13:38:57,247  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar1.jpg
+2026-08-31 13:38:57,247  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar2.jpg
+2026-08-31 13:38:57,247  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar3.jpg
+2026-08-31 13:38:57,247  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Adhar card  for Testing\Chinmaya Aadhara.pdf
+2026-08-31 13:38:57,247  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\PAN.jpg
+2026-08-31 13:38:57,247  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\PAN1.jpg
+2026-08-31 13:38:57,247  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard2.jpg
+2026-08-31 13:38:57,247  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Passport for Testing\Indianpassportbiopage2025.jpg
+2026-08-31 13:38:57,247  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Passport for Testing\indianpp.jpg
+2026-08-31 13:38:57,247  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Passport for Testing\sample-indian-passport-1.jpg
+2026-08-31 13:38:57,254  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Dl_Odisha.jpg
+2026-08-31 13:38:57,254  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving Licence 2.jpg
+2026-08-31 13:38:57,254  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving Licence.pdf
+2026-08-31 13:38:57,255  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving License Image1.jpg
+2026-08-31 13:38:57,255  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\DL for Testing\Driving License Sample.jpg
+2026-08-31 13:38:57,256  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1053_page_0.png
+2026-08-31 13:38:57,257  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1054_page_0.png
+2026-08-31 13:38:57,257  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1055_page_0.png
+2026-08-31 13:38:57,258  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1056_page_0.png
+2026-08-31 13:38:57,258  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1057_page_0.png
+2026-08-31 13:38:57,258  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1058_page_0.png
+2026-08-31 13:38:57,260  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1059_page_0.png
+2026-08-31 13:38:57,260  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1060_page_0.png
+2026-08-31 13:38:57,260  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1061_page_0.png
+2026-08-31 13:38:57,261  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1062_page_0.png
+2026-08-31 13:38:57,261  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1065_page_0.png
+2026-08-31 13:38:57,263  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1066_page_0.png
+2026-08-31 13:38:57,263  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1067_page_0.png
+2026-08-31 13:38:57,264  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1068_page_0.png
+2026-08-31 13:38:57,264  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1069_page_0.png
+2026-08-31 13:38:57,265  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1070_page_0.png
+2026-08-31 13:38:57,265  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1071_page_0.png
+2026-08-31 13:38:57,265  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1072_page_0.png
+2026-08-31 13:38:57,266  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1073_page_0.png
+2026-08-31 13:38:57,266  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1074_page_0.png
+2026-08-31 13:38:57,266  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1077_page_0.png
+2026-08-31 13:38:57,267  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1078_page_0.png
+2026-08-31 13:38:57,267  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1079_page_0.png
+2026-08-31 13:38:57,267  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1080_page_0.png
+2026-08-31 13:38:57,267  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1081_page_0.png
+2026-08-31 13:38:57,267  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1082_page_0.png
+2026-08-31 13:38:57,267  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1083_page_0.png
+2026-08-31 13:38:57,267  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1084_page_0.png
+2026-08-31 13:38:57,267  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1085_page_0.png
+2026-08-31 13:38:57,267  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1086_page_0.png
+2026-08-31 13:38:57,267  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1089_page_0.png
+2026-08-31 13:38:57,267  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1090_page_0.png
+2026-08-31 13:38:57,272  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1091_page_0.png
+2026-08-31 13:38:57,272  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1092_page_0.png
+2026-08-31 13:38:57,272  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1093_page_0.png
+2026-08-31 13:38:57,272  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1094_page_0.png
+2026-08-31 13:38:57,272  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1095_page_0.png
+2026-08-31 13:38:57,272  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1096_page_0.png
+2026-08-31 13:38:57,272  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1097_page_0.png
+2026-08-31 13:38:57,275  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1098_page_0.png
+2026-08-31 13:38:57,275  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1101_page_0.png
+2026-08-31 13:38:57,275  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1102_page_0.png
+2026-08-31 13:38:57,276  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1103_page_0.png
+2026-08-31 13:38:57,276  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1104_page_0.png
+2026-08-31 13:38:57,277  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1105_page_0.png
+2026-08-31 13:38:57,277  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1106_page_0.png
+2026-08-31 13:38:57,277  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1107_page_0.png
+2026-08-31 13:38:57,278  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1108_page_0.png
+2026-08-31 13:38:57,279  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1109_page_0.png
+2026-08-31 13:38:57,279  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1110_page_0.png
+2026-08-31 13:38:57,279  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1113_page_0.png
+2026-08-31 13:38:57,279  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1114_page_0.png
+2026-08-31 13:38:57,279  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1115_page_0.png
+2026-08-31 13:38:57,279  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1116_page_0.png
+2026-08-31 13:38:57,279  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1117_page_0.png
+2026-08-31 13:38:57,279  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1118_page_0.png
+2026-08-31 13:38:57,279  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1119_page_0.png
+2026-08-31 13:38:57,279  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1120_page_0.png
+2026-08-31 13:38:57,283  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1121_page_0.png
+2026-08-31 13:38:57,283  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1122_page_0.png
+2026-08-31 13:38:57,283  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1125_page_0.png
+2026-08-31 13:38:57,283  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1126_page_0.png
+2026-08-31 13:38:57,283  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1127_page_0.png
+2026-08-31 13:38:57,283  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1128_page_0.png
+2026-08-31 13:38:57,284  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1129_page_0.png
+2026-08-31 13:38:57,284  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1130_page_0.png
+2026-08-31 13:38:57,284  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1131_page_0.png
+2026-08-31 13:38:57,284  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1132_page_0.png
+2026-08-31 13:38:57,284  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1133_page_0.png
+2026-08-31 13:38:57,284  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\10th Marksheet for Testing\Document10_1134_page_0.png
+2026-08-31 13:38:57,285  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_188_page_0.png
+2026-08-31 13:38:57,285  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_189_page_0.png
+2026-08-31 13:38:57,285  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_190_page_0.png
+2026-08-31 13:38:57,285  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_191_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_192_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_193_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_194_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_195_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_196_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_197_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_198_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_198_page_1.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_199_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_200_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_201_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_202_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_203_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_204_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_205_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_206_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_207_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_208_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_209_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_210_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_211_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_212_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_213_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_214_page_0.png
+2026-08-31 13:38:57,286  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_215_page_0.png
+2026-08-31 13:38:57,293  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_216_page_0.png
+2026-08-31 13:38:57,293  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_217_page_0.png
+2026-08-31 13:38:57,293  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_218_page_0.png
+2026-08-31 13:38:57,293  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_219_page_0.png
+2026-08-31 13:38:57,293  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_220_page_0.png
+2026-08-31 13:38:57,293  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_221_page_0.png
+2026-08-31 13:38:57,294  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_222_page_0.png
+2026-08-31 13:38:57,294  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_223_page_0.png
+2026-08-31 13:38:57,294  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_224_page_0.png
+2026-08-31 13:38:57,295  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_225_page_0.png
+2026-08-31 13:38:57,295  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_226_page_0.png
+2026-08-31 13:38:57,295  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_227_page_0.png
+2026-08-31 13:38:57,295  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_228_page_0.png
+2026-08-31 13:38:57,297  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_229_page_0.png
+2026-08-31 13:38:57,297  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_230_page_0.png
+2026-08-31 13:38:57,297  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_231_page_0.png
+2026-08-31 13:38:57,298  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_232_page_0.png
+2026-08-31 13:38:57,298  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_233_page_0.png
+2026-08-31 13:38:57,298  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_234_page_0.png
+2026-08-31 13:38:57,298  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_235_page_0.png
+2026-08-31 13:38:57,298  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_236_page_0.png
+2026-08-31 13:38:57,300  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_237_page_0.png
+2026-08-31 13:38:57,300  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_238_page_0.png
+2026-08-31 13:38:57,301  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_239_page_0.png
+2026-08-31 13:38:57,301  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_240_page_0.png
+2026-08-31 13:38:57,301  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_241_page_0.png
+2026-08-31 13:38:57,301  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_242_page_0.png
+2026-08-31 13:38:57,302  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_243_page_0.png
+2026-08-31 13:38:57,302  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_244_page_0.png
+2026-08-31 13:38:57,302  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_244_page_1.png
+2026-08-31 13:38:57,302  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_245_page_0.png
+2026-08-31 13:38:57,302  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_246_page_0.png
+2026-08-31 13:38:57,303  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_247_page_0.png
+2026-08-31 13:38:57,303  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_248_page_0.png
+2026-08-31 13:38:57,303  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_249_page_0.png
+2026-08-31 13:38:57,303  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_250_page_0.png
+2026-08-31 13:38:57,304  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_251_page_0.png
+2026-08-31 13:38:57,304  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_252_page_0.png
+2026-08-31 13:38:57,304  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_253_page_0.png
+2026-08-31 13:38:57,304  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_254_page_0.png
+2026-08-31 13:38:57,305  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\12th Certificate for Testing\Document11_255_page_0.png
+2026-08-31 13:38:57,305  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_118_page_0.png
+2026-08-31 13:38:57,305  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_119_page_0.png
+2026-08-31 13:38:57,305  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_120_page_0.png
+2026-08-31 13:38:57,305  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_121_page_0.png
+2026-08-31 13:38:57,305  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_122_page_0.png
+2026-08-31 13:38:57,305  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_122_page_1.png
+2026-08-31 13:38:57,307  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_123_page_0.png
+2026-08-31 13:38:57,307  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_124_page_0.png
+2026-08-31 13:38:57,307  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_125_page_0.png
+2026-08-31 13:38:57,307  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_126_page_0.png
+2026-08-31 13:38:57,307  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_127_page_0.png
+2026-08-31 13:38:57,307  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_128_page_0.png
+2026-08-31 13:38:57,307  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_129_page_0.png
+2026-08-31 13:38:57,307  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_130_page_0.png
+2026-08-31 13:38:57,307  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_131_page_0.png
+2026-08-31 13:38:57,309  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_132_page_0.png
+2026-08-31 13:38:57,309  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_133_page_0.png
+2026-08-31 13:38:57,309  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_134_page_0.png
+2026-08-31 13:38:57,309  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_135_page_0.png
+2026-08-31 13:38:57,310  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_136_page_0.png
+2026-08-31 13:38:57,310  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_137_page_0.png
+2026-08-31 13:38:57,310  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_138_page_0.png
+2026-08-31 13:38:57,310  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_139_page_0.png
+2026-08-31 13:38:57,310  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_140_page_0.png
+2026-08-31 13:38:57,310  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_140_page_1.png
+2026-08-31 13:38:57,311  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_141_page_0.png
+2026-08-31 13:38:57,312  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_142_page_0.png
+2026-08-31 13:38:57,312  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_143_page_0.png
+2026-08-31 13:38:57,312  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_144_page_0.png
+2026-08-31 13:38:57,312  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_145_page_0.png
+2026-08-31 13:38:57,312  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_146_page_0.png
+2026-08-31 13:38:57,312  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_147_page_0.png
+2026-08-31 13:38:57,312  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_148_page_0.png
+2026-08-31 13:38:57,312  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_149_page_0.png
+2026-08-31 13:38:57,312  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_150_page_0.png
+2026-08-31 13:38:57,312  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_151_page_0.png
+2026-08-31 13:38:57,312  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_152_page_0.png
+2026-08-31 13:38:57,312  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_153_page_0.png
+2026-08-31 13:38:57,316  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_154_page_0.png
+2026-08-31 13:38:57,316  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_155_page_0.png
+2026-08-31 13:38:57,316  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_156_page_0.png
+2026-08-31 13:38:57,317  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_157_page_0.png
+2026-08-31 13:38:57,317  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_158_page_0.png
+2026-08-31 13:38:57,317  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_159_page_0.png
+2026-08-31 13:38:57,317  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_160_page_0.png
+2026-08-31 13:38:57,317  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_161_page_0.png
+2026-08-31 13:38:57,318  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_162_page_0.png
+2026-08-31 13:38:57,318  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_163_page_0.png
+2026-08-31 13:38:57,318  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_164_page_0.png
+2026-08-31 13:38:57,318  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_165_page_0.png
+2026-08-31 13:38:57,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_166_page_0.png
+2026-08-31 13:38:57,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_167_page_0.png
+2026-08-31 13:38:57,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_168_page_0.png
+2026-08-31 13:38:57,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_169_page_0.png
+2026-08-31 13:38:57,319  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_169_page_1.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_170_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_170_page_1.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_171_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_172_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_173_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_174_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_175_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_176_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_177_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_178_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_179_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_180_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_181_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_182_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Degree Certificate\Document12_183_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_466_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_467_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_468_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_469_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_470_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_471_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_472_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_473_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_474_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_475_page_0.png
+2026-08-31 13:38:57,320  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_476_page_0.png
+2026-08-31 13:38:57,326  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_477_page_0.png
+2026-08-31 13:38:57,326  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_478_page_0.png
+2026-08-31 13:38:57,326  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_479_page_0.png
+2026-08-31 13:38:57,326  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_480_page_0.png
+2026-08-31 13:38:57,326  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_481_page_0.png
+2026-08-31 13:38:57,326  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_482_page_0.png
+2026-08-31 13:38:57,327  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_483_page_0.png
+2026-08-31 13:38:57,327  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_484_page_0.png
+2026-08-31 13:38:57,327  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_485_page_0.png
+2026-08-31 13:38:57,327  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_486_page_0.png
+2026-08-31 13:38:57,328  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_487_page_0.png
+2026-08-31 13:38:57,328  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_488_page_0.png
+2026-08-31 13:38:57,328  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_489_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_490_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_491_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_492_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_493_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_494_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_495_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_496_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_497_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_498_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_499_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_500_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_501_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_502_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_503_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_504_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_505_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_506_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_507_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_508_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_509_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_510_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_511_page_0.png
+2026-08-31 13:38:57,330  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_512_page_0.png
+2026-08-31 13:38:57,336  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_513_page_0.png
+2026-08-31 13:38:57,337  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_514_page_0.png
+2026-08-31 13:38:57,337  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_515_page_0.png
+2026-08-31 13:38:57,337  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_516_page_0.png
+2026-08-31 13:38:57,337  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_517_page_0.png
+2026-08-31 13:38:57,337  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_518_page_0.png
+2026-08-31 13:38:57,337  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_519_page_0.png
+2026-08-31 13:38:57,338  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_520_page_0.png
+2026-08-31 13:38:57,338  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_521_page_0.png
+2026-08-31 13:38:57,338  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_522_page_0.png
+2026-08-31 13:38:57,338  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_523_page_0.png
+2026-08-31 13:38:57,338  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_524_page_0.png
+2026-08-31 13:38:57,339  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_525_page_0.png
+2026-08-31 13:38:57,339  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_526_page_0.png
+2026-08-31 13:38:57,339  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_527_page_0.png
+2026-08-31 13:38:57,339  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_528_page_0.png
+2026-08-31 13:38:57,339  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_529_page_0.png
+2026-08-31 13:38:57,339  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_530_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_531_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_532_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_533_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_534_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Income Certificate for Testing\IncomeCertificate_535_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_130_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_131_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_132_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_133_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_134_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_135_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_136_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_137_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_138_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_139_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_140_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_141_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_142_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_143_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_144_page_0.png
+2026-08-31 13:38:57,340  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_145_page_0.png
+2026-08-31 13:38:57,345  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_146_page_0.png
+2026-08-31 13:38:57,345  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_147_page_0.png
+2026-08-31 13:38:57,345  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_148_page_0.png
+2026-08-31 13:38:57,345  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_149_page_0.png
+2026-08-31 13:38:57,345  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_150_page_0.png
+2026-08-31 13:38:57,345  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_151_page_0.png
+2026-08-31 13:38:57,345  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_152_page_0.png
+2026-08-31 13:38:57,345  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_153_page_0.png
+2026-08-31 13:38:57,345  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_154_page_0.png
+2026-08-31 13:38:57,348  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_155_page_0.png
+2026-08-31 13:38:57,348  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_156_page_0.png
+2026-08-31 13:38:57,349  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_157_page_0.png
+2026-08-31 13:38:57,349  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_158_page_0.png
+2026-08-31 13:38:57,349  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_159_page_0.png
+2026-08-31 13:38:57,349  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_160_page_0.png
+2026-08-31 13:38:57,350  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_161_page_0.png
+2026-08-31 13:38:57,350  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_162_page_0.png
+2026-08-31 13:38:57,350  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_163_page_0.png
+2026-08-31 13:38:57,351  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_164_page_0.png
+2026-08-31 13:38:57,351  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_165_page_0.png
+2026-08-31 13:38:57,352  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_166_page_0.png
+2026-08-31 13:38:57,352  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_167_page_0.png
+2026-08-31 13:38:57,352  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_168_page_0.png
+2026-08-31 13:38:57,352  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_169_page_0.png
+2026-08-31 13:38:57,352  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_170_page_0.png
+2026-08-31 13:38:57,353  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_171_page_0.png
+2026-08-31 13:38:57,353  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_172_page_0.png
+2026-08-31 13:38:57,353  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_173_page_0.png
+2026-08-31 13:38:57,353  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_174_page_0.png
+2026-08-31 13:38:57,353  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_175_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_176_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_177_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_178_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_179_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_180_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_181_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_182_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_183_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_184_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_185_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_186_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_187_page_0.png
+2026-08-31 13:38:57,354  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_188_page_0.png
+2026-08-31 13:38:57,357  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_189_page_0.png
+2026-08-31 13:38:57,357  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_190_page_0.png
+2026-08-31 13:38:57,357  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_191_page_0.png
+2026-08-31 13:38:57,357  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_192_page_0.png
+2026-08-31 13:38:57,357  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_193_page_0.png
+2026-08-31 13:38:57,357  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_194_page_0.png
+2026-08-31 13:38:57,358  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_195_page_0.png
+2026-08-31 13:38:57,358  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_196_page_0.png
+2026-08-31 13:38:57,358  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_197_page_0.png
+2026-08-31 13:38:57,358  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_198_page_0.png
+2026-08-31 13:38:57,358  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Cast Certificate for Testing\CastCertificate_199_page_0.png
+2026-08-31 13:38:57,359  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_130_page_0.png
+2026-08-31 13:38:57,359  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_131_page_0.png
+2026-08-31 13:38:57,359  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_132_page_0.png
+2026-08-31 13:38:57,359  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_133_page_0.png
+2026-08-31 13:38:57,359  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_134_page_0.png
+2026-08-31 13:38:57,360  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_135_page_0.png
+2026-08-31 13:38:57,360  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_136_page_0.png
+2026-08-31 13:38:57,360  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_137_page_0.png
+2026-08-31 13:38:57,361  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_138_page_0.png
+2026-08-31 13:38:57,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_139_page_0.png
+2026-08-31 13:38:57,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_140_page_0.png
+2026-08-31 13:38:57,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_141_page_0.png
+2026-08-31 13:38:57,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_142_page_0.png
+2026-08-31 13:38:57,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_143_page_0.png
+2026-08-31 13:38:57,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_144_page_0.png
+2026-08-31 13:38:57,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_145_page_0.png
+2026-08-31 13:38:57,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_146_page_0.png
+2026-08-31 13:38:57,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_147_page_0.png
+2026-08-31 13:38:57,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_148_page_0.png
+2026-08-31 13:38:57,362  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_149_page_0.png
+2026-08-31 13:38:57,367  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_150_page_0.png
+2026-08-31 13:38:57,367  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_151_page_0.png
+2026-08-31 13:38:57,367  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_152_page_0.png
+2026-08-31 13:38:57,367  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_153_page_0.png
+2026-08-31 13:38:57,368  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_154_page_0.png
+2026-08-31 13:38:57,368  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_155_page_0.png
+2026-08-31 13:38:57,368  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_156_page_0.png
+2026-08-31 13:38:57,369  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_157_page_0.png
+2026-08-31 13:38:57,369  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_158_page_0.png
+2026-08-31 13:38:57,369  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_159_page_0.png
+2026-08-31 13:38:57,369  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_160_page_0.png
+2026-08-31 13:38:57,369  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_161_page_0.png
+2026-08-31 13:38:57,370  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_162_page_0.png
+2026-08-31 13:38:57,370  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_163_page_0.png
+2026-08-31 13:38:57,370  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_164_page_0.png
+2026-08-31 13:38:57,370  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_165_page_0.png
+2026-08-31 13:38:57,370  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_166_page_0.png
+2026-08-31 13:38:57,371  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_167_page_0.png
+2026-08-31 13:38:57,371  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_168_page_0.png
+2026-08-31 13:38:57,372  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_169_page_0.png
+2026-08-31 13:38:57,372  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_170_page_0.png
+2026-08-31 13:38:57,372  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_171_page_0.png
+2026-08-31 13:38:57,372  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_172_page_0.png
+2026-08-31 13:38:57,372  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_173_page_0.png
+2026-08-31 13:38:57,372  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_174_page_0.png
+2026-08-31 13:38:57,373  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_175_page_0.png
+2026-08-31 13:38:57,374  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_176_page_0.png
+2026-08-31 13:38:57,374  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_177_page_0.png
+2026-08-31 13:38:57,374  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_178_page_0.png
+2026-08-31 13:38:57,374  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_179_page_0.png
+2026-08-31 13:38:57,374  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_180_page_0.png
+2026-08-31 13:38:57,375  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_181_page_0.png
+2026-08-31 13:38:57,375  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_182_page_0.png
+2026-08-31 13:38:57,375  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_183_page_0.png
+2026-08-31 13:38:57,375  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_184_page_0.png
+2026-08-31 13:38:57,375  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_185_page_0.png
+2026-08-31 13:38:57,375  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_186_page_0.png
+2026-08-31 13:38:57,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_187_page_0.png
+2026-08-31 13:38:57,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_188_page_0.png
+2026-08-31 13:38:57,376  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_189_page_0.png
+2026-08-31 13:38:57,377  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_190_page_0.png
+2026-08-31 13:38:57,377  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_191_page_0.png
+2026-08-31 13:38:57,377  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_192_page_0.png
+2026-08-31 13:38:57,377  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_193_page_0.png
+2026-08-31 13:38:57,378  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_194_page_0.png
+2026-08-31 13:38:57,378  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_195_page_0.png
+2026-08-31 13:38:57,378  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_196_page_0.png
+2026-08-31 13:38:57,378  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_197_page_0.png
+2026-08-31 13:38:57,378  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_198_page_0.png
+2026-08-31 13:38:57,378  [INFO    ]  input_tracker -   SKIPPING (already SUCCESS): D:\ai_doc_automation\Test Data\Residence Certificate for Testing\ResidenceCertificate_199_page_0.png
+2026-08-31 13:38:57,378  [INFO    ]  main - Records to process: 3
+2026-08-31 13:39:02,200  [INFO    ]  driver_setup - Chrome WebDriver started successfully.
+2026-08-31 13:39:02,204  [INFO    ]  main - [--resume] Auto-detected most recent output file: D:\ai_doc_automation\output\ai_doc_results_20260822_213737.xlsx
+2026-08-31 13:39:03,496  [INFO    ]  excel_writer - Resuming into existing output Excel: D:\ai_doc_automation\output\ai_doc_results_20260822_213737.xlsx
+2026-08-31 13:39:03,497  [INFO    ]  excel_writer - Note: total/average processing-time stats for ALREADY-written rows could not be recovered (that value isn't stored per-row) — time stats in the Summary will only reflect this session's new rows going forward. Success/Failed/Error counts are fully accurate.
+2026-08-31 13:39:03,497  [INFO    ]  main - Opening portal: https://aiprojects.odisha.gov.in/demo
+2026-08-31 13:39:08,394  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260831_133908_01_dashboard.png
+2026-08-31 13:39:08,395  [INFO    ]  doc_uploader - Navigating to 'Verify Document' page...
+2026-08-31 13:39:10,669  [INFO    ]  doc_uploader - On Verify Document page.
+2026-08-31 13:39:10,861  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260831_133910_02_verify_form.png
+2026-08-31 13:39:10,898  [INFO    ]  main - 
+[1/3] D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar Card Test - Digi Locker.pdf
+2026-08-31 13:39:10,900  [INFO    ]  main - ============================================================
+2026-08-31 13:39:10,901  [INFO    ]  main - Processing [1/3]: Aadhar Card Test - Digi Locker.pdf  |  Aadhaar Card  |  Attempt 1
+2026-08-31 13:39:10,901  [INFO    ]  main - ============================================================
+2026-08-31 13:39:10,904  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-31 13:39:10,905  [INFO    ]  doc_uploader - Selecting document type: 'Aadhaar Card'
+2026-08-31 13:39:11,047  [INFO    ]  doc_uploader - Selected by visible text: 'Aadhaar Card'
+2026-08-31 13:39:11,047  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-31 13:39:16,580  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-31 13:39:16,583  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\Adhar card  for Testing\Aadhar Card Test - Digi Locker.pdf
+2026-08-31 13:39:16,596  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-31 13:39:27,236  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-31 13:39:27,236  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-31 13:39:27,236  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-31 13:39:27,305  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-31 13:39:27,696  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-31 13:39:27,696  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-31 13:39:52,970  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-31 13:39:55,357  [INFO    ]  result_parser - _parse_via_javascript: 8 fields
+2026-08-31 13:39:55,464  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260831_133955_extracted_Aadhar Card Test - Digi Locker.pdf.png
+2026-08-31 13:39:56,091  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-31 13:39:56,091  [INFO    ]  main - [OK] Aadhar Card Test - Digi Locker.pdf: SUCCESS (43.1s)
+2026-08-31 13:39:56,091  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-31 13:39:58,003  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-31 13:39:58,022  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-31 13:39:58,022  [INFO    ]  main - 
+[2/3] D:\ai_doc_automation\Test Data\PAN card for Testing\PAN2.jpg
+2026-08-31 13:39:58,022  [INFO    ]  main - ============================================================
+2026-08-31 13:39:58,022  [INFO    ]  main - Processing [2/3]: PAN2.jpg  |  PAN Card  |  Attempt 1
+2026-08-31 13:39:58,022  [INFO    ]  main - ============================================================
+2026-08-31 13:39:58,022  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-31 13:39:58,064  [INFO    ]  doc_uploader - Selecting document type: 'PAN Card'
+2026-08-31 13:39:58,173  [INFO    ]  doc_uploader - Selected by visible text: 'PAN Card'
+2026-08-31 13:39:58,173  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-31 13:40:03,561  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-31 13:40:03,562  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\PAN card for Testing\PAN2.jpg
+2026-08-31 13:40:03,569  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-31 13:40:14,000  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-31 13:40:14,000  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-31 13:40:14,000  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-31 13:40:14,051  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-31 13:40:14,441  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-31 13:40:14,441  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-31 13:40:39,636  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-31 13:40:42,019  [INFO    ]  result_parser - _parse_via_javascript: 4 fields
+2026-08-31 13:40:42,145  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260831_134042_extracted_PAN2.jpg.png
+2026-08-31 13:40:42,583  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-31 13:40:42,583  [INFO    ]  main - [OK] PAN2.jpg: SUCCESS (42.6s)
+2026-08-31 13:40:42,583  [INFO    ]  doc_uploader - Resetting form for next submission...
+2026-08-31 13:40:44,469  [INFO    ]  doc_uploader - New submission clicked — form reset.
+2026-08-31 13:40:44,492  [INFO    ]  doc_uploader - Upload form is ready for next document.
+2026-08-31 13:40:44,493  [INFO    ]  main - 
+[3/3] D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard.jpg
+2026-08-31 13:40:44,493  [INFO    ]  main - ============================================================
+2026-08-31 13:40:44,493  [INFO    ]  main - Processing [3/3]: Pancard.jpg  |  PAN Card  |  Attempt 1
+2026-08-31 13:40:44,493  [INFO    ]  main - ============================================================
+2026-08-31 13:40:44,495  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-31 13:40:44,495  [INFO    ]  doc_uploader - Selecting document type: 'PAN Card'
+2026-08-31 13:40:44,531  [INFO    ]  doc_uploader - Selected by visible text: 'PAN Card'
+2026-08-31 13:40:44,532  [INFO    ]  doc_uploader - Ensuring 'Plain extraction' is selected...
+2026-08-31 13:40:49,930  [INFO    ]  doc_uploader - Clicked Plain extraction text element.
+2026-08-31 13:40:49,930  [INFO    ]  doc_uploader - Uploading file: D:\ai_doc_automation\Test Data\PAN card for Testing\Pancard.jpg
+2026-08-31 13:40:49,930  [INFO    ]  doc_uploader - File input found via JS querySelector.
+2026-08-31 13:41:00,367  [INFO    ]  doc_uploader - Upload preview ready (submit button visible).
+2026-08-31 13:41:00,367  [INFO    ]  doc_uploader - File uploaded successfully.
+2026-08-31 13:41:00,367  [INFO    ]  doc_uploader - Pre-submit verification...
+2026-08-31 13:41:00,414  [INFO    ]  doc_uploader - Clicking 'Submit to engine'...
+2026-08-31 13:41:00,797  [INFO    ]  doc_uploader - Submitted to engine. Waiting for result...
+2026-08-31 13:41:00,797  [INFO    ]  doc_uploader - Waiting for engine result (timeout=90s)...
+2026-08-31 13:41:26,043  [INFO    ]  doc_uploader - Result appeared after 25s.
+2026-08-31 13:41:38,128  [INFO    ]  result_parser - Extraction tab not present — reading Overview for failure reason.
+2026-08-31 13:41:38,255  [INFO    ]  doc_uploader - Screenshot saved: D:\ai_doc_automation\output\screenshots\20260831_134138_result_Pancard.jpg.png
+2026-08-31 13:41:38,255  [INFO    ]  result_parser - Reading verdict from Overview tab...
+2026-08-31 13:41:48,447  [INFO    ]  result_parser - Pipeline failure reason captured: VERIFAI — Document Intelligence — Dashboard — Verify Document — Plain Extraction — Golden Record — Document Linking — Transactions — API Playground — Settings — About — Collapse menu — AI DOCUMENT VERIFICATION ENGINE — Plain extraction — Backend online — AE — TRANSACTION COMPLETE — Pipeline failure result — TXN-20260831-9641994257 — Copy ID — New submission — PIPELINE FAILURE · DOCUMENT_TYPE_MISMATCH — Document type mismatch — Requested document type: — Expected document — PAN Card — Detected document — UNKOWN_DOCUMENT — Overview — Raw JSON — OVERALL VERDICT — FAILED — SUCCESS — DOCUMENT TYPE — Pan CardProcessing time not returned — QR CODE RESULTS — No QR code detected. QR presence is optional and does not indicate document validity.
+2026-08-31 13:41:48,447  [INFO    ]  result_parser - Verdict: FAILED (Pipeline Failure banner detected: VERIFAI — Document Intelligence — Dashboard — Verify Document — Plain Extraction — Golden Record — Document Linking — Transactions — API Playground — Settings — About — Collapse menu — AI DOCUMENT VERIFICATION ENGINE — Plain extraction — Backend online — AE — TRANSACTION COMPLETE — Pipeline failure result — TXN-20260831-9641994257 — Copy ID — New submission — PIPELINE FAILURE · DOCUMENT_TYPE_MISMATCH — Document type mismatch — Requested document type: — Expected document — PAN Card — Detected do)
+2026-08-31 13:41:48,845  [WARNING ]  input_tracker - Could not save input_map.xlsx — it may be open in Excel. Close the file and the status will update on next write.
+2026-08-31 13:41:48,845  [INFO    ]  main - [FAIL] Pancard.jpg: FAILED (42.6s)
+2026-08-31 13:41:48,857  [INFO    ]  excel_writer - Summary sheet written with overall timing statistics.
+2026-08-31 13:41:49,240  [INFO    ]  excel_writer - Excel saved: D:\ai_doc_automation\output\ai_doc_results_20260822_213737.xlsx
+2026-08-31 13:41:49,240  [INFO    ]  main - 
+============================================================
+2026-08-31 13:41:49,240  [INFO    ]  main -   COMPLETE
+2026-08-31 13:41:49,240  [INFO    ]  main -   Total   : 3
+2026-08-31 13:41:49,240  [INFO    ]  main -   Success : 2
+2026-08-31 13:41:49,240  [INFO    ]  main -   Failed  : 1
+2026-08-31 13:41:49,240  [INFO    ]  main -   Errors  : 0
+2026-08-31 13:41:49,240  [INFO    ]  main -   Output  : D:\ai_doc_automation\output\ai_doc_results_20260822_213737.xlsx
+2026-08-31 13:41:49,240  [INFO    ]  main - ============================================================
+2026-08-31 13:41:51,550  [INFO    ]  main - Browser closed.
