@@ -104,14 +104,18 @@ class InputTracker:
 
     # ── Load rows ──────────────────────────────────────────
     def load_records(self, doc_type_filter: str = None,
-                     skip_done: bool = False) -> List[Dict]:
+                     skip_done: bool = False,
+                     status_filter: list = None) -> List[Dict]:
         """
         Read all records from the input Excel.
         Returns list of dicts with added 'row_num' and 'sheet_name' keys.
 
         Args:
             doc_type_filter: if set, only load rows from this sheet
-            skip_done:       if True, skip rows already marked SUCCESS/FAILED/SKIPPED
+            skip_done:       if True, skip rows already marked SUCCESS/SKIPPED
+            status_filter:   if set, load ONLY rows whose current status is in
+                             this list (e.g. ["FAILED","ERROR","TIMEOUT"]).
+                             Takes priority over skip_done when provided.
         """
         from config import DOCUMENT_TYPES
         records = []
@@ -129,7 +133,7 @@ class InputTracker:
                 file_path = ws.cell(row=row_num, column=COL_FILE_PATH).value
                 if not file_path:
                     continue
-                file_path = str(file_path).strip()
+                file_path = str(file_path).strip().strip('"').strip("'")
                 if not file_path or "<" in file_path or ">" in file_path or file_path == "None":
                     continue
 
@@ -141,13 +145,16 @@ class InputTracker:
 
                 current_status = ws.cell(row=row_num, column=COL_STATUS).value or STATUS_PENDING
 
-                # Skip already-successful rows if --resume
-                # (PENDING, FAILED, ERROR, TIMEOUT, and RUNNING files will still be executed)
-                if skip_done and current_status in (STATUS_SUCCESS, STATUS_SKIPPED):
-                    logger.info(f"  SKIPPING (already {current_status}): {file_path}")
-                    continue
-
-
+                # status_filter: load ONLY rows whose status is in the list
+                if status_filter is not None:
+                    if current_status not in status_filter:
+                        continue
+                else:
+                    # Skip already-successful rows if --resume
+                    # (PENDING, FAILED, ERROR, TIMEOUT, and RUNNING files will still be executed)
+                    if skip_done and current_status in (STATUS_SUCCESS, STATUS_SKIPPED):
+                        logger.info(f"  SKIPPING (already {current_status}): {file_path}")
+                        continue
 
                 records.append({
                     "file_path":   file_path,

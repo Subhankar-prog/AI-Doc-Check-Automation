@@ -21,8 +21,9 @@ from tqdm import tqdm
 
 from config import (
     PORTAL_URL, INPUT_MAP_FILE, INPUT_EXCEL_COLUMNS, DOCUMENT_TYPES,
-    LOGS_DIR, RETRY_ON_TIMEOUT
+    LOGS_DIR, RETRY_ON_TIMEOUT, AUTO_RETRY_FAILED_PASSES, SKIP_DONE
 )
+from input_tracker import STATUS_FAILED, STATUS_ERROR, STATUS_TIMEOUT
 from driver_setup   import create_driver
 from doc_uploader   import (
     navigate_to_upload, select_document_type,
@@ -73,6 +74,56 @@ def load_records(input_file: Path, doc_type_filter: str, skip_done: bool) -> lis
 # ──────────────────────────────────────────────────────────
 # Process a single document (with retry on timeout)
 # ──────────────────────────────────────────────────────────
+# ──────────────────────────────────────────────────────────
+# Shared batch runner (used for main pass and every retry pass)
+# ──────────────────────────────────────────────────────────
+def _run_batch(driver, records: list, excel: ExcelWriter,
+              tracker: InputTracker, stats: dict,
+              batch_label: str = "Documents"):
+    """
+    Process a list of records through the portal, updating stats in-place.
+    Returns the driver (may be a fresh instance if a browser crash forced a restart).
+    """
+    total = len(records)
+    for idx, record in enumerate(tqdm(records, desc=batch_label, unit="doc"), start=1):
+        record["_idx"]   = idx
+        record["_total"] = total
+
+        logger.info(f"\n[{idx}/{total}] {record['file_path']}")
+
+        try:
+            result = process_document(driver, record, excel, tracker)
+        except Exception as e:
+            logger.error(f"Top-level exception processing document: {e}")
+            result = {"Status": "ERROR", "_processing_time": 0}
+
+        s = result.get("Status", "ERROR").upper()
+        if s == "SUCCESS":
+            stats["success"] += 1
+        elif s in ("FAILED", "TIMEOUT"):
+            stats["failed"] += 1
+        else:
+            stats["error"] += 1
+
+        # Reset form for next file (skip on last)
+        if idx < total:
+            try:
+                click_new_submission(driver)
+                wait_for_form_ready(driver)
+            except Exception as ex:
+                logger.warning(f"Error resetting form ({ex}). Restarting browser session...")
+                try:
+                    driver.quit()
+                except Exception:
+                    pass
+                driver = create_driver()
+                driver.get(PORTAL_URL)
+                time.sleep(1)
+                navigate_to_upload(driver)
+
+    return driver
+
+
 def process_document(driver, record: dict, excel: ExcelWriter,
                      tracker: InputTracker, attempt: int = 1):
     file_path  = record["file_path"]
@@ -96,11 +147,11 @@ def process_document(driver, record: dict, excel: ExcelWriter,
     pre_check_reject, pre_check_reason = pre_check_file(file_path)
 
     try:
-        # Step 1: Select document type
-        select_document_type(driver, doc_type)
-
-        # Step 2: Ensure Plain Extraction is selected
+        # Step 1: Ensure Plain Extraction is selected
         ensure_plain_extraction(driver)
+
+        # Step 2: Select document type
+        select_document_type(driver, doc_type)
 
         # Step 3: Upload file (raises UploadRejectedError if size/format error banner appears)
         upload_file(driver, file_path)
@@ -110,11 +161,14 @@ def process_document(driver, record: dict, excel: ExcelWriter,
         #  doesn't affect it, so we skip re-checking it here.)
         verify_and_submit(driver, doc_type, skip_plain_extraction_recheck=True)
 
-        # Step 5: Wait for result (detected by TRANSACTION COMPLETE / Pipeline failure / result-tabs)
-        result_appeared = wait_for_result(driver)
+        # Step 5: Wait for result.
+        #   Returns "SUCCESS" (Extraction tab found+clicked),
+        #           "FAILED"  (result page appeared, no Extraction tab), or
+        #           "TIMEOUT" (engine did not respond in time).
+        wait_status = wait_for_result(driver)
         elapsed = time.time() - start_time
 
-        if not result_appeared:
+        if wait_status == "TIMEOUT":
             if attempt <= RETRY_ON_TIMEOUT:
                 logger.warning(f"Timeout on attempt {attempt}. Retrying...")
                 tracker.mark_running(sheet_name, row_num)   # still running
@@ -130,8 +184,15 @@ def process_document(driver, record: dict, excel: ExcelWriter,
                     "_processing_time": round(elapsed, 1),
                 }
         else:
-            # Step 6: Parse result page (accurately detects SUCCESS vs FAILED)
-            result = parse_result(driver, filename, doc_type, elapsed)
+            # Step 6: Parse result page.
+            #   wait_status == "SUCCESS" → Extraction tab already clicked by
+            #     wait_for_result(); parse_result scrapes immediately.
+            #   wait_status == "FAILED"  → no Extraction tab; parse_result
+            #     reads the Overview tab for the failure reason.
+            result = parse_result(
+                driver, filename, doc_type, elapsed,
+                already_on_extraction_tab=(wait_status == "SUCCESS"),
+            )
 
     except UploadRejectedError as ure:
         elapsed = time.time() - start_time
@@ -231,7 +292,36 @@ def main():
         "--dry-run", action="store_true",
         help="Check file paths only — no browser, no uploads"
     )
+    parser.add_argument(
+        "--retry-failed", action="store_true",
+        help=(
+            "After the main run, automatically retry all FAILED/ERROR/TIMEOUT\n"
+            "rows. Useful when server issues cause transient failures.\n"
+            "Number of retry passes is set by --retry-passes (default: 1)."
+        )
+    )
+    parser.add_argument(
+        "--retry-passes", type=int, default=None,
+        metavar="N",
+        help=(
+            "How many retry passes to run after the main batch.\n"
+            f"Defaults to AUTO_RETRY_FAILED_PASSES in config.py ({AUTO_RETRY_FAILED_PASSES}).\n"
+            "Implies --retry-failed."
+        )
+    )
     args = parser.parse_args()
+
+    # Resolve retry settings:
+    #   --retry-passes N  → sets pass count and enables retry
+    #   --retry-failed    → enables retry, uses config default for pass count
+    #   neither flag      → retry is still ON if AUTO_RETRY_FAILED_PASSES > 0
+    #                       (set AUTO_RETRY_FAILED_PASSES = 0 in config to disable)
+    if args.retry_passes is None:
+        args.retry_passes = AUTO_RETRY_FAILED_PASSES   # use config default
+    if args.retry_passes > 0:
+        args.retry_failed = True     # auto-enable when passes > 0
+    else:
+        args.retry_failed = False    # --retry-passes 0 explicitly disables
 
     logger = setup_logging()
     logger.info("=" * 60)
@@ -247,11 +337,15 @@ def main():
     # ── Load records via tracker ───────────────────────────
     logger.info(f"Input file : {input_file}")
     if args.resume:
-        logger.info("[--resume] Skipping rows already marked SUCCESS/FAILED.")
+        logger.info("[--resume] Skipping rows already marked SUCCESS/FAILED. Merging into previous output Excel.")
+    elif SKIP_DONE:
+        logger.info("[SKIP_DONE=True] Skipping rows already marked SUCCESS/SKIPPED (set SKIP_DONE=False in config to re-run all).")
     if args.doc_type:
         logger.info(f"[--type]   Running only: '{args.doc_type}'")
 
-    tracker, records = load_records(input_file, args.doc_type, args.resume)
+    # skip_done: True when --resume OR when SKIP_DONE=True in config
+    skip_done = args.resume or SKIP_DONE
+    tracker, records = load_records(input_file, args.doc_type, skip_done)
     total = len(records)
 
     if total == 0:
@@ -317,59 +411,61 @@ def main():
     try:
         logger.info(f"Opening portal: {PORTAL_URL}")
         driver.get(PORTAL_URL)
-        time.sleep(3)
+        time.sleep(1.5)
         take_screenshot(driver, "01_dashboard")
 
         navigate_to_upload(driver)
         take_screenshot(driver, "02_verify_form")
 
-        # ── Main loop ─────────────────────────────────────
-        for idx, record in enumerate(tqdm(records, desc="Documents", unit="doc"), start=1):
-            record["_idx"]   = idx
-            record["_total"] = total
+        # ── Main pass ─────────────────────────────────────
+        driver = _run_batch(driver, records, excel, tracker, stats)
 
-            logger.info(f"\n[{idx}/{total}] {record['file_path']}")
+        # ── Auto-retry failed rows ─────────────────────────
+        if args.retry_failed:
+            retry_statuses = [STATUS_FAILED, STATUS_ERROR, STATUS_TIMEOUT]
+            for retry_num in range(1, args.retry_passes + 1):
+                # Reload tracker from disk — picks up updated statuses
+                tracker = InputTracker(input_file)
+                retry_records = tracker.load_records(
+                    doc_type_filter=args.doc_type,
+                    status_filter=retry_statuses,
+                )
 
-            try:
-                result = process_document(driver, record, excel, tracker)
-            except Exception as e:
-                logger.error(f"Top-level exception processing document: {e}")
-                result = {"Status": "ERROR", "_processing_time": 0}
+                if not retry_records:
+                    logger.info(
+                        f"\n[Retry pass {retry_num}/{args.retry_passes}] "
+                        "No FAILED/ERROR/TIMEOUT rows remaining — stopping early."
+                    )
+                    break
 
-            s = result.get("Status", "ERROR").upper()
-            if s == "SUCCESS":
-                stats["success"] += 1
-            elif s in ("FAILED", "TIMEOUT"):
-                stats["failed"] += 1
-            else:
-                stats["error"] += 1
+                logger.info("\n" + "=" * 60)
+                logger.info(
+                    f"  RETRY PASS {retry_num}/{args.retry_passes} "
+                    f"— {len(retry_records)} row(s) to retry"
+                )
+                logger.info("=" * 60)
 
-            # Reset form for next file (skip on last)
-            if idx < total:
+                # Reset form before starting retry batch
                 try:
                     click_new_submission(driver)
                     wait_for_form_ready(driver)
-                except Exception as ex:
-                    logger.warning(f"Error resetting form ({ex}). Restarting browser session...")
-                    try:
-                        driver.quit()
-                    except Exception:
-                        pass
-                    driver = create_driver()
-                    driver.get(PORTAL_URL)
-                    time.sleep(2)
+                except Exception:
                     navigate_to_upload(driver)
 
+                driver = _run_batch(
+                    driver, retry_records, excel, tracker, stats,
+                    batch_label=f"Retry {retry_num}",
+                )
 
         # ── Finish ────────────────────────────────────────
         output_path = excel.finalize()
         logger.info("\n" + "=" * 60)
         logger.info("  COMPLETE")
-        logger.info(f"  Total   : {total}")
-        logger.info(f"  Success : {stats['success']}")
-        logger.info(f"  Failed  : {stats['failed']}")
-        logger.info(f"  Errors  : {stats['error']}")
-        logger.info(f"  Output  : {output_path}")
+        logger.info(f"  Total (pass 1)  : {total}")
+        logger.info(f"  Success         : {stats['success']}")
+        logger.info(f"  Failed          : {stats['failed']}")
+        logger.info(f"  Errors          : {stats['error']}")
+        logger.info(f"  Output          : {output_path}")
         logger.info("=" * 60)
 
     except KeyboardInterrupt:

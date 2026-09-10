@@ -61,7 +61,7 @@ def get_status(driver: webdriver.Chrome) -> Tuple[str, str]:
     try:
         overview = _find_element(driver, XPATHS["overview_tab"], timeout=5)
         _click_safe(driver, overview)
-        time.sleep(1.0)
+        time.sleep(0.4)
     except NoSuchElementException:
         logger.warning("Overview tab not found — reading current page.")
 
@@ -231,7 +231,7 @@ def get_extracted_fields(driver: webdriver.Chrome) -> Dict[str, str]:
     try:
         ext_tab = _find_element(driver, XPATHS["extraction_tab"], timeout=10)
         _click_safe(driver, ext_tab)
-        time.sleep(1.5)
+        time.sleep(0.5)
         logger.info("On Extraction tab.")
     except NoSuchElementException:
         logger.warning("Extraction tab not found — attempting to read current page.")
@@ -409,46 +409,47 @@ def parse_result(
     driver: webdriver.Chrome,
     filename: str,
     doc_type: str,
-    processing_time: float
+    processing_time: float,
+    already_on_extraction_tab: bool = False,
 ) -> Dict[str, str]:
     """
-    Collect the full result for one document — FAST PATH FIRST:
+    Collect the full result for one document.
 
-    1. Try to click the Extraction tab directly.
-       - If it exists: the document succeeded. Scrape fields immediately.
-         No Overview tab click, no verdict-text reading, no body-text scan.
-         One screenshot only (of the extracted fields).
-       - If it doesn't exist (NoSuchElementException): fall back to the
-         slower Overview/verdict read, since this is now a genuine
-         failure/unknown case worth the extra diagnostic cost.
+    Args:
+        already_on_extraction_tab:
+            True  — wait_for_result() already found and clicked the
+                    Extraction tab. Skip the element search and scrape
+                    immediately (SUCCESS fast path).
+            False — result page appeared but no Extraction tab was present
+                    (FAILED / UNKNOWN). Read the Overview tab for the
+                    failure reason.
+
+    This keeps parse_result() in sync with wait_for_result()'s new
+    extraction-tab-first detection: for SUCCESS documents there is no
+    longer a duplicate "find Extraction tab" scan after the wait.
     """
-    try:
-        ext_tab = _find_element(driver, XPATHS["extraction_tab"], timeout=6)
-        _click_safe(driver, ext_tab)
-        time.sleep(1.0)
-
+    if already_on_extraction_tab:
+        # Fast path — Extraction tab is already open, scrape directly.
+        logger.info("Scraping Extraction tab (already open from wait_for_result)...")
         fields = _scrape_fields_only(driver)
         take_screenshot(driver, f"extracted_{filename}")
-
         return {
-            "Filename": filename,
-            "Document Type": doc_type,
-            "Status": "SUCCESS",
-            "Error Message": "",
-            "_processing_time": round(processing_time, 1),
+            "Filename":          filename,
+            "Document Type":     doc_type,
+            "Status":            "SUCCESS",
+            "Error Message":     "",
+            "_processing_time":  round(processing_time, 1),
             **fields,
         }
 
-    except NoSuchElementException:
-        # No Extraction tab -> genuinely failed/unknown, worth the slow read
-        logger.info("Extraction tab not present — reading Overview for failure reason.")
-        take_screenshot(driver, f"result_{filename}")
-        status, error_msg = get_status(driver)
-
-        return {
-            "Filename": filename,
-            "Document Type": doc_type,
-            "Status": status,
-            "Error Message": error_msg,
-            "_processing_time": round(processing_time, 1),
-        }
+    # Slow path — no Extraction tab on result page → read failure reason.
+    logger.info("Extraction tab not present — reading Overview for failure reason.")
+    take_screenshot(driver, f"result_{filename}")
+    status, error_msg = get_status(driver)
+    return {
+        "Filename":         filename,
+        "Document Type":    doc_type,
+        "Status":           status,
+        "Error Message":    error_msg,
+        "_processing_time": round(processing_time, 1),
+    }

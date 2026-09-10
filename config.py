@@ -25,10 +25,15 @@ SCREENSHOTS_DIR = OUTPUT_DIR / "screenshots"
 PORTAL_URL = os.getenv("PORTAL_URL", "https://aiprojects.odisha.gov.in/demo")
 
 # --- Timeouts ------------------------------------------------
-PAGE_LOAD_TIMEOUT  = 30     # seconds for page load
-ENGINE_TIMEOUT     = 90    # seconds to wait for engine result (max)
-POLL_INTERVAL      = 5      # seconds between status polls
-RETRY_ON_TIMEOUT   = 1      # number of retries if engine times out
+PAGE_LOAD_TIMEOUT  = 30       # seconds for page load
+ENGINE_TIMEOUT     = 150      # seconds to wait for engine result (max)
+POLL_INTERVAL      = 2        # seconds between status polls
+RETRY_ON_TIMEOUT   = 0        # number of retries if engine times out
+AUTO_RETRY_FAILED_PASSES = 0  # retry passes for FAILED/ERROR/TIMEOUT rows after main run
+                              # (0 = disabled; override with --retry-passes N on CLI)
+SKIP_DONE = True              # True  = skip SUCCESS/SKIPPED rows by default (recommended)
+                              # False = re-run every row from scratch every time
+                              # Note: --resume also skips done AND merges into previous output Excel
 
 # --- Browser -------------------------------------------------
 HEADLESS_MODE = False        # Set True to hide Chrome window
@@ -57,10 +62,10 @@ DOCUMENT_TYPES = {
 
     # --- Newly added types (added 2026-09-05) ---
     "College Id":                    "College Id",
-    # "Destitute Certificate":         "Destitute Certificate",
+    "Destitute Certificate":         "Destitute Certificate",
     "HIV Certificate":               "HIV Certificate",
-    # "Without Shelter Certificate":   "Without Shelter Certificate",
-    # "Manual Scavangers Certificate": "Manual Scavangers Certificate",
+    "Without Shelter Certificate":   "Without Shelter Certificate",
+    "Manual Scavanger Certificate": "Manual Scavenger Certificate",
     "Vulnerable Tribal Certificate": "Vulnerable Tribal Certificate",
     "Bonded Labour Certificate":     "Bonded Labour Certificate",
     "Single Mother Certificate":     "Single Mother Certificate",

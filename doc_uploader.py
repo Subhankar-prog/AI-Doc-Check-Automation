@@ -38,7 +38,7 @@ def _find_element(driver: webdriver.Chrome, *xpaths: str, timeout: int = 10):
                     return el
             except NoSuchElementException:
                 pass
-        time.sleep(0.5)
+        time.sleep(0.15)
     raise NoSuchElementException(
         f"None of the XPaths found within {timeout}s: {xpaths}"
     )
@@ -47,7 +47,7 @@ def _find_element(driver: webdriver.Chrome, *xpaths: str, timeout: int = 10):
 def _click_safe(driver: webdriver.Chrome, element):
     """Click element, scroll into view first; fallback to JS click."""
     driver.execute_script("arguments[0].scrollIntoView({block:'center'});", element)
-    time.sleep(0.3)
+    time.sleep(0.1)
     try:
         element.click()
     except ElementClickInterceptedException:
@@ -73,7 +73,7 @@ def navigate_to_upload(driver: webdriver.Chrome):
     try:
         btn = _find_element(driver, XPATHS["verify_document_link"], timeout=10)
         _click_safe(driver, btn)
-        time.sleep(1.5)
+        time.sleep(0.5)
         logger.info("On Verify Document page.")
     except NoSuchElementException:
         # If already on the right page (after New Submission), skip
@@ -135,7 +135,7 @@ def _select_custom_dropdown(driver: webdriver.Chrome, display_text: str):
         "//div[contains(@class,'select') or contains(@class,'dropdown')][@role='combobox' or contains(@class,'trigger')]"
     )
     _click_safe(driver, trigger)
-    time.sleep(0.5)
+    time.sleep(0.3)
 
     # Find the option with matching text
     option = driver.find_element(
@@ -275,7 +275,7 @@ def upload_file(driver: webdriver.Chrome, file_path: str):
         """,
         file_input
     )
-    time.sleep(0.3)
+    time.sleep(0.1)
 
     file_input.send_keys(abs_path)
 
@@ -472,7 +472,7 @@ def verify_and_submit(driver: webdriver.Chrome, doc_type: str,
         select_el = _find_element(
             driver,
             XPATHS["doc_type_select"],
-            timeout=5
+            timeout=3                  # already on page — find is instant
         )
         sel = Select(select_el)
         current = sel.first_selected_option.text.strip()
@@ -495,7 +495,7 @@ def verify_and_submit(driver: webdriver.Chrome, doc_type: str,
         driver,
         XPATHS["submit_to_engine"],
         XPATHS["submit_to_engine_v2"],
-        timeout=10
+        timeout=5                      # button visible since upload completed
     )
     _click_safe(driver, submit_btn)
 
@@ -505,11 +505,26 @@ def verify_and_submit(driver: webdriver.Chrome, doc_type: str,
 # ──────────────────────────────────────────────────────────
 # Step 6: Wait for engine to finish
 # ──────────────────────────────────────────────────────────
-def wait_for_result(driver: webdriver.Chrome) -> bool:
+def wait_for_result(driver: webdriver.Chrome) -> str:
     """
     Wait until the engine finishes processing.
-    Detected by: "TRANSACTION COMPLETE" heading, pipeline failure, or result-tabs appearing.
-    Returns True if result page appeared, False on timeout.
+
+    Poll order every POLL_INTERVAL seconds:
+      1. Extraction tab — fastest success signal. If visible, click it
+         immediately and return "SUCCESS". No second tab-search needed
+         in parse_result().
+      2. Upload error banner — raises UploadRejectedError (unchanged).
+      3. Body text for failure signals — PIPELINE FAILURE, TRANSACTION
+         COMPLETE (without extraction tab), NEW SUBMISSION. Includes a
+         1.5 s grace window to re-check for the Extraction tab before
+         declaring "FAILED", guarding against a race where the tab
+         appears a moment after the heading text.
+      4. Processing indicator — logged for visibility.
+
+    Returns:
+        "SUCCESS"  — Extraction tab found and already clicked.
+        "FAILED"   — Failure/result page appeared, no Extraction tab.
+        "TIMEOUT"  — Engine did not respond within ENGINE_TIMEOUT seconds.
     """
     logger.info(f"Waiting for engine result (timeout={ENGINE_TIMEOUT}s)...")
     start = time.time()
@@ -518,46 +533,66 @@ def wait_for_result(driver: webdriver.Chrome) -> bool:
     while time.time() < deadline:
         elapsed = int(time.time() - start)
 
-        # 1. Check if the result page has appeared FIRST
+        # 1. Extraction tab — primary success signal.
+        #    Click it the moment it appears so parse_result() can scrape
+        #    immediately without a second element search.
         try:
-            el = driver.find_element(By.XPATH, XPATHS["result_appeared"])
-            if el.is_displayed():
-                logger.info(f"Result appeared after {elapsed}s.")
-                time.sleep(1)  # small stabilisation pause
-                return True
+            ext_tab = driver.find_element(By.XPATH, XPATHS["extraction_tab"])
+            if ext_tab.is_displayed():
+                logger.info(f"Extraction tab found after {elapsed}s — clicking immediately.")
+                _click_safe(driver, ext_tab)
+                time.sleep(0.4)   # let tab content render
+                return "SUCCESS"
         except (NoSuchElementException, StaleElementReferenceException):
             pass
 
-        # 2. Fallback: check body text for fast detection
-        try:
-            body = driver.find_element(By.TAG_NAME, "body").text.upper()
-            if any(k in body for k in ["TRANSACTION COMPLETE", "PIPELINE FAILURE", "OVERALL VERDICT", "NEW SUBMISSION"]):
-                logger.info(f"Result keyword detected in body after {elapsed}s.")
-                time.sleep(1)
-                return True
-        except Exception:
-            pass
-
-        # 3. Check if upload error banner is on screen (e.g. file size > 5 MB rejection)
+        # 2. Upload error banner (e.g. file > 5 MB rejected after submit).
         upload_err = _check_upload_error(driver)
         if upload_err:
             logger.warning(f"Upload rejection banner detected during wait: {upload_err}")
             raise UploadRejectedError(upload_err)
 
-        # 4. Check if still in processing state
+        # 3. Body text scan for failure / completion signals.
+        #    TRANSACTION COMPLETE and NEW SUBMISSION appear on both success
+        #    and failure result pages, so when we see them we wait 1.5 s
+        #    and re-check the Extraction tab before declaring FAILED.
+        try:
+            body = driver.find_element(By.TAG_NAME, "body").text.upper()
+
+            if "PIPELINE FAILURE" in body or "PIPELINE FAILED" in body:
+                logger.info(f"Pipeline failure detected in body after {elapsed}s.")
+                return "FAILED"
+
+            if any(k in body for k in ["TRANSACTION COMPLETE", "NEW SUBMISSION", "OVERALL VERDICT"]):
+                # Grace window: Extraction tab might still be rendering.
+                time.sleep(0.6)
+                try:
+                    ext_tab = driver.find_element(By.XPATH, XPATHS["extraction_tab"])
+                    if ext_tab.is_displayed():
+                        logger.info(f"Extraction tab appeared (grace window) after {elapsed}s — clicking.")
+                        _click_safe(driver, ext_tab)
+                        time.sleep(0.4)
+                        return "SUCCESS"
+                except (NoSuchElementException, StaleElementReferenceException):
+                    pass
+                logger.info(f"Result page appeared (no Extraction tab) after {elapsed}s — FAILED.")
+                return "FAILED"
+
+        except Exception:
+            pass
+
+        # 4. Still processing — log and continue.
         try:
             proc = driver.find_element(By.XPATH, XPATHS["processing_indicator"])
             if proc.is_displayed():
                 logger.info(f"  [{elapsed}s] Engine processing...")
-                time.sleep(POLL_INTERVAL)
-                continue
         except (NoSuchElementException, StaleElementReferenceException):
             pass
 
         time.sleep(POLL_INTERVAL)
 
     logger.warning(f"Engine timeout after {ENGINE_TIMEOUT}s.")
-    return False
+    return "TIMEOUT"
 
 
 # ──────────────────────────────────────────────────────────
@@ -578,7 +613,7 @@ def click_new_submission(driver: webdriver.Chrome):
             timeout=3
         )
         _click_safe(driver, btn)
-        time.sleep(1.5)
+        time.sleep(0.4)
         logger.info("New submission clicked — form reset.")
         return
     except NoSuchElementException:

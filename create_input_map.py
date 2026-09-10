@@ -6,10 +6,10 @@ Structure:
     Sheet "PAN Card"                      <- paste all PAN image paths here
     Sheet "Indian Passport"               <- etc.
     Sheet "College Id"                    <- new
-    # Sheet "Destitute Certificate"         <- new
+    Sheet "Destitute Certificate"         <- new
     Sheet "HIV Certificate"               <- new
-    # Sheet "Without Shelter Certificate"   <- new
-    # Sheet "Manual Scavangers Certificate" <- new
+    Sheet "Without Shelter Certificate"   <- new
+    Sheet "Manual Scavanger Certificate" <- new
     Sheet "Vulnerable Tribal Certificate" <- new
     Sheet "Bonded Labour Certificate"     <- new
     Sheet "Single Mother Certificate"     <- new
@@ -59,10 +59,10 @@ SHEET_COLORS = {
 
     # --- Newly added types (added 2026-09-05) ---
     "College Id":                    ("FFF8E1", "F57F17"),  # amber
-    # "Destitute Certificate":         ("FCE4EC", "880E4F"),  # deep pink
+    "Destitute Certificate":         ("FCE4EC", "880E4F"),  # deep pink
     "HIV Certificate":               ("F3E5F5", "6A1B9A"),  # deep purple
-    # "Without Shelter Certificate":   ("E0F7FA", "006064"),  # cyan
-    # "Manual Scavangers Certificate": ("FBE9E7", "BF360C"),  # deep orange 2
+    "Without Shelter Certificate":   ("E0F7FA", "006064"),  # cyan
+    "Manual Scavanger Certificate": ("FBE9E7", "BF360C"),  # deep orange 2
     "Vulnerable Tribal Certificate": ("E8F5E9", "2E7D32"),  # dark green
     "Bonded Labour Certificate":     ("EDE7F6", "4527A0"),  # deep purple 2
     "Single Mother Certificate":     ("FFF3E0", "E65100"),  # orange 2
@@ -95,6 +95,9 @@ TEST_DATA_FOLDERS = {
     "Bonded Labour Certificate":     "Bonded Labour Certificate for Testing",
     "Single Mother Certificate":     "Single Mother Certificate for Testing",
     "Bank Passbook":                 "Bank Passbook for Testing",
+    "Manual Scavanger Certificate":  "Manual Scavengers Certificate for Testing",
+    "Without Shelter Certificate":   "Without Shelter certificate for Testing",
+    "Destitute Certificate":         "Destitute Certificate for Testing",
 }
 
 
