@@ -73,10 +73,10 @@ SHEET_COLORS = {
     "Bank Passbook":                 ("E1F5FE", "01579B"),  # light blue
 
     # --- Newly added types (added 2026-09-16) ---
-    "General Caste Self Decl":        ("E8F4FD", "1565C0"),
-    "Institute Affiliation Decl":     ("FDE8F4", "880E4F"),
-    "Orphan Certificate":             ("E8FDE8", "1B5E20"),
-    "Ration Card":                    ("FDF5E8", "E65100"),
+    "General Caste Self Decl":        ("FFF8E1", "F9A825"),  # yellow
+    "Institute Affiliation Decl":     ("E8EAF6", "283593"),  # deep indigo
+    "Orphan Certificate":             ("FCE4EC", "AD1457"),  # deep pink
+    "Ration Card":                    ("E0F2F1", "00695C"),  # dark teal
 }
 
 PLACEHOLDER_ROWS = 10   # blank rows pre-created when folder is empty
