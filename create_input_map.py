@@ -44,6 +44,10 @@ THIN         = Side(style="thin")
 THIN_BORDER  = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 
 # One distinct light colour per document type sheet tab
+# 
+# 👉 TO ADD A NEW EXCEL SHEET TAB:
+# Add a new line here to give the new tab a colour.
+# Format: "Your Excel Sheet Name": ("BackgroundColorHex", "TextColorHex"),
 SHEET_COLORS = {
     # --- Original 10 types ---
     "Aadhaar Card":                  ("E8F4FD", "1565C0"),  # blue
@@ -67,6 +71,12 @@ SHEET_COLORS = {
     "Bonded Labour Certificate":     ("EDE7F6", "4527A0"),  # deep purple 2
     "Single Mother Certificate":     ("FFF3E0", "E65100"),  # orange 2
     "Bank Passbook":                 ("E1F5FE", "01579B"),  # light blue
+
+    # --- Newly added types (added 2026-09-16) ---
+    "General Caste Self Decl":        ("E8F4FD", "1565C0"),
+    "Institute Affiliation Decl":     ("FDE8F4", "880E4F"),
+    "Orphan Certificate":             ("E8FDE8", "1B5E20"),
+    "Ration Card":                    ("FDF5E8", "E65100"),
 }
 
 PLACEHOLDER_ROWS = 10   # blank rows pre-created when folder is empty
@@ -74,6 +84,10 @@ PLACEHOLDER_ROWS = 10   # blank rows pre-created when folder is empty
 # Maps each document type -> its Test Data subfolder name.
 # The folder is scanned at creation time; found files are pre-filled
 # into Column A so you don't have to type paths manually.
+# 
+# 👉 TO MAP TO A LOCAL FOLDER:
+# Add a new line here to tell the script which local folder to scan.
+# Format: "Your Excel Sheet Name": "Name of the folder inside Test Data",
 TEST_DATA_DIR = Path(__file__).parent / "Test Data"
 TEST_DATA_FOLDERS = {
     # --- Original 10 types ---
@@ -98,6 +112,12 @@ TEST_DATA_FOLDERS = {
     "Manual Scavanger Certificate":  "Manual Scavengers Certificate for Testing",
     "Without Shelter Certificate":   "Without Shelter certificate for Testing",
     "Destitute Certificate":         "Destitute Certificate for Testing",
+    
+    # --- Newly added types (added 2026-09-16) ---
+    "General Caste Self Decl":        "General Caste Self Declaration for Testing",
+    "Institute Affiliation Decl":     "Institute Affiliation Declaration for Testing",
+    "Orphan Certificate":             "Orphan Certificate for Testing",
+    "Ration Card":                    "Ration Card for Testing",
 }
 
 

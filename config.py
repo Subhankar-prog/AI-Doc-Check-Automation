@@ -29,7 +29,7 @@ PAGE_LOAD_TIMEOUT  = 30       # seconds for page load
 ENGINE_TIMEOUT     = 150      # seconds to wait for engine result (max)
 POLL_INTERVAL      = 2        # seconds between status polls
 RETRY_ON_TIMEOUT   = 0        # number of retries if engine times out
-AUTO_RETRY_FAILED_PASSES = 0  # retry passes for FAILED/ERROR/TIMEOUT rows after main run
+AUTO_RETRY_FAILED_PASSES = 1  # retry passes for FAILED/ERROR/TIMEOUT rows after main run
                               # (0 = disabled; override with --retry-passes N on CLI)
 SKIP_DONE = True              # True  = skip SUCCESS/SKIPPED rows by default (recommended)
                               # False = re-run every row from scratch every time
@@ -45,8 +45,12 @@ MAX_UPLOAD_SIZE_MB       = 5
 ALLOWED_UPLOAD_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".pdf"}
 
 # --- Document Type Dropdown Values ---------------------------
-# Keys  = value you write in input_map.xlsx "Document Type" column
-# Values = exact text shown in portal dropdown
+# Keys   = value you write in input_map.xlsx "Document Type" column (also used for the sheet tab name)
+# Values = exact text shown in the portal's "Document Type" dropdown menu
+# 
+# 👉 TO ADD A NEW TYPE TO THE DROPDOWN:
+# Simply add a new line here. 
+# Format: "Your Excel Sheet Name": "Exact Text in Portal Dropdown",
 DOCUMENT_TYPES = {
     # --- Original 10 types ---
     "Aadhaar Card":                  "Aadhaar Card",
@@ -69,7 +73,13 @@ DOCUMENT_TYPES = {
     "Vulnerable Tribal Certificate": "Vulnerable Tribal Certificate",
     "Bonded Labour Certificate":     "Bonded Labour Certificate",
     "Single Mother Certificate":     "Single Mother Certificate",
-    "Bank Passbook":  "Bank Passbook",
+    "Bank Passbook":                 "Bank Passbook",
+
+    # --- Newly added types (added 2026-09-16) ---
+    "General Caste Self Decl":        "General Caste Self Declaration",
+    "Institute Affiliation Decl":     "Institute Affiliation Declaration",
+    "Orphan Certificate":             "Orphan Certificate",
+    "Ration Card":                    "Ration Card",
 }
 
 # --- XPaths (verified from VERIFAI portal console) -----------
