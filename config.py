@@ -72,6 +72,7 @@ DOCUMENT_TYPES = {
     "Manual Scavanger Certificate": "Manual Scavenger Certificate",
     "Vulnerable Tribal Certificate": "Vulnerable Tribal Certificate",
     "Bonded Labour Certificate":     "Bonded Labour Certificate",
+    "BOC Certificate":               "BOC Certificate",
     "Single Mother Certificate":     "Single Mother Certificate",
     "Bank Passbook":                 "Bank Passbook",
 
@@ -80,6 +81,13 @@ DOCUMENT_TYPES = {
     "Institute Affiliation Decl":     "Institute Affiliation Declaration",
     "Orphan Certificate":             "Orphan Certificate",
     "Ration Card":                    "Ration Card",
+
+     # --- Newly added types (added 2026-09-19) ---
+    "Divyang Certificate":            "Divyang Certificate",
+    "Occupation Certificate":         "Occupation Certificate",
+    "Annual Contribution Certificate":"Annual Contribution Certificate",
+    "Transgender Certificate":        "Transgender Certificate",
+    "Visa":                           "Visa",
 }
 
 # --- XPaths (verified from VERIFAI portal console) -----------

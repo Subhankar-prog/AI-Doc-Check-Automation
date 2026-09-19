@@ -69,6 +69,7 @@ SHEET_COLORS = {
     "Manual Scavanger Certificate": ("FBE9E7", "BF360C"),  # deep orange 2
     "Vulnerable Tribal Certificate": ("E8F5E9", "2E7D32"),  # dark green
     "Bonded Labour Certificate":     ("EDE7F6", "4527A0"),  # deep purple 2
+    "BOC Certificate":               ("E8EAF6", "283593"),  # deep indigo
     "Single Mother Certificate":     ("FFF3E0", "E65100"),  # orange 2
     "Bank Passbook":                 ("E1F5FE", "01579B"),  # light blue
 
@@ -77,7 +78,14 @@ SHEET_COLORS = {
     "Institute Affiliation Decl":     ("E8EAF6", "283593"),  # deep indigo
     "Orphan Certificate":             ("FCE4EC", "AD1457"),  # deep pink
     "Ration Card":                    ("E0F2F1", "00695C"),  # dark teal
-}
+
+    # --- Newly added types (added 2026-09-19) ---
+    "Divyang Certificate":            ("F3E5F5", "6A1B9A"),  # deep purple
+    "Occupation Certificate":         ("E0F7FA", "006064"),  # cyan
+    "Annual Contribution Certificate":("FBE9E7", "BF360C"),  # deep orange 2
+    "Transgender Certificate":        ("E8F5E9", "2E7D32"),  # dark green
+    "Visa":                           ("EDE7F6", "4527A0"),  # deep purple 2
+} 
 
 PLACEHOLDER_ROWS = 10   # blank rows pre-created when folder is empty
 
@@ -107,6 +115,7 @@ TEST_DATA_FOLDERS = {
     "HIV Certificate":               "HIV Certificate for Testing",
     "Vulnerable Tribal Certificate": "Vulnerable Tribal Certificate for Testing",
     "Bonded Labour Certificate":     "Bonded Labour Certificate for Testing",
+    "BOC Certificate":               "BOC Certificate for Testing",
     "Single Mother Certificate":     "Single Mother Certificate for Testing",
     "Bank Passbook":                 "Bank Passbook for Testing",
     "Manual Scavanger Certificate":  "Manual Scavengers Certificate for Testing",
@@ -118,6 +127,13 @@ TEST_DATA_FOLDERS = {
     "Institute Affiliation Decl":     "Institute Affiliation Declaration for Testing",
     "Orphan Certificate":             "Orphan Certificate for Testing",
     "Ration Card":                    "Ration Card for Testing",
+
+    # --- Newly added types (added 2026-09-19) ---
+    "Divyang Certificate":            "Divyang Certificate for Testing",
+    "Occupation Certificate":         "Occupation Certificate for Testing",
+    "Annual Contribution Certificate":"Annual Contribution Certificate for Testing",
+    "Transgender Certificate":        "Transgender Certificate for Testing",
+    "Visa":                           "Visa for Testing",
 }
 
 
@@ -218,6 +234,13 @@ def _write_placeholder_rows(ws, doc_type: str, bg: str, n: int = PLACEHOLDER_ROW
 
 def create():
     INPUT_DIR.mkdir(parents=True, exist_ok=True)
+    TEST_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    
+    # Auto-create all test data folders so testers don't have to manually create them
+    for folder_name in TEST_DATA_FOLDERS.values():
+        if folder_name:
+            (TEST_DATA_DIR / folder_name).mkdir(parents=True, exist_ok=True)
+
 
     wb = openpyxl.Workbook()
     wb.remove(wb.active)   # remove default empty sheet
