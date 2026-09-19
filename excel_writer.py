@@ -23,6 +23,8 @@ from typing import Dict, Any, List
 import openpyxl
 from openpyxl.styles import PatternFill, Font, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
+from openpyxl.chart import PieChart, Reference, BarChart, Series
+from openpyxl.chart.label import DataLabelList
 
 from config import OUTPUT_DIR, OUTPUT_EXCEL_PREFIX, FIXED_COLUMNS, DOCUMENT_TYPES, KNOWN_VALIDATION_REJECTION_PATTERNS
 
@@ -321,110 +323,171 @@ class ExcelWriter:
 
     def _write_summary_sheet(self):
         """
-        Write a Summary sheet with counts, total processing time, and average time per document.
-        Success and Failed counts are derived directly from Final Output (PASS / FAIL).
+        Write a dynamic Summary dashboard with live formulas and charts.
         """
         if not self._stats:
             return
 
-        # If resuming, an old Summary sheet may already exist — remove it so
-        # the new one (with correctly combined stats) replaces it cleanly
-        # instead of being created as "Summary1" alongside a stale one.
         if "Summary" in self.wb.sheetnames:
             del self.wb["Summary"]
-        ws = self.wb.create_sheet(title="Summary", index=0)  # insert at front
+        ws = self.wb.create_sheet(title="Summary", index=0)
 
-        # Clean Summary Headers (Test Pass / Test Fail merged into Success / Failed)
+        # Dashboard Styling
+        ws.sheet_view.showGridLines = False
+
+        # Title
+        ws.merge_cells("A1:H1")
+        title_cell = ws["A1"]
+        title_cell.value = f"VERIFAI Automation Dashboard - {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+        title_cell.font = Font(name="Calibri", size=16, bold=True, color="1E3A5F")
+        title_cell.alignment = Alignment(horizontal="center", vertical="center")
+        ws.row_dimensions[1].height = 40
+
+        # Headers
         summary_headers = [
             "Document Type", "Total Executed", "Success", "Failed", "Error",
             "Success Rate", "Total Time (s)", "Avg Time/Doc (s)"
         ]
         for col_idx, h in enumerate(summary_headers, start=1):
-            self._write_header_cell(ws, 1, col_idx, h)
-        ws.row_dimensions[1].height = 24
+            self._write_header_cell(ws, 2, col_idx, h)
+        ws.row_dimensions[2].height = 24
 
-        grand_total = 0
-        grand_success = 0
-        grand_failed = 0
-        grand_error = 0
-        grand_time = 0.0
-
-        current_row = 2
+        current_row = 3
         # Data rows per document type
         for doc_type, counts in self._stats.items():
-            total      = counts["TOTAL"]
-            success    = counts["SUCCESS"]  # Final Output == PASS
-            failed     = counts["FAILED"]   # Final Output == FAIL
-            error      = counts["ERROR"]    # Final Output == REVIEW / ERROR
+            sheet_name = _safe_sheet_name(doc_type)
+            # Make sure to wrap sheet name in single quotes for Excel formulas
+            sn = f"'{sheet_name}'"
+            
+            # Static time values (time isn't tracked in the individual rows)
             total_time = counts.get("TOTAL_TIME", 0.0)
-            avg_time   = (total_time / total) if total > 0 else 0.0
-            rate_pct   = (success / total * 100) if total > 0 else 0.0
-            rate_str   = f"{rate_pct:.1f}%"
 
-            grand_total   += total
-            grand_success += success
-            grand_failed  += failed
-            grand_error   += error
-            grand_time    += total_time
+            # Excel formulas for dynamic counting
+            f_total   = f'=COUNTA({sn}!A:A)-1'  # Count column A (Filename) minus header
+            f_success = f'=COUNTIF({sn}!E:E, "PASS")'
+            f_failed  = f'=COUNTIF({sn}!E:E, "FAIL")'
+            f_error   = f'=B{current_row}-C{current_row}-D{current_row}' # Total - Success - Failed
+            f_rate    = f'=IF(B{current_row}>0, C{current_row}/B{current_row}, 0)'
+            f_avg     = f'=IF(B{current_row}>0, G{current_row}/B{current_row}, 0)'
 
             values = [
                 doc_type,
-                total,
-                success,
-                failed,
-                error,
-                rate_str,
-                f"{total_time:.1f}s",
-                f"{avg_time:.1f}s"
+                f_total,
+                f_success,
+                f_failed,
+                f_error,
+                f_rate,
+                round(total_time, 1),
+                f_avg
             ]
+            
             for col_idx, val in enumerate(values, start=1):
                 cell = ws.cell(row=current_row, column=col_idx, value=val)
                 cell.font      = CELL_FONT
                 cell.alignment = CENTER_ALIGN if col_idx > 1 else LEFT_ALIGN
                 cell.border    = THIN_BORDER
-                # Colour by success rate
+                
+                # Apply percentage formatting
                 if col_idx == 6:
-                    rate_num = success / total if total > 0 else 0
-                    cell.fill = (SUCCESS_FILL if rate_num >= 0.8
-                                 else UNKNOWN_FILL if rate_num >= 0.5
-                                 else FAILED_FILL)
+                    cell.number_format = '0.0%'
 
             ws.row_dimensions[current_row].height = 20
             current_row += 1
 
-        # ── Overall Summary Row at bottom ────────────────────
-        grand_rate_pct = (grand_success / grand_total * 100) if grand_total > 0 else 0.0
-        grand_avg_time = (grand_time / grand_total) if grand_total > 0 else 0.0
+        # Overall Summary Row
+        total_row = current_row
+        ws.cell(row=total_row, column=1, value="OVERALL TOTAL").font = Font(bold=True)
+        ws.cell(row=total_row, column=1).alignment = LEFT_ALIGN
+        
+        # SUM formulas for totals
+        for col_idx, letter in zip(range(2, 6), ["B", "C", "D", "E"]):
+            ws.cell(row=total_row, column=col_idx, value=f"=SUM({letter}3:{letter}{total_row-1})").font = Font(bold=True)
+            ws.cell(row=total_row, column=col_idx).alignment = CENTER_ALIGN
 
-        total_row_values = [
-            "OVERALL TOTAL",
-            grand_total,
-            grand_success,
-            grand_failed,
-            grand_error,
-            f"{grand_rate_pct:.1f}%",
-            f"{grand_time:.1f}s",
-            f"{grand_avg_time:.1f}s"
-        ]
+        # Overall Rate & Time formulas
+        ws.cell(row=total_row, column=6, value=f"=IF(B{total_row}>0, C{total_row}/B{total_row}, 0)").font = Font(bold=True)
+        ws.cell(row=total_row, column=6).number_format = '0.0%'
+        ws.cell(row=total_row, column=6).alignment = CENTER_ALIGN
 
-        total_fill = PatternFill("solid", fgColor="D9E1F2")  # soft accent blue
-        total_font = Font(name="Calibri", size=10, bold=True)
-        for col_idx, val in enumerate(total_row_values, start=1):
-            cell = ws.cell(row=current_row, column=col_idx, value=val)
-            cell.font      = total_font
-            cell.fill      = total_fill
-            cell.alignment = CENTER_ALIGN if col_idx > 1 else LEFT_ALIGN
-            cell.border    = THIN_BORDER
+        ws.cell(row=total_row, column=7, value=f"=SUM(G3:G{total_row-1})").font = Font(bold=True)
+        ws.cell(row=total_row, column=7).alignment = CENTER_ALIGN
 
-        ws.row_dimensions[current_row].height = 22
+        ws.cell(row=total_row, column=8, value=f"=IF(B{total_row}>0, G{total_row}/B{total_row}, 0)").font = Font(bold=True)
+        ws.cell(row=total_row, column=8).alignment = CENTER_ALIGN
+
+        # Apply Total row styling
+        for col_idx in range(1, 9):
+            c = ws.cell(row=total_row, column=col_idx)
+            c.fill = PatternFill("solid", fgColor="D9E1F2")
+            c.border = THIN_BORDER
+        
+        ws.row_dimensions[total_row].height = 22
 
         # Column widths
-        ws.column_dimensions["A"].width = 28
+        ws.column_dimensions["A"].width = 30
         for col in ["B", "C", "D", "E", "F", "G", "H"]:
-            ws.column_dimensions[col].width = 18
+            ws.column_dimensions[col].width = 16
 
-        ws.freeze_panes = "A2"
-        logger.info("Summary sheet written with overall timing statistics.")
+        # --- CHARTS ---
+        try:
+            # 1. Overall Pie Chart (Success vs Failed vs Error)
+            pie = PieChart()
+            pie.title = "Overall Results Breakdown"
+            pie.width = 12
+            pie.height = 7
+            
+            # The data is in the total_row (C, D, E)
+            labels = Reference(ws, min_col=3, min_row=2, max_col=5, max_row=2)  # Headers: Success, Failed, Error
+            data = Reference(ws, min_col=3, min_row=total_row, max_col=5, max_row=total_row) # Data: Grand totals
+            
+            pie.add_data(data, from_rows=True, titles_from_data=False)
+            pie.set_categories(labels)
+            
+            # Only show percentages to prevent overlapping text
+            pie.dataLabels = DataLabelList()
+            pie.dataLabels.showPercent = True
+            pie.dataLabels.showVal = False
+            pie.dataLabels.showCatName = False
+            pie.dataLabels.showSerName = False
+            
+            # Position the pie chart next to the table
+            ws.add_chart(pie, "J3")
+
+            # 2. Bar Chart for Success Rates
+            if total_row > 3: # Only draw if there are actual rows
+                bar = BarChart()
+                bar.title = "Success Rate by Document Type"
+                bar.width = 15
+                bar.height = 7.5
+                
+                # Y-Axis Formatting (0% to 100%)
+                bar.y_axis.title = "Success Rate (%)"
+                bar.y_axis.scaling.min = 0.0
+                bar.y_axis.scaling.max = 1.0
+                bar.y_axis.majorUnit = 0.2
+                bar.y_axis.number_format = '0%'
+                
+                # Categories: Document names (Col A)
+                cats = Reference(ws, min_col=1, min_row=3, max_row=total_row-1)
+                # Data: Success Rate (Col F)
+                rate_data = Reference(ws, min_col=6, min_row=2, max_row=total_row-1)
+                
+                bar.add_data(rate_data, titles_from_data=True)
+                bar.set_categories(cats)
+                
+                # Turn off varyColors so the categories stay on the X-axis instead of becoming a legend
+                bar.varyColors = False
+                # Remove the legend for the bar chart since there's only one series ("Success Rate")
+                bar.legend = None 
+                
+                # Position below the pie chart
+                ws.add_chart(bar, "J18")
+                
+        except Exception as e:
+            logger.warning(f"Could not generate charts in Excel: {e}")
+
+        ws.freeze_panes = "A3"
+        logger.info("Dynamic Dashboard Summary sheet written with formulas and charts.")
 
     def _save(self):
         """Save the workbook (called after every row for crash safety)."""
