@@ -78,7 +78,7 @@ DOCUMENT_TYPES = {
 
     # --- Newly added types (added 2026-09-16) ---
     "General Caste Self Decl":        "General Caste Self Declaration",
-    "Institute Affiliation Decl":     "Institute Affiliation Declaration",
+    "Institute Declaration Certificate":     "Institute Declaration Certificate",
     "Orphan Certificate":             "Orphan Certificate",
     "Ration Card":                    "Ration Card",
 

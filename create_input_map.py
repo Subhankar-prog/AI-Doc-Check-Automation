@@ -75,7 +75,7 @@ SHEET_COLORS = {
 
     # --- Newly added types (added 2026-09-16) ---
     "General Caste Self Decl":        ("FFF8E1", "F9A825"),  # yellow
-    "Institute Affiliation Decl":     ("E8EAF6", "283593"),  # deep indigo
+    "Institute Declaration Certificate":     ("E8EAF6", "283593"),  # deep indigo
     "Orphan Certificate":             ("FCE4EC", "AD1457"),  # deep pink
     "Ration Card":                    ("E0F2F1", "00695C"),  # dark teal
 
@@ -124,7 +124,7 @@ TEST_DATA_FOLDERS = {
     
     # --- Newly added types (added 2026-09-16) ---
     "General Caste Self Decl":        "General Caste Self Declaration for Testing",
-    "Institute Affiliation Decl":     "Institute Affiliation Declaration for Testing",
+    "Institute Declaration Certificate":     "Institute Affiliation Declaration for Testing",
     "Orphan Certificate":             "Orphan Certificate for Testing",
     "Ration Card":                    "Ration Card for Testing",
 
@@ -303,3 +303,4 @@ def create():
 
 if __name__ == "__main__":
     create()
+# dummy text
