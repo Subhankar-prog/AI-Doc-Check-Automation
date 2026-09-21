@@ -85,6 +85,7 @@ SHEET_COLORS = {
     "Annual Contribution Certificate":("FBE9E7", "BF360C"),  # deep orange 2
     "Transgender Certificate":        ("E8F5E9", "2E7D32"),  # dark green
     "Visa":                           ("EDE7F6", "4527A0"),  # deep purple 2
+    "Parent Declaration Certificate": ("EDE7F6", "4527A0"),  # deep purple 2
 } 
 
 PLACEHOLDER_ROWS = 10   # blank rows pre-created when folder is empty
@@ -134,6 +135,7 @@ TEST_DATA_FOLDERS = {
     "Annual Contribution Certificate":"Annual Contribution Certificate for Testing",
     "Transgender Certificate":        "Transgender Certificate for Testing",
     "Visa":                           "Visa for Testing",
+    "Parent Declaration Certificate": "Parent Declaration Certificate for Testing"
 }
 
 

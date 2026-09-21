@@ -88,6 +88,7 @@ DOCUMENT_TYPES = {
     "Annual Contribution Certificate":"Annual Contribution Certificate",
     "Transgender Certificate":        "Transgender Certificate",
     "Visa":                           "Visa",
+    "Parent Declaration Certificate": "Parent Declaration Certificate"
 }
 
 # --- XPaths (verified from VERIFAI portal console) -----------
